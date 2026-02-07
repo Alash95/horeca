@@ -1,0 +1,11 @@
+/* Basic styling for the Horeca Intelligence Dashboard */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}

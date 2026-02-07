@@ -1,0 +1,3092 @@
+[
+  {
+    "brandOwner": "Asahi Breweries",
+    "brand": "Nikka",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Japanese Whisky"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Gran Riserva Puro Malto",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "St. Stefanus",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Meantime",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Kozel",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Gran Riserva Doppio Malto",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Grolsch",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Nastro Azzurro Stile Capri",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Senza Glutine",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Asahi Super Dry",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroncino",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Raffo Ricetta Originale",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Wührer",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Crystall Wührer",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Nastro Azzurro 0.0%",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer - Non-Alcoholic"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Tourtel",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer - Non-Alcoholic"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Itala Pilsen",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Pilsner Urquell",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Nastro Azzurro",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Chill Lemon",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Gran Riserva Rossa",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Forte",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Raffo Lavorazione Grezza",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Asahi-Birra Peroni",
+    "brand": "Peroni Gran Riserva Bianca",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Oxley",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Santa Teresa 1796",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Angel's Envy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "D'USSÉ",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "D'usse",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "St-Germain",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Elderflower Liqueur"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "St Germain",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Elderflower Liqueur"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Bombay Sapphire",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Bombay Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Bénédictine & Brandy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "B&B",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Ilegal Mezcal",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Bacardi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Dewar's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Dewars",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Patrón",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Cazadores",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Martini & Rossi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Martini Rosso",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Martini Riserva Bitter",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Bacardi Limited",
+    "brand": "Grey Goose",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Barbera d'Asti DOCG \"L'Altra\" 2022",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Piemonte Albarossa DOC \"La Lus\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Chianti Classico Riserva DOCG 2020",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Brunello di Montalcino DOCG 2020",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Bolgheri DOC “Aska” 2022",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Rosso di Montalcino DOC \"Poggio alle Mura\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Brunello di Montalcino DOCG 2019 Magnum",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Toscana Rosso IGT \"Cum Laude\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Banfi",
+    "brand": "Brunello di Montalcino Riserva DOCG \"Poggio alle Mura\" 2017",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Becle (Proximo Spirits)",
+    "brand": "The Kraken",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Spiced Rum"
+  },
+  {
+    "brandOwner": "Becle (Proximo Spirits)",
+    "brand": "Kraken Rum",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Spiced Rum"
+  },
+  {
+    "brandOwner": "Becle (Proximo Spirits)",
+    "brand": "Jose Cuervo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Bela",
+    "brand": "Ribera del Duero Tempranillo Roble DO “Finca Vallejo” 2023",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bela",
+    "brand": "Ribera del Duero Tempranillo Crianza DO \"Finca Vallejo\" 2020",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Beluga Group",
+    "brand": "Beluga",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Beluga Group",
+    "brand": "Beluga Gold",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Beringer",
+    "brand": "California Cabernet Sauvignon 2023",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Toscana Rosso IGT \"Achille\" 2022",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Toscana Rosso IGT \"Achille\" 2022 Magnum",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Chianti Classico DOCG \"Ser Gardo\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Chianti DOCG “La Boncia” 2023",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Chianti Classico DOCG \"La Ghirlanda\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Toscana Rosso  \"Simbiosi\" 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Toscana Rosso Governo all’Uso Toscano IGT \"Nicolò\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bindi Sergardi",
+    "brand": "Chianti Classico Gran Selezione DOCG “Mocenni 89” 2018",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Barbera d’Asti DOCG \"Montebruna\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Monferrato Rosso DOC \"Il Bacialé\" 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Barbera del Monferrato Frizzante DOC \"La Monella\" 2024",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Barbera d’Asti DOCG \"Bricco della Bigotta\" 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Barbera d’Asti DOCG \"Bricco dell'Uccellone\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Grignolino D'Asti DOC \"Limonte\" 2024",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Braida",
+    "brand": "Brachetto D'Acqui DOCG 2024",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bricco dei Guazzi",
+    "brand": "Barbera d'Asti DOCG 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Bricco dei Guazzi",
+    "brand": "Barolo DOCG 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Brigaldara",
+    "brand": "Amarone della Valpolicella Classico DOCG 2018",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Woodford Reserve",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Old Forester",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Canadian Mist",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Canadian Whisky"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Fords Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Gin Mare",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Chambord",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Diplomático Selección De Familia",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Diplomático Ambassador",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "The GlenDronach",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Benriach 10 Year Old",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Jack Daniel's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tennessee Whiskey"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Jack Daniels",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tennessee Whiskey"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "El Jimador",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "elJimador",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Brown-Forman",
+    "brand": "Herradura",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Caffo 1915",
+    "brand": "Vecchio Amaro del Capo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Averna",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Cynar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Sarti",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Aperol",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Crodino",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Aperitivo RTD"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Camparisoda",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Aperitivo RTD"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Campari",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Campari Bitter",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Wild Turkey",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Bulldog Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Professore Monsieur",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Professore Madame",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Frangelico",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Hazelnut Liqueur"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Grand Marnier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Montelobos",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Montelobos Tobalà",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Montelobos Ensamble",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Los Siete Misterios Doba",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Ouzo Mini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Ouzo"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Appleton Estate",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Espolòn",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Espolon",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Campari Group",
+    "brand": "Cinzano",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Poindevigne",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Armagnac"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Teerenpeli",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Angostura",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Jefferson",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Roulis",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Magnifica",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Busnel",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Calvados"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Charma",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cane Spirit Drink"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Leopold Gourmel",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Saroglia",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Curaçay"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Me Gin Smoked Tea",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Aqua Luce",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Beefeater",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Bluecoat",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Bond Street",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Brockmans",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Cacao Ethique",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Citadelle",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Elephant",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Fary",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "G5L",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Ginastic",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Habberdise",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Martin Miller's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "MCL",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "No. 209",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Regidor de los Apostoles",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Rudolf",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Saigon Baigur",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Seele",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Spirit Garden",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Zudam",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Amaretto di Club",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Bergamotto Fantastico",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Cabotine",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Doc Noire",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Elephant Coffee",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Cioccolino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Kioskinen Viina Salmiakki",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Mala Vida",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Madame Mu",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Midnight Moon",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Manfred",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Mermallado",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Mistral",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Roger",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Salvia & Limone",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Scandinavian",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Sakari",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "The Gibson",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Washington",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Aprendiz",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Cimarrón",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Meteoro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Tío Pesca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Vago",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Xicala",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Pescador de Sueños",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Finest Call",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixer"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Real",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixer"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Campo de Encanto",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pisco"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Quinta das Carvalhas",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Porto"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Siglo Cero",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pox"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Ninfa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Raicilla"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Appleton Jamadera",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Dictador",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "El Dorado",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "El Ron Prohibido",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Plantation",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Planteray",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Ron Opthimus",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Prince Clairin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Santísima Trinidad de Cuba",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Smith Maria",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Volcano Croque",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Pomarium",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Sidro"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Teofrast Dream Enigma",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Sodato"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Clande",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Coyote",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Desert Door",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Flor del Desierto",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Rancho Tepua",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Sotoleros",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sotol"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Monin",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Syrup"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "123 Organic Tequila",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Cascahuín",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Komos",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Los Arango",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Ocho",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Sierra Milenario",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Vecinidad",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Match-Tonic",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Tonic Water"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Carlo Alberto",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Apri Verciano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "C&C",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Charma Wines",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Mitnatch Frères",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Pu Wines",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Tavares de Pina",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Visani",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Vino"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Koperniková",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Airell",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Jefferson's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Matthew",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Heaven's Door",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Teeling",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Widow Jane",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "AnCnoc",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Balblair",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Brennie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Elon",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Glen Scotia",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Hankey Bannister",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Incir",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Knappogue",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Levant Highlands",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Loch Lomond",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Macallan",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "McConnell's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Noble Rebel",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Old Pulteney",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Old Smoky",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Seale by Seca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Tomintoul",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Compagnia dei Caraibi",
+    "brand": "Wemyss",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Demerara Distillers",
+    "brand": "El Dorado",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado 12 Year Old",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado 15 Year Old",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Versailles",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado 21 Year Old",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Enmore 1993",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Port Mourant 1999",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Reserve 25 Year Old",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Single Still Port Mourant 2009",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Demerara Distillers Ltd.",
+    "brand": "El Dorado Rare Collection Skeldon 2000",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Dettori",
+    "brand": "Romangia Rosso IGT \"Tenores\" 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Dettori",
+    "brand": "Romangia Rosso IGT \"Tuderi\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Di Majo Norante",
+    "brand": "Molise Aglianico Riserva DOC \"Sassius\" 2015",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Di Majo Norante",
+    "brand": "Tintilia del Molise DOP 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Di Majo Norante",
+    "brand": "Terre degli Osci Sangiovese IGT 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Di Majo Norante",
+    "brand": "Molise Rosso Riserva DOP \"Don Luigi\" 2019",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Venturo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Bulleit Bourbon",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Ypioca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Crown Royal",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Canadian Whisky"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Godiva",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Chocolate Liqueur"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Baileys",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cream Liqueur"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Baileys Irish Cream",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cream Liqueur"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip Grove",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Distillato Analcolico"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip Spice",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Distillato Analcolico"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip Garden 108",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Distillato Analcolico"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip Grove 42",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Distillato Analcolico"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip Spice 94",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Distillato Analcolico"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Tanqueray",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Tanqueray Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Gordon's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Gordons Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Aviation Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Villa Ascenti Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Pimm's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Pimms",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Pierde Almas",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Seedlip",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Non-alcoholic Spirit"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Rumple Minze",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Peppermint Schnapps"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Zacapa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Ron Zacapa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Johnnie Walker",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Lagavulin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Talisker",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Oban",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Captain Morgan",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Spiced Rum"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Don Julio",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Casamigos",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Smirnoff",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Ketel One",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Diageo",
+    "brand": "Ketel One Vodka",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Dievole",
+    "brand": "Toscana Rosso IGT \"Le Due Arbie\" 2022",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Amaro Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Select",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Select Aperitivo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Vecchia Romagna",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Brandy"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "St-Rémy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Brandy"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Oro Pilla",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Brandy"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Edgar Sopper",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Grappa del Lupo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Grappa"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Pampero",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Pampero Blanco",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Pampero Especial",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Pampero Aniversario",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Rosso Antico",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brandOwner": "Gruppo Montenegro",
+    "brand": "Maysta",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Ichnusa non Filtrata",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Messina Cristalli di Sale",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Affligem",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Desperados",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti IPA",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Lagunitas IPA",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Murphy's",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Ichnusa",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Ichnusa Cruda",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Messina",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Dreher",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Amstel",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Slalom",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti Zero",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer - Non-Alcoholic"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Dreher Lemon Radler 0.0%",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer - Non-Alcoholic"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Heineken",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti Radler",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti Radler Chinotto",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti Radler Gazzosa",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Ichnusa Limone",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Dreher Lemon Radler",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti La Rossa",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Messina Cristalli di Sale",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Birra Moretti Bianca",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Blanche de Bruxelles",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Heineken Italia",
+    "brand": "Adelscott",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Rabarbaro Zucca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Sagamore Spirit",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whiskey"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Tia Maria",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Coffee Liqueur"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Disaronno Velvet",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cream Liqueur"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Engine Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "The Busker",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Disaronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Isolabella Sambuca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Isolabella Limoncello",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Aurum",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "RumP@blic",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Illva Saronno S.p.A.",
+    "brand": "Artic Vodka",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Hennessy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Hennessy Cognac",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Ardbeg",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Glenmorangie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Belvedere",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "LVMH",
+    "brand": "Woodinville",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whiskey"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Amaro San Simone",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Tattico",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Zerotrenta",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Gerlando",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "La Licorne",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Armagnac"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Beijing Red Star",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Baijiu"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Lefebvre",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Eggenberg",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Cachaça 51",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Fazenda Soledade",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Marquis de la Pomme",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Calvados"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Jeeper",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Méteyer",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Loriot Pagel",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Saint Réol",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Dubois",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Maison Lheureux",
+    "macroCategoria": "Champagne",
+    "categoriaProdotto": "Champagne"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Ms. Better’s Bitters",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Cocktail Finisher"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Guérin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Amuerte",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Solaro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Le Tribute",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Saneha",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Seven Hills",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Palo de Sitges",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Mayfair",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Mastui",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Eden Mill",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "M&H Distillery",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Himbrimi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Flame of Passion",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Socro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Melifera",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Selezione Grappa Anthology",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Grappa"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Monkai",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Dennis Zoppi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "LOVEN",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Black Signer",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Lantenhammer",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Koch",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Noble Coyote",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Gusano Rojo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Explosivo",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixer"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Capel",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pisco"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Occucaje",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pisco"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Damoiseau",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Bielle",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Chalong Bay",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Auténtico Nativo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Embargo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Mama Quilla",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Come Hell or High Water",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Selezione Buttiglieri Clément",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Hakushika",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sake"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Bacanha",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Sciroppo"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "More Agave",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Sciroppo"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Hussong",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Vuela Alto",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Spiriti Artigiani",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermut"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Le Philtre",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Tom of Finland",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Brave New Spirits",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "The San IN",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Prieto y Prieta",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Mavolo",
+    "brand": "Moonshine Runners",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brandOwner": "Mazzei",
+    "brand": "Chianti Classico Riserva DOCG \"Ser Lapo\" 2021",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Nittardi",
+    "brand": "Toscana Rosso IGT \"Ad Astra\" 2020",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Ramazzotti",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amaro"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Pernod",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Lillet",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Suze",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Italicus",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivo"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Wiser's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Canadian Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Kahlúa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Coffee Liqueur"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Kahlua",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Coffee Liqueur"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Martell",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Beefeater",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Beefeater Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Plymouth Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Monkey 47",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Malfy Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Jameson",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Jameson Irish Whiskey",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Redbreast",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Del Maguey",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Ouzo 12",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Ouzo"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Havana Club",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Malibu",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Chivas Regal",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Chivas",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "The Glenlivet",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Ballantine's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Aberlour",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Olmeca Altos",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Absolut",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Absolut Vodka",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Pernod Ricard",
+    "brand": "Wyborowa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "St-Rémy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Brandy"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "St Remy",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Brandy"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "Rémy Martin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "Remy Martin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cognac"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "The Botanist",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "Metaxa",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Greek Spirit / Brandy"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "Cointreau",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Rémy Cointreau",
+    "brand": "Mount Gay",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "San Zorz",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Mosaic IPA",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Faxe IPA",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Top Royal",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Top Extra Lager",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Staropramen Granat",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Anarkist Neipa",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Staropramen Non Alcoholic",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer - Non-Alcoholic"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Royal Økologisk Classic",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Royal Økologisk Pilsner",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Hoppy Ale",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Top Pilsner",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Faxe Premium",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Staropramen Premium",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Red Erik",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Strong Ale",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Extreme Ten",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Faxe 10%",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Ceres Unfiltered",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Staropramen Unfiltered",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Lemonsoda Energy Activator",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Energy Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Crazy Tiger",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Energy Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Lemonsoda",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Lemonsoda Mojito",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Lemonsoda Zero",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Oransoda",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Oransoda Zero",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Royal Unibrew",
+    "brand": "Pelmosoda",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Soft Drink"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Herbsaint",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Buffalo Trace",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Pappy Van Winkle",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Blanton's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Eagle Rare",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bourbon Whiskey"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Goldschläger",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cinnamon Schnapps"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Goldschlager",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cinnamon Schnapps"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Fireball",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cinnamon Whisky Liqueur"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Southern Comfort",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "DeKuyper",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Myers's Rum",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Myers",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Sazerac Rye",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rye Whiskey"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Romana Sambuca",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Sambuca"
+  },
+  {
+    "brandOwner": "Sazerac Company",
+    "brand": "Corazón Tequila",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Hendrick's",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Hendricks Gin",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Monkey 47",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Tullamore D.E.W.",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Tullamore Dew",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whiskey"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Glenfiddich",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "The Balvenie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Drambuie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky Liqueur"
+  },
+  {
+    "brandOwner": "William Grant & Sons",
+    "brand": "Sailor Jerry",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Spiced Rum"
+  }
+]

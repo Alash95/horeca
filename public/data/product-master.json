@@ -1,0 +1,5434 @@
+[
+  {
+    "brand": "Vodka altamura",
+    "brandOwner": "Altamura Distilleries",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Bock chiara doppio malto 5 luppoli",
+    "brandOwner": "Angelo poretti",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "Poretti 5 luppoli"
+    ]
+  },
+  {
+    "brand": "Bolgheri vermentino antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Bolgheri vermentino antinori"
+    ]
+  },
+  {
+    "brand": "Chardonnay bramìto della sala castello della sala 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay bramìto della sala castello della sala"
+    ]
+  },
+  {
+    "brand": "Chardonnay haras de pirque antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay haras de pirque antinori"
+    ]
+  },
+  {
+    "brand": "Conte della vipera castello della sala antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Conte della vipera castello della sala antinori"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer pannon tűzkő antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer pannon tűzkő antinori"
+    ]
+  },
+  {
+    "brand": "Bolgheri rosato scalabrone antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Bolgheri rosato scalabrone antinori"
+    ]
+  },
+  {
+    "brand": "Chianti classico pèppoli antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti classico pèppoli antinori"
+    ]
+  },
+  {
+    "brand": "Chianti classico riserva villa antinori 2022",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti classico riserva villa antinori"
+    ]
+  },
+  {
+    "brand": "Chianti superiore santa cristina antinori 2023",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti superiore santa cristina antinori"
+    ]
+  },
+  {
+    "brand": "Santa cristina rosso antinori 2024",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Santa cristina rosso antinori"
+    ]
+  },
+  {
+    "brand": "Villa antinori rosso 2023",
+    "brandOwner": "Antinori",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Villa antinori rosso"
+    ]
+  },
+  {
+    "brand": "Nastro azzurro zero",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "0-Low Alcool"
+  },
+  {
+    "brand": "Asahi super dry",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni bianca gran riserva",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni cru",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni Cruda",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni doppio malto gran riserva",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni rossa gran riserva",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Peroni senza glutine",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Pferden",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Pilsner urquell",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Raffo",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Raffo grezza",
+    "brandOwner": "Asahi Birra Peroni",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "China martini",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "aperitivo martini rosato",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Martini Rosato"
+    ]
+  },
+  {
+    "brand": "Martini fiero",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Bitter martini",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "Martini Bitter",
+      "Martini"
+    ]
+  },
+  {
+    "brand": "Bitter riserva speciale 1872",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "Riserva speciale 1872"
+    ]
+  },
+  {
+    "brand": "Gin bombay dry",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Gin bombay sapphire",
+      "Bombay"
+    ]
+  },
+  {
+    "brand": "Gin bosford",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Bosford Gin",
+      "Bosford"
+    ]
+  },
+  {
+    "brand": "Gin larios",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Larios Gin",
+      "Larios"
+    ]
+  },
+  {
+    "brand": "Gin oxley",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Oxley",
+      "Gin oxley"
+    ]
+  },
+  {
+    "brand": "Gin premier cru bombay sapphire",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Espresso martini tails cocktails",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Rum Bacardi Carta Blanca",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Rum Bacardi Carta Oro",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Rum Havana Club 3 Anni",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Havana Club",
+      "Havana Club 3 yo"
+    ]
+  },
+  {
+    "brand": "Aberfeldy 12 anni",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Aberfeldy 21 anni",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Martini bianco",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Martini bianco vermouth"
+    ]
+  },
+  {
+    "brand": "Martini dry",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brand": "Martini Extra Dry",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Martini Extra Dry Vermouth"
+    ]
+  },
+  {
+    "brand": "Martini rosso vermouth",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Martini rosso"
+    ]
+  },
+  {
+    "brand": "Noilly prat",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "noilly prat dry"
+    ]
+  },
+  {
+    "brand": "Vermouth di torino riserva speciale ambrato",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "riserva speciale ambrato"
+    ]
+  },
+  {
+    "brand": "Vermouth di torino riserva speciale rubino",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "riserva speciale rubino"
+    ]
+  },
+  {
+    "brand": "Grey Goose",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Vodka Grey Goose"
+    ]
+  },
+  {
+    "brand": "Vodka 42 below",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "42 Below"
+    ]
+  },
+  {
+    "brand": "Vodka eristoff",
+    "brandOwner": "Bacardi Martini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Eristoff Vodka",
+      "Eristoff"
+    ]
+  },
+  {
+    "brand": "Fumaio banfi 2024",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Fumaio banfi"
+    ]
+  },
+  {
+    "brand": "Moscato d'asti sciandor banfi 2024",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Moscato d'asti sciandor banfi"
+    ]
+  },
+  {
+    "brand": "Vermentino la pettegola banfi 2024",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vermentino la pettegola banfi"
+    ]
+  },
+  {
+    "brand": "Bolgheri rosso aska banfi 2022",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Bolgheri rosso aska banfi"
+    ]
+  },
+  {
+    "brand": "Brunello di montalcino banfi 2020",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Brunello di montalcino banfi"
+    ]
+  },
+  {
+    "brand": "Chianti banfi 2024",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti banfi"
+    ]
+  },
+  {
+    "brand": "Col di sasso banfi 2024",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Col di sasso banfi"
+    ]
+  },
+  {
+    "brand": "Rosso di montalcino banfi 2023",
+    "brandOwner": "Banfi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Rosso di montalcino banfi"
+    ]
+  },
+  {
+    "brand": "Bass scotch ale",
+    "brandOwner": "Bass",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "Bass scotch ale"
+    ]
+  },
+  {
+    "brand": "Amarone collezione bertani 2021",
+    "brandOwner": "Bertani",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone collezione bertani"
+    ]
+  },
+  {
+    "brand": "Amarone valpantena bertani 2022",
+    "brandOwner": "Bertani",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone valpantena bertani"
+    ]
+  },
+  {
+    "brand": "Valpolicella ripasso bertani 2023",
+    "brandOwner": "Bertani",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella ripasso bertani"
+    ]
+  },
+  {
+    "brand": "Chimay blonde 150 limited",
+    "brandOwner": "Bieres de chimay s.a.",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Chimay rouge/triple/bleue + 1 bicchiere",
+    "brandOwner": "Bieres de chimay s.a.",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Birra del borgo lisa lager",
+    "brandOwner": "Birra del borgo",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "Bitter lemon"
+    ]
+  },
+  {
+    "brand": "Birra del borgo maledetta",
+    "brandOwner": "Birra del borgo",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "Bitter sicilian lemon"
+    ]
+  },
+  {
+    "brand": "025 blanche birra artigianale",
+    "brandOwner": "Birrificio di legnano",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Cinq' ghei american amber rossa",
+    "brandOwner": "Birrificio di legnano",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Olonella stout birra artigianale",
+    "brandOwner": "Birrificio di legnano",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Tarcisio session ipa birra artigianale",
+    "brandOwner": "Birrificio di legnano",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Blue moon belgian white",
+    "brandOwner": "Blue moon brewing company",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Boem hard seltzer pompelmo rosa",
+    "brandOwner": "Boem",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Saint benoit ambree fusto",
+    "brandOwner": "Brasserie du bocq",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Saint benoit blanche fusto",
+    "brandOwner": "Brasserie du bocq",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Gentleman Jack",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "Jack Daniel's",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "jack daniel's single barrel",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "Woodford reserve",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Woodford reserve kentucky straight rye whisky"
+    ]
+  },
+  {
+    "brand": "Gin mare",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Gin mare mediterranean gin"
+    ]
+  },
+  {
+    "brand": "Gin mare capri",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Rum Diplomático Mantuano",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Rum Diplomático Planas",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Rum Diplomático Reserva Exclusiva",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Rum Diplomatico"
+    ]
+  },
+  {
+    "brand": "Benriach 10 anni",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Benriach 10 yo"
+    ]
+  },
+  {
+    "brand": "Benriach 12 anni",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Benriach 12 yo"
+    ]
+  },
+  {
+    "brand": "Benriach 21 anni",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Benriach 21 yo"
+    ]
+  },
+  {
+    "brand": "Benriach 30 anni",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Benriach 30 yo"
+    ]
+  },
+  {
+    "brand": "Benriach smoke season",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Jack Daniel's Tennessee Whiskey Old N. 7 Brand",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Jack Daniel's Tennessee Whiskey",
+      "Jack Daniel's"
+    ]
+  },
+  {
+    "brand": "Woodford Reserve Distiller's Select Kentucky Straight Bourbon Whiskey",
+    "brandOwner": "Brown forman",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Woodford Reserve Distiller's Select",
+      "Woodford Reserve"
+    ]
+  },
+  {
+    "brand": "Amaro Braulio",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Braulio"
+    ]
+  },
+  {
+    "brand": "Amaro Cynar",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Cynar"
+    ]
+  },
+  {
+    "brand": "Averna",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Amaro Averna"
+    ]
+  },
+  {
+    "brand": "Braulio riserva",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Amaro Cynar 'high proof'",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Cynar 'high proof'"
+    ]
+  },
+  {
+    "brand": "Diesus",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Amaro Diesus"
+    ]
+  },
+  {
+    "brand": "Wild turkey 101 proof",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Wild turkey 101 proof",
+      "Wild turkey 101"
+    ]
+  },
+  {
+    "brand": "Wild turkey 81 proof",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Wild turkey 81 proof kentucky straight bourbon",
+      "Wild turkey 81"
+    ]
+  },
+  {
+    "brand": "Wild turkey longbranch",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "Wild turkey rare breed",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "Wild turkey russell's 10 anni",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Wild turkey russell's"
+    ]
+  },
+  {
+    "brand": "Wild turkey rye",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky"
+  },
+  {
+    "brand": "Aperol",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Aperol aperitivo",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Aperol spritz",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Biancosarti",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Campari soda",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Camparisoda"
+    ]
+  },
+  {
+    "brand": "Crodino",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Sarti rosa aperitivo",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Sarti rosa",
+      "Sarti"
+    ]
+  },
+  {
+    "brand": "Bitter campari cask tales bourbon barrel finished",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "Bitter campari cask tales",
+      "campari cask tales"
+    ]
+  },
+  {
+    "brand": "Campari",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "Campari Bitter"
+    ]
+  },
+  {
+    "brand": "Gin bickens london dry",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "bickens london dry",
+      "bickens"
+    ]
+  },
+  {
+    "brand": "Gin bickens london dry pink",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "bickens london dry pink",
+      "bickens dry pink"
+    ]
+  },
+  {
+    "brand": "Gin bulldog",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "bulldog"
+    ]
+  },
+  {
+    "brand": "Gin bulldog bold black london dry",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "bulldog bold black london dry",
+      "bulldog bold black"
+    ]
+  },
+  {
+    "brand": "Gin del professore crocodile",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin del professore La madame",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin del professore monsieur",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin ondina",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Ondina Gin"
+    ]
+  },
+  {
+    "brand": "Mezcal montelobos 100% agave espadin",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal",
+    "aliases": [
+      "Mezcal montelobos espadin",
+      "montelobos espadin"
+    ]
+  },
+  {
+    "brand": "Mezcal montelobos 100% agave tobalà joven",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal",
+    "aliases": [
+      "Mezcal montelobos joven",
+      "montelobos joven"
+    ]
+  },
+  {
+    "brand": "Ancho reyes rosso",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brand": "Ancho reyes verde",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brand": "Tequila espolòn blanco",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila",
+    "aliases": [
+      "Espolòn blanco",
+      "Espolon"
+    ]
+  },
+  {
+    "brand": "Tequila Espolòn Reposado",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila",
+    "aliases": [
+      "Espolòn Reposado",
+      "Espolon"
+    ]
+  },
+  {
+    "brand": "Vodka skyy",
+    "brandOwner": "Campari group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Skyy",
+      "Skyy Vodka"
+    ]
+  },
+  {
+    "brand": "Amarone classico passo del bovaro 2022",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone classico passo del bovaro"
+    ]
+  },
+  {
+    "brand": "Amarone fulminato 2021",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone fulminato"
+    ]
+  },
+  {
+    "brand": "Amarone fulminato 2022",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone fulminato"
+    ]
+  },
+  {
+    "brand": "Amarone riserva antico bovaro 2019",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone riserva antico bovaro"
+    ]
+  },
+  {
+    "brand": "Valpolicella classico platonico bovaro 2024",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella classico platonico bovaro"
+    ]
+  },
+  {
+    "brand": "Valpolicella ripasso classico superiore per te bovaro 2022",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella ripasso classico superiore per te bovaro"
+    ]
+  },
+  {
+    "brand": "Valpolicella ripasso superiore fulminato 2022",
+    "brandOwner": "Cantina negrar",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella ripasso superiore fulminato"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer j.hütte"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer malachite j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer malachite j.hütte"
+    ]
+  },
+  {
+    "brand": "Müller thurgau j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Müller thurgau j.hütte"
+    ]
+  },
+  {
+    "brand": "Pinot bianco weissburgunder adamite j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot bianco weissburgunder adamite j.hütte"
+    ]
+  },
+  {
+    "brand": "Pinot bianco weissburgunder j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot bianco weissburgunder j.hütte"
+    ]
+  },
+  {
+    "brand": "Riesling j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Riesling j.hütte"
+    ]
+  },
+  {
+    "brand": "Sauvignon albite j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon albite j.hütte"
+    ]
+  },
+  {
+    "brand": "Sauvignon j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon j.hütte"
+    ]
+  },
+  {
+    "brand": "Lagrein j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lagrein j.hütte"
+    ]
+  },
+  {
+    "brand": "Pinot nero blauburgunder j.hütte 2024",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero blauburgunder j.hütte"
+    ]
+  },
+  {
+    "brand": "Pinot nero riserva j.hütte 2022",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero riserva j.hütte"
+    ]
+  },
+  {
+    "brand": "St.magdalener j.hütte 2023",
+    "brandOwner": "Cantina produttori bolzano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "St.magdalener j.hütte"
+    ]
+  },
+  {
+    "brand": "Chardonnay terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay terlano"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer terlano"
+    ]
+  },
+  {
+    "brand": "Pinot bianco vorberg riserva terlano 2023",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot bianco vorberg riserva terlano"
+    ]
+  },
+  {
+    "brand": "Pinot grigio terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot grigio terlano"
+    ]
+  },
+  {
+    "brand": "Sauvignon winkl terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon winkl terlano"
+    ]
+  },
+  {
+    "brand": "Terlaner cuvée bianco terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Terlaner cuvée bianco terlano"
+    ]
+  },
+  {
+    "brand": "Lagrein terlano 2024",
+    "brandOwner": "Cantina terlano",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lagrein terlano"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer bio cantina toblino 2024",
+    "brandOwner": "Cantina toblino",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer bio cantina toblino"
+    ]
+  },
+  {
+    "brand": "Lagrein dunkel cantina toblino 2023",
+    "brandOwner": "Cantina toblino",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lagrein dunkel cantina toblino"
+    ]
+  },
+  {
+    "brand": "Trebbiano d'abruzzo biologico cantina tollo 2023",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Trebbiano d'abruzzo biologico cantina tollo"
+    ]
+  },
+  {
+    "brand": "Trebbiano d'abruzzo mascoli rupicapra 2024",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Trebbiano d'abruzzo mascoli rupicapra"
+    ]
+  },
+  {
+    "brand": "Montepulciano d'abruzzo biologico cantina tollo 2023",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Montepulciano d'abruzzo biologico cantina tollo"
+    ]
+  },
+  {
+    "brand": "Montepulciano d'abruzzo biologico humus rupicapra 2022",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Montepulciano d'abruzzo biologico humus rupicapra"
+    ]
+  },
+  {
+    "brand": "Montepulciano d'abruzzo mascoli rupicapra 2024",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Montepulciano d'abruzzo mascoli rupicapra"
+    ]
+  },
+  {
+    "brand": "Montepulciano d'abruzzo riserva dente del lupo rupicapra 2020",
+    "brandOwner": "Cantina tollo",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Montepulciano d'abruzzo riserva dente del lupo rupicapra"
+    ]
+  },
+  {
+    "brand": "Biancolella casa d'ambra 2024",
+    "brandOwner": "Casa d'ambra",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Biancolella casa d'ambra"
+    ]
+  },
+  {
+    "brand": "Biancolella frassitelli casa d'ambra 2024",
+    "brandOwner": "Casa d'ambra",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Biancolella frassitelli casa d'ambra"
+    ]
+  },
+  {
+    "brand": "Sauvignon sasà leboem 2024",
+    "brandOwner": "Casa roma vini srl",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon sasà leboem"
+    ]
+  },
+  {
+    "brand": "Traminer aromatico tra leboem 2024",
+    "brandOwner": "Casa roma vini srl",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Traminer aromatico tra leboem"
+    ]
+  },
+  {
+    "brand": "Amaro Del Ciclista",
+    "brandOwner": "Casoni Liquori",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Amaro Del Ciclista"
+    ]
+  },
+  {
+    "brand": "Vermentino di toscana elianto castelli del grevepesa 2024",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vermentino di toscana elianto castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Rosato maggese castelli del grevepesa 2024",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Rosato maggese castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Chianti classico castelgreve castelli del grevepesa 2023",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti classico castelgreve castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Chianti classico clemente vii castelli del grevepesa 2021",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti classico clemente vii castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Chianti classico riserva clemente vii castelli del grevepesa 2020",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti classico riserva clemente vii castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Chianti pontormo castelli del grevepesa 2024",
+    "brandOwner": "Castelli del grevepesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti pontormo castelli del grevepesa"
+    ]
+  },
+  {
+    "brand": "Kreos negroamaro rosato castello monaci 2024",
+    "brandOwner": "Castello monaci",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Kreos negroamaro rosato castello monaci"
+    ]
+  },
+  {
+    "brand": "Toscana rosso barbutino 2022",
+    "brandOwner": "Castello sonnino",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Toscana rosso barbutino"
+    ]
+  },
+  {
+    "brand": "Pecorino giulia cataldi madonna 2024",
+    "brandOwner": "Cataldi madonna",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pecorino giulia cataldi madonna"
+    ]
+  },
+  {
+    "brand": "Cerasuolo d'abruzzo malandrino cataldi madonna 2024",
+    "brandOwner": "Cataldi madonna",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Cerasuolo d'abruzzo malandrino cataldi madonna"
+    ]
+  },
+  {
+    "brand": "Montepulciano d'abruzzo malandrino cataldi madonna 2023",
+    "brandOwner": "Cataldi madonna",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Montepulciano d'abruzzo malandrino cataldi madonna"
+    ]
+  },
+  {
+    "brand": "Lambrusco di sorbara amabile contessa matilde cavicchioli",
+    "brandOwner": "Cavicchioli",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lambrusco di sorbara amabile contessa matilde cavicchioli"
+    ]
+  },
+  {
+    "brand": "Lambrusco di sorbara secco contessa matilde cavicchioli",
+    "brandOwner": "Cavicchioli",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lambrusco di sorbara secco contessa matilde cavicchioli"
+    ]
+  },
+  {
+    "brand": "Lambrusco otello nero ceci",
+    "brandOwner": "Ceci",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lambrusco otello nero ceci"
+    ]
+  },
+  {
+    "brand": "Langhe arneis blangé ceretto 2024",
+    "brandOwner": "Ceretto",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Langhe arneis blangé ceretto"
+    ]
+  },
+  {
+    "brand": "Lucano amaro zero analcolico",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "0-Low Alcool",
+    "aliases": [
+      "Lucano amaro 0.0"
+    ]
+  },
+  {
+    "brand": "Amaro Lucano",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Lucano"
+    ]
+  },
+  {
+    "brand": "Lucano anniversario",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Lucano essenza",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Gin brokers citrus",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Broker's gin citrus"
+    ]
+  },
+  {
+    "brand": "Gin brokers london dry",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Broker's gin"
+    ]
+  },
+  {
+    "brand": "Gin brokers pink",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "brokers pink"
+    ]
+  },
+  {
+    "brand": "Gin grifu agrumato",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "grifu agrumato"
+    ]
+  },
+  {
+    "brand": "Gin grifu old",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "grifu old"
+    ]
+  },
+  {
+    "brand": "Gin pigskin pink",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "pigskin pink"
+    ]
+  },
+  {
+    "brand": "Gin pigskin silver",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "pigskin silver"
+    ]
+  },
+  {
+    "brand": "Glendalough rose gin",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Glendalough wild botanical gin",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Sipsmith london dry gin",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Sipsmith sloe gin",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Mirto rosso di sardegna",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Ron Barceló Blanco",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Ron Barceló Imperial",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Ron Barceló Imperial Onyx",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Vodka finlandia",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Finlandia Vodka"
+    ]
+  },
+  {
+    "brand": "Vodka snow leopard",
+    "brandOwner": "Coca Cola HBC",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Amaro Jefferson",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Amaro jefferson 1871"
+    ]
+  },
+  {
+    "brand": "Frack",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Washington amaro di arance ed erbe amaricanti 28",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Elephant london dry gin",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin citadelle",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "citadelle"
+    ]
+  },
+  {
+    "brand": "Gin gil - the authentic rural gin",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "gil - the authentic rural gin"
+    ]
+  },
+  {
+    "brand": "Gin gil peated torbato italiano",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "gil peated torbato italiano"
+    ]
+  },
+  {
+    "brand": "Gin gil torbato - the authentic rural gin",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "gil torbato - the authentic rural gin"
+    ]
+  },
+  {
+    "brand": "Gin martin millers original",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "martin millers original",
+      "Martin Miller's"
+    ]
+  },
+  {
+    "brand": "Gin martin millers summerful",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "martin millers summerful",
+      "Martin Miller's summerful"
+    ]
+  },
+  {
+    "brand": "Gin martin millers westbourne",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "martin millers westbourne",
+      "Martin Miller's westbourne"
+    ]
+  },
+  {
+    "brand": "Gin martin millers winterful",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "martin millers winterful",
+      "Martin Miller's winterful"
+    ]
+  },
+  {
+    "brand": "Haswell london distilled dry gin",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Haswell",
+      "Haswell london dry"
+    ]
+  },
+  {
+    "brand": "Sabatini gin",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Sabatini London Dry",
+      "Gin Sabatini"
+    ]
+  },
+  {
+    "brand": "Rum El Dorado 12 Anni",
+    "brandOwner": "Compagnia dei caraibi",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Angostura Bitters 20cl",
+    "brandOwner": "D&C",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brand": "Amaro di angostura",
+    "brandOwner": "D&C",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Vetz aperitivo superiore",
+    "brandOwner": "D&C",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Vetz",
+      "Vetz aperitivo"
+    ]
+  },
+  {
+    "brand": "Angostura bitter",
+    "brandOwner": "D&C",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brand": "J.j. whitley london dry",
+    "brandOwner": "D&C",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin Engine Pure Organic",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "The busker irish whiskey triple cask",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "The busker triple cask"
+    ]
+  },
+  {
+    "brand": "The busker single grain irish whiskey",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "The busker single grain"
+    ]
+  },
+  {
+    "brand": "The busker single malt irish whiskey",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "The busker single malt"
+    ]
+  },
+  {
+    "brand": "The busker single pot irish whiskey",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "The busker single pot"
+    ]
+  },
+  {
+    "brand": "Amaretto disaronno",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Artic bianca",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Artic fragola",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Artic limone",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Artic melone",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Artic menta bianca",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Artic pesca",
+    "brandOwner": "Di saronno",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Gin Tanqueray 0.0",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "0-Low Alcool",
+    "aliases": [
+      "Tanqueray 0.0"
+    ]
+  },
+  {
+    "brand": "Gin tanqueray alcohol free",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "0-Low Alcool"
+  },
+  {
+    "brand": "Aperitivo Mediterraneo Venturo",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Venturo",
+      "Venturo Aperitivo"
+    ]
+  },
+  {
+    "brand": "Gin gordon's",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Gordon's London Dry Gin",
+      "Gordon's"
+    ]
+  },
+  {
+    "brand": "Gin gordons premium pink",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "gordons premium pink",
+      "Gordon's pink"
+    ]
+  },
+  {
+    "brand": "Gin gordons premium sicilian lemon",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "gordons premium sicilian lemon",
+      "sicilian lemon"
+    ]
+  },
+  {
+    "brand": "Gin Tanqueray",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Tanqueray"
+    ]
+  },
+  {
+    "brand": "Gin tanqueray n. ten",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "tanqueray n. ten"
+    ]
+  },
+  {
+    "brand": "Gin tanqueray rangpur",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "tanqueray rangpur"
+    ]
+  },
+  {
+    "brand": "Gin tanqueray sevilla",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "tanqueray sevilla"
+    ]
+  },
+  {
+    "brand": "Gin villa ascenti",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "villa ascenti"
+    ]
+  },
+  {
+    "brand": "Jinzu",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Roe & co irish whiskey",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "Roe & co"
+    ]
+  },
+  {
+    "brand": "Baileys Original Irish Cream",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore",
+    "aliases": [
+      "Baileys",
+      "Baileys Original"
+    ]
+  },
+  {
+    "brand": "Captain Morgan Jamaica Dark",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Captain Morgan Dark"
+    ]
+  },
+  {
+    "brand": "Captain Morgan Jamaica White",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Captain Morgan White"
+    ]
+  },
+  {
+    "brand": "Captain Morgan Original Spiced Gold",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Captain Morgan Spiced Gold"
+    ]
+  },
+  {
+    "brand": "Rum Zacapa Solera Gran Reserva",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "zacapa 23",
+      "zacapa 23yo"
+    ]
+  },
+  {
+    "brand": "Rum Zacapa XO 25 Anni Centenario Solera Gran Reserva Especial",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Zacapa XO",
+      "zacapa 25yo"
+    ]
+  },
+  {
+    "brand": "Brora 34 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "brora 34 yo",
+      "brora 34 years old"
+    ]
+  },
+  {
+    "brand": "Caol ila",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Craggamore",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Glenkinchie",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Lagavulin",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Lagavulin 12 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Lagavulin 12 yo",
+      "Lagavulin 12"
+    ]
+  },
+  {
+    "brand": "Lagavulin 8 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Lagavulin 8 yo",
+      "Lagavulin 8"
+    ]
+  },
+  {
+    "brand": "Mortlach",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Oban",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Oban 10 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Oban 10 yo",
+      "Oban 10 years"
+    ]
+  },
+  {
+    "brand": "Oban 14 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Oban 14 yo",
+      "Oban 14 years"
+    ]
+  },
+  {
+    "brand": "Oban 21 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Oban 21 yo",
+      "Oban 21 years"
+    ]
+  },
+  {
+    "brand": "Port Ellen",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Port ellen 37 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Port ellen 37 yo",
+      "Port ellen 37 years old"
+    ]
+  },
+  {
+    "brand": "Talisker",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Talisker 10 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 10 yo",
+      "Talisker 10 years"
+    ]
+  },
+  {
+    "brand": "Talisker 25 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 25 yo",
+      "Talisker 25 years"
+    ]
+  },
+  {
+    "brand": "Talisker 30 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 30 yo",
+      "Talisker 30 years"
+    ]
+  },
+  {
+    "brand": "Talisker 40 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 40 yo",
+      "Talisker 40 years"
+    ]
+  },
+  {
+    "brand": "Talisker 45 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 45 yo",
+      "Talisker 45 years"
+    ]
+  },
+  {
+    "brand": "Talisker 8 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Talisker 8 yo",
+      "Talisker 8 years"
+    ]
+  },
+  {
+    "brand": "Talisker port ruighe",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Talisker skye",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Talisker storm",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Vat 69",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Vat 69"
+    ]
+  },
+  {
+    "brand": "Tequila Casamigos Blanco",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila",
+    "aliases": [
+      "Casamigos Blanco"
+    ]
+  },
+  {
+    "brand": "Tequila Casamigos Reposado",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila",
+    "aliases": [
+      "Casamigos Reposado"
+    ]
+  },
+  {
+    "brand": "Vermouth dry belsazar",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "vermouth belsazar dry"
+    ]
+  },
+  {
+    "brand": "Vermouth rosso belsazar",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "vermouth belsazar rosso"
+    ]
+  },
+  {
+    "brand": "Vodka ciroc",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "ciroc"
+    ]
+  },
+  {
+    "brand": "Vodka ketel one",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Ketel One",
+      "Ketel One Vodka"
+    ]
+  },
+  {
+    "brand": "Vodka smirnoff",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Smirnoff Vodka",
+      "Smirnoff"
+    ]
+  },
+  {
+    "brand": "Bulleit bourbon frontier whiskey",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Bulleit bourbon"
+    ]
+  },
+  {
+    "brand": "Bulleit Rye Frontier Whiskey",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Bulleit Rye"
+    ]
+  },
+  {
+    "brand": "Caol Ila 12 Years",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Caol Ila 12",
+      "Caol Ila 12 anni"
+    ]
+  },
+  {
+    "brand": "Johnnie Walker Black Label 12 Years Blended Scotch Whisky",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Johnnie Walker Black Label 12 Years",
+      "Johnnie Walker Black Label"
+    ]
+  },
+  {
+    "brand": "Johnnie Walker Red Label Old Scotch Whisky",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Johnnie Walker Red Label",
+      "Johnnie Walker Red"
+    ]
+  },
+  {
+    "brand": "Lagavulin 16 anni",
+    "brandOwner": "Diageo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Lagavulin 16 Years Old",
+      "Lagavulin 16 Years Old"
+    ]
+  },
+  {
+    "brand": "Chablis domaine begue-mathiot 2024",
+    "brandOwner": "Domaine begue-mathiot",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chablis domaine begue-mathiot"
+    ]
+  },
+  {
+    "brand": "Pouilly-fumé la charmette domaine chauveau 2024",
+    "brandOwner": "Domaine chauveau",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pouilly-fumé la charmette domaine chauveau"
+    ]
+  },
+  {
+    "brand": "Chardonnay domaine de la santoline 2024",
+    "brandOwner": "Domaine de la santoline",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay domaine de la santoline"
+    ]
+  },
+  {
+    "brand": "Sauvignon domaine de la santoline 2024",
+    "brandOwner": "Domaine de la santoline",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon domaine de la santoline"
+    ]
+  },
+  {
+    "brand": "Cabernet sauvignon domaine de la santoline 2024",
+    "brandOwner": "Domaine de la santoline",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Cabernet sauvignon domaine de la santoline"
+    ]
+  },
+  {
+    "brand": "Merlot domaine de la santoline 2023",
+    "brandOwner": "Domaine de la santoline",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Merlot domaine de la santoline"
+    ]
+  },
+  {
+    "brand": "Anthìlia donnafugata 2024",
+    "brandOwner": "Donnafugata",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Anthìlia donnafugata"
+    ]
+  },
+  {
+    "brand": "Damarino donnafugata 2024",
+    "brandOwner": "Donnafugata",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Damarino donnafugata"
+    ]
+  },
+  {
+    "brand": "Lumera donnafugata 2024",
+    "brandOwner": "Donnafugata",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Lumera donnafugata"
+    ]
+  },
+  {
+    "brand": "Sedàra donnafugata 2022",
+    "brandOwner": "Donnafugata",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Sedàra donnafugata"
+    ]
+  },
+  {
+    "brand": "Corvo glicine bianco duca di salaparuta 2024",
+    "brandOwner": "Duca di salaparuta",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Corvo glicine bianco duca di salaparuta"
+    ]
+  },
+  {
+    "brand": "Corvo rosso duca di salaparuta 2023",
+    "brandOwner": "Duca di salaparuta",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Corvo rosso duca di salaparuta"
+    ]
+  },
+  {
+    "brand": "Chardonnay dufouleur père & fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay dufouleur père & fils"
+    ]
+  },
+  {
+    "brand": "Sauvignon dufouleur père et fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon dufouleur père et fils"
+    ]
+  },
+  {
+    "brand": "Côtes du rhône réserve dufouleur père & fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Côtes du rhône réserve dufouleur père & fils"
+    ]
+  },
+  {
+    "brand": "Pinot noir dufouleur père & fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot noir dufouleur père & fils"
+    ]
+  },
+  {
+    "brand": "Syrah dufouleur père et fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Syrah dufouleur père et fils"
+    ]
+  },
+  {
+    "brand": "Viognier dufouleur père et fils 2024",
+    "brandOwner": "Dufouleur père & fils",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Viognier dufouleur père et fils"
+    ]
+  },
+  {
+    "brand": "Chardonnay elena walch 2024",
+    "brandOwner": "Elena walch",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay elena walch"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer elena walch 2024",
+    "brandOwner": "Elena walch",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer elena walch"
+    ]
+  },
+  {
+    "brand": "Pinot grigio elena walch 2024",
+    "brandOwner": "Elena walch",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot grigio elena walch"
+    ]
+  },
+  {
+    "brand": "Amaro del capo",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Del Capo",
+      "Vecchio amaro del capo"
+    ]
+  },
+  {
+    "brand": "Amaro Petrus Boonekamp",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Petrus"
+    ]
+  },
+  {
+    "brand": "Borsci san marzano",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Borsci"
+    ]
+  },
+  {
+    "brand": "Petrus",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "amaro petrus boonekamp",
+      "amaro petrus"
+    ]
+  },
+  {
+    "brand": "Cinzano vermouth bianco",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Cinzano Bianco"
+    ]
+  },
+  {
+    "brand": "Cinzano vermouth rosso",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Cinzano Rosso"
+    ]
+  },
+  {
+    "brand": "Vermouth di torino rosso 'bottega' 1757",
+    "brandOwner": "F.lli Caffo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Cinzano Vermouth di Torino",
+      "Cinzano 1757"
+    ]
+  },
+  {
+    "brand": "Est est est le pòggere falesco 2024",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Est est est le pòggere falesco"
+    ]
+  },
+  {
+    "brand": "Poggio dei gelsi falesco 2024",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Poggio dei gelsi falesco"
+    ]
+  },
+  {
+    "brand": "Tellus chardonnay falesco 2024",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Tellus chardonnay falesco"
+    ]
+  },
+  {
+    "brand": "Vitiano vermentino falesco 2024",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vitiano vermentino falesco"
+    ]
+  },
+  {
+    "brand": "Cesanese del piglio rospiglioso falesco 2023",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Cesanese del piglio rospiglioso falesco"
+    ]
+  },
+  {
+    "brand": "Tellus syrah falesco cotarella 2023",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Tellus syrah falesco cotarella"
+    ]
+  },
+  {
+    "brand": "Vitiano rosso cabernet sauvignon falesco 2024",
+    "brandOwner": "Famiglia cotarella",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Vitiano rosso cabernet sauvignon falesco"
+    ]
+  },
+  {
+    "brand": "Amaro botanical",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Botanical"
+    ]
+  },
+  {
+    "brand": "Bitter fusetti",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "fusetti"
+    ]
+  },
+  {
+    "brand": "Bitter fusetti 'american limited edition'",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "fusetti 'american limited edition'"
+    ]
+  },
+  {
+    "brand": "Bitter fusetti cacao",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "fusetti cacao"
+    ]
+  },
+  {
+    "brand": "Bitter fusetti 'mare limited edition'",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "fusetti 'mare limited edition'"
+    ]
+  },
+  {
+    "brand": "Bitter fusetti 'mexico limited edition'",
+    "brandOwner": "Farmily",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "fusetti 'mexico limited edition'"
+    ]
+  },
+  {
+    "brand": "Tonica premium indian",
+    "brandOwner": "Fentimans",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Falanghina del sannio feudi di san gregorio 2024",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Falanghina del sannio feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Falanghina del sannio serrocielo feudi di san gregorio 2024",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Falanghina del sannio serrocielo feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Fiano di avellino feudi di san gregorio 2024",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Fiano di avellino feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Greco di tufo feudi di san gregorio 2024",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Greco di tufo feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Lacryma christi bianco feudi di san gregorio 2024",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Lacryma christi bianco feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Aglianico rubrato feudi di san gregorio 2022",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Aglianico rubrato feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Bolgheri rosso stupore campo alle comete 2023",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Bolgheri rosso stupore campo alle comete"
+    ]
+  },
+  {
+    "brand": "Lacryma christi rosso feudi di san gregorio 2023",
+    "brandOwner": "Feudi di san gregorio",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Lacryma christi rosso feudi di san gregorio"
+    ]
+  },
+  {
+    "brand": "Sicilian lemonade",
+    "brandOwner": "Fever-tree",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Soda Fever-tree",
+    "brandOwner": "Fever-tree",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica elderflower handpicked",
+    "brandOwner": "Fever-tree",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica indian",
+    "brandOwner": "Fever-tree",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica mediterranea",
+    "brandOwner": "Fever-tree",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Etna bianco le sabbie dell'etna firriato 2024",
+    "brandOwner": "Firriato",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine"
+  },
+  {
+    "brand": "Bayamore rosso firriato 2023",
+    "brandOwner": "Firriato",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Bayamore rosso firriato"
+    ]
+  },
+  {
+    "brand": "Chardonnay biologico leboem 2024",
+    "brandOwner": "Fm vino",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay biologico leboem"
+    ]
+  },
+  {
+    "brand": "Pinot grigio bio boem 2023",
+    "brandOwner": "Fm vino",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot grigio bio boem"
+    ]
+  },
+  {
+    "brand": "Müller thurgau sòfi franz haas 2024",
+    "brandOwner": "Franz haas",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Müller thurgau sòfi franz haas"
+    ]
+  },
+  {
+    "brand": "Pinot grigio franz haas 2024",
+    "brandOwner": "Franz haas",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot grigio franz haas"
+    ]
+  },
+  {
+    "brand": "Pinot nero franz haas 2023",
+    "brandOwner": "Franz haas",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero franz haas"
+    ]
+  },
+  {
+    "brand": "Amaro Brancamenta",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Brancamenta"
+    ]
+  },
+  {
+    "brand": "Amaro Fernet-Branca",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Fernet-Branca",
+      "Fernet branca"
+    ]
+  },
+  {
+    "brand": "Brancamenta",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Brancamenta"
+    ]
+  },
+  {
+    "brand": "Four Roses Bourbon Whiskey",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Four Roses",
+      "Four Roses Bourbon"
+    ]
+  },
+  {
+    "brand": "Punt e mes",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Seven hills italian dry gin",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Seven hills dry gin",
+      "Seven hills"
+    ]
+  },
+  {
+    "brand": "Southern comfort",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Carpano Antica Formula Vermouth",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Carpano Antica Formula",
+      "Carpano"
+    ]
+  },
+  {
+    "brand": "Carpano bianco vermouth classico",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Carpano bianco vermouth",
+      "Carpano bianco"
+    ]
+  },
+  {
+    "brand": "Carpano Classico Vermouth",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Carpano Classico"
+    ]
+  },
+  {
+    "brand": "Carpano dry vermouth classico",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Carpano dry vermouth",
+      "Carpano dry"
+    ]
+  },
+  {
+    "brand": "Carpano rosso vermouth classico",
+    "brandOwner": "Fratelli Branca Distillerie",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Carpano rosso vermouth",
+      "Carpano rosso"
+    ]
+  },
+  {
+    "brand": "Rosato alìe ammiraglia frescobaldi 2024",
+    "brandOwner": "Frescobaldi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "Rosato alìe ammiraglia"
+    ]
+  },
+  {
+    "brand": "Chianti rufina riserva nipozzano frescobaldi 2022",
+    "brandOwner": "Frescobaldi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Chianti rufina riserva nipozzano"
+    ]
+  },
+  {
+    "brand": "Aranciata Galvanina",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Bio cola",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Bio cola zero",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Bitter lemon",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Bitter sicilian lemon",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Cedrata",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Chinotto",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Soda al pompelmo rosa",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Soda Galvanina",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Te' al limone",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Te' bianco",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Te' verde",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica classica",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica leggera",
+    "brandOwner": "Galvanina",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Lugana centofilari cesari 2024",
+    "brandOwner": "Gerardo cesari",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine"
+  },
+  {
+    "brand": "Valpolicella ripasso superiore cesari 2022",
+    "brandOwner": "Gerardo cesari",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella ripasso superiore cesari"
+    ]
+  },
+  {
+    "brand": "448 s.l.m. bianco girlan 2024",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "449 s.l.m. bianco girlan"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer aimè girlan 2024",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer aimè girlan"
+    ]
+  },
+  {
+    "brand": "Sauvignon indra girlan 2024",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon indra girlan"
+    ]
+  },
+  {
+    "brand": "448 s.l.m. rosé girlan 2024",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Rosè Wine",
+    "aliases": [
+      "449 s.l.m. rosé girlan"
+    ]
+  },
+  {
+    "brand": "448 s.l.m. rosso girlan 2024",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "449 s.l.m. rosso girlan"
+    ]
+  },
+  {
+    "brand": "Pinot nero patricia girlan 2023",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero patricia girlan"
+    ]
+  },
+  {
+    "brand": "Pinot nero riserva trattmann girlan 2022",
+    "brandOwner": "Girlan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero riserva trattmann girlan"
+    ]
+  },
+  {
+    "brand": "Amaro Jagermeister",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Jagermeister"
+    ]
+  },
+  {
+    "brand": "Amaro Montenegro",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Montenegro"
+    ]
+  },
+  {
+    "brand": "Aperitivo Select",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Select"
+    ]
+  },
+  {
+    "brand": "Limoncello Benvenuti",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Limoncello",
+    "aliases": [
+      "Limoncello Benvenuti",
+      "Benvenuti"
+    ]
+  },
+  {
+    "brand": "Pampero",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Rum Pampero"
+    ]
+  },
+  {
+    "brand": "Tequila Jose Cuervo Clasico",
+    "brandOwner": "Gruppo Montenegro",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila",
+    "aliases": [
+      "Tequila Jose Cuervo Clasico",
+      "Jose Cuervo Clasico"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer joseph hofstätter 2024",
+    "brandOwner": "Hofstätter",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer joseph hofstätter"
+    ]
+  },
+  {
+    "brand": "Pinot nero meczan hofstätter 2023",
+    "brandOwner": "Hofstätter",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Pinot nero meczan hofstätter"
+    ]
+  },
+  {
+    "brand": "Beck's analcolica",
+    "brandOwner": "Inbev",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "0-Low Alcool"
+  },
+  {
+    "brand": "Beck's",
+    "brandOwner": "Inbev",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Stella artois",
+    "brandOwner": "Inbev",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Bolgheri rosso bell'aja san felice 2023",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Bolgheri rosso bell'aja san felice"
+    ]
+  },
+  {
+    "brand": "Chardonnay jermann 2024",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay jermann"
+    ]
+  },
+  {
+    "brand": "Pinot bianco jermann 2024",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot bianco jermann"
+    ]
+  },
+  {
+    "brand": "Pinot grigio jermann 2024",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot grigio jermann"
+    ]
+  },
+  {
+    "brand": "Sauvignon jermann 2024",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon jermann"
+    ]
+  },
+  {
+    "brand": "Vinnae jermann 2024",
+    "brandOwner": "Jermann",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vinnae jermann"
+    ]
+  },
+  {
+    "brand": "Aranciata Lurisia",
+    "brandOwner": "Lurisia",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "soft drink",
+    "aliases": [
+      "Lurisia Aranciata"
+    ]
+  },
+  {
+    "brand": "Tonica",
+    "brandOwner": "Lurisia",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers",
+    "aliases": [
+      "Lurisia Tonica"
+    ]
+  },
+  {
+    "brand": "Ardbeg 10 anni",
+    "brandOwner": "LVMH",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Ardbeg Ten Islay Single Malt Scotch Whisky",
+      "Ardbeg Ten"
+    ]
+  },
+  {
+    "brand": "Vodka belvedere",
+    "brandOwner": "LVMH",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Belvedere Vodka",
+      "Belvedere"
+    ]
+  },
+  {
+    "brand": "Rinomato americano bianco",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "americano bianco"
+    ]
+  },
+  {
+    "brand": "Rinomato aperitivo deciso",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "aperitivo deciso"
+    ]
+  },
+  {
+    "brand": "Rinomato bitter scuro",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "bitter scuro"
+    ]
+  },
+  {
+    "brand": "Vermouth bianco ambrato mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "bianco ambrato mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth chinato mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "chinato mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth kopi mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "kopi mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth rosso amaranto mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "rosso amaranto mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth sakura mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "sakura mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth secco mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "secco mancino"
+    ]
+  },
+  {
+    "brand": "Vermouth vecchio mancino",
+    "brandOwner": "Mancino",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "vecchio mancino"
+    ]
+  },
+  {
+    "brand": "Amarone classico costasera masi 2020",
+    "brandOwner": "Masi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Amarone classico costasera masi"
+    ]
+  },
+  {
+    "brand": "Campofiorin masi 2022",
+    "brandOwner": "Masi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Campofiorin masi"
+    ]
+  },
+  {
+    "brand": "Valpolicella classico bonacosta masi 2024",
+    "brandOwner": "Masi",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Valpolicella classico bonacosta masi"
+    ]
+  },
+  {
+    "brand": "Amaro san simone",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "san simone"
+    ]
+  },
+  {
+    "brand": "Gerlando",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Tattico",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "Zerotrenta",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari"
+  },
+  {
+    "brand": "La licorne",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Armagnac"
+  },
+  {
+    "brand": "Eggenberg",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Lefebvre",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Ms. better’s bitters",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter"
+  },
+  {
+    "brand": "Cachaça 51",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brand": "Fazenda soledade",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Cachaça"
+  },
+  {
+    "brand": "Amuerte",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Eden mill",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Flame of passion",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin amuerte coca leaf black",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf black",
+      "coca leaf black"
+    ]
+  },
+  {
+    "brand": "Gin amuerte coca leaf blue",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf blue",
+      "coca leaf blue"
+    ]
+  },
+  {
+    "brand": "Gin amuerte coca leaf green",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf green",
+      "coca leaf green"
+    ]
+  },
+  {
+    "brand": "Gin amuerte coca leaf orange",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf orange",
+      "coca leaf orange"
+    ]
+  },
+  {
+    "brand": "Gin amuerte coca leaf red",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf red",
+      "coca leaf red"
+    ]
+  },
+  {
+    "brand": "Gin amuerte coca leaf white",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "amuerte coca leaf white",
+      "coca leaf white"
+    ]
+  },
+  {
+    "brand": "Gin Bobby's",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin Bobby's Schiedam",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Himbrimi",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Le tribute",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "M&h distillery",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Mastui",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Mayfair",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Melifera",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Palo de sitges",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Saneha",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Seven hills",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Socro",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Solaro",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Zerotrenta",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Selezione grappa anthology",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Grappa"
+  },
+  {
+    "brand": "Black signer",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Dennis zoppi",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Lantenhammer",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Loven",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Monkai",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Gusano rojo",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brand": "Koch",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brand": "Le tribute",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brand": "Noble coyote",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Mezcal"
+  },
+  {
+    "brand": "Explosivo",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Le tribute",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Capel",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pisco"
+  },
+  {
+    "brand": "Occucaje",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Pisco"
+  },
+  {
+    "brand": "Auténtico nativo",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Bielle",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Chalong bay",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Come hell or high water",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Damoiseau",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Embargo",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Mama quilla",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Selezione buttiglieri clément",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum"
+  },
+  {
+    "brand": "Hussong",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brand": "Vuela alto",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Tequila"
+  },
+  {
+    "brand": "Spiriti artigiani",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth"
+  },
+  {
+    "brand": "Le philtre",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Tom of finland",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Brave new spirits",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "Eden mill",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "Lantenhammer",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "M&h distillery",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "Moonshine runners",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "Prieto y prieta",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "The san-in",
+    "brandOwner": "Mavolo",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky"
+  },
+  {
+    "brand": "Vermentino di sardegna giunco cantina mesa 2024",
+    "brandOwner": "Mesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vermentino di sardegna giunco cantina mesa"
+    ]
+  },
+  {
+    "brand": "Buio carignano del sulcis cantina mesa 2023",
+    "brandOwner": "Mesa",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Buio carignano del sulcis cantina mesa"
+    ]
+  },
+  {
+    "brand": "Limoncello Di Capri",
+    "brandOwner": "Molinari",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Limoncello",
+    "aliases": [
+      "Limoncello Di Capri",
+      "Di Capri"
+    ]
+  },
+  {
+    "brand": "Sambuca Extra Molinari",
+    "brandOwner": "Molinari",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore",
+    "aliases": [
+      "Sambuca Extra",
+      "Sambuca"
+    ]
+  },
+  {
+    "brand": "Acqua di cedro",
+    "brandOwner": "Nardini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Gin Acqua di cedro"
+    ]
+  },
+  {
+    "brand": "Bobbys schiedam dry gin",
+    "brandOwner": "Onesti group",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Bobbys"
+    ]
+  },
+  {
+    "brand": "Le volte dell'ornellaia 2023",
+    "brandOwner": "Ornellaia",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Le volte dell'ornellaia"
+    ]
+  },
+  {
+    "brand": "Amaro Formidabile Liquori & Affini",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Amari",
+    "aliases": [
+      "Amaro Formidabile",
+      "Formidabile"
+    ]
+  },
+  {
+    "brand": "Gin arte dry gin",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "arte dry gin"
+    ]
+  },
+  {
+    "brand": "Gin arte pomegranate",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "arte pomegranate"
+    ]
+  },
+  {
+    "brand": "Gin No.3",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "N.3 London Dry gin"
+    ]
+  },
+  {
+    "brand": "Limoncello La Papessa",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Limoncello",
+    "aliases": [
+      "Limoncello La Papessa",
+      "La Papessa"
+    ]
+  },
+  {
+    "brand": "Limoncello Pallini",
+    "brandOwner": "Pallini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Limoncello",
+    "aliases": [
+      "Limoncello Pallini",
+      "Pallini"
+    ]
+  },
+  {
+    "brand": "Paulaner weisse",
+    "brandOwner": "Paulaner",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Beefeater burrough reserve rested gin",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Beefeater burrough reserve",
+      "Beefeater burrough"
+    ]
+  },
+  {
+    "brand": "beefeater red london dry gin",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Gin beefeater red",
+      "beefeater red"
+    ]
+  },
+  {
+    "brand": "Gin 44â°n",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin amber inverroche",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin Beefeater",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Beefeater"
+    ]
+  },
+  {
+    "brand": "Gin beefeater 24",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "beefeater 24"
+    ]
+  },
+  {
+    "brand": "Gin malfy arancia",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Malfy Arancia"
+    ]
+  },
+  {
+    "brand": "Gin malfy limone",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Malfy Limone"
+    ]
+  },
+  {
+    "brand": "Gin malfy originale",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Malfy originale",
+      "Malfy"
+    ]
+  },
+  {
+    "brand": "Gin malfy rosa",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Malfy rosa"
+    ]
+  },
+  {
+    "brand": "Gin monkey 47",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "monkey 47"
+    ]
+  },
+  {
+    "brand": "Gin plymouth",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "plymouth Gin",
+      "plymouth"
+    ]
+  },
+  {
+    "brand": "Gin plymouth navy strength",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "plymouth navy strength gin",
+      "plymouth navy strength"
+    ]
+  },
+  {
+    "brand": "Gin verdant inverroche",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "verdant inverroche gin",
+      "verdant inverroche"
+    ]
+  },
+  {
+    "brand": "Jameson Irish Whiskey Triple Distilled",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Irish Whisky",
+    "aliases": [
+      "Jameson",
+      "Jameson Irish"
+    ]
+  },
+  {
+    "brand": "St. Germain Liquore Di Sambuco",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore",
+    "aliases": [
+      "St. Germain"
+    ]
+  },
+  {
+    "brand": "Rum Bumbu The Original",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Bumbu The Original",
+      "Bumbu"
+    ]
+  },
+  {
+    "brand": "Aberlour 12 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Aberlour 14 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Aberlour 16 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Ballantine's",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Ballantines blended scotch whisky",
+      "Ballantines"
+    ]
+  },
+  {
+    "brand": "Royal salute 21 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Royal salute 21 anni",
+      "Royal salute"
+    ]
+  },
+  {
+    "brand": "The glenlivet 12 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Glenlivet 12",
+      "Glenlivet 12yo"
+    ]
+  },
+  {
+    "brand": "The glenlivet 15 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Glenlivet 15",
+      "Glenlivet 15yo"
+    ]
+  },
+  {
+    "brand": "The glenlivet 18 anni",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Glenlivet 18",
+      "Glenlivet 18yo"
+    ]
+  },
+  {
+    "brand": "Lillet bianco",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Vermouth Lillet bianco"
+    ]
+  },
+  {
+    "brand": "Lillet rose'",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Vermouth Lillet rose'"
+    ]
+  },
+  {
+    "brand": "Lillet rosso",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Vermouth Lillet rosso"
+    ]
+  },
+  {
+    "brand": "Vodka absolut",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Absolut"
+    ]
+  },
+  {
+    "brand": "Vodka absolut citron",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut citron"
+    ]
+  },
+  {
+    "brand": "Vodka absolut elyx",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "elyx"
+    ]
+  },
+  {
+    "brand": "Vodka absolut level",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut level"
+    ]
+  },
+  {
+    "brand": "Vodka absolut mandrin",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut mandrin"
+    ]
+  },
+  {
+    "brand": "Vodka absolut peach",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut peach"
+    ]
+  },
+  {
+    "brand": "Vodka absolut pears",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut pears"
+    ]
+  },
+  {
+    "brand": "Vodka absolut raspberry",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut raspberry"
+    ]
+  },
+  {
+    "brand": "Vodka absolut ruby red",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut ruby red"
+    ]
+  },
+  {
+    "brand": "Vodka absolut vanilia",
+    "brandOwner": "Pernod ricard",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "absolut vanilia"
+    ]
+  },
+  {
+    "brand": "Vermentino belvento 2024",
+    "brandOwner": "Petra",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Vermentino belvento"
+    ]
+  },
+  {
+    "brand": "Soave classico pieropan 2024",
+    "brandOwner": "Pieropan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Soave classico pieropan"
+    ]
+  },
+  {
+    "brand": "Nebbiolo pio cesare 2022",
+    "brandOwner": "Pio cesare",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "Red Wine",
+    "aliases": [
+      "Nebbiolo pio cesare"
+    ]
+  },
+  {
+    "brand": "La segreta bianco planeta 2024",
+    "brandOwner": "Planeta",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "La segreta bianco planeta"
+    ]
+  },
+  {
+    "brand": "Casa Savoia orancio aperitivo bitter",
+    "brandOwner": "Proposta Vini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Casa Savoia orancio",
+      "Savoia orancio"
+    ]
+  },
+  {
+    "brand": "Casa Savoia rosso aperitivo bitter",
+    "brandOwner": "Proposta Vini",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi",
+    "aliases": [
+      "Casa Savoia rosso",
+      "Savoia rosso"
+    ]
+  },
+  {
+    "brand": "Puni arte",
+    "brandOwner": "Puni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Italian Whisky"
+  },
+  {
+    "brand": "Puni aura",
+    "brandOwner": "Puni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Italian Whisky"
+  },
+  {
+    "brand": "Puni gold italian malt whisky",
+    "brandOwner": "Puni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Italian Whisky",
+    "aliases": [
+      "Puni gold"
+    ]
+  },
+  {
+    "brand": "Puni sole italian malt whisky",
+    "brandOwner": "Puni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Italian Whisky",
+    "aliases": [
+      "Puni sole"
+    ]
+  },
+  {
+    "brand": "Puni vina - marsala edition -",
+    "brandOwner": "Puni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Italian Whisky",
+    "aliases": [
+      "Puni vina"
+    ]
+  },
+  {
+    "brand": "Ceres",
+    "brandOwner": "Royal Unibrew",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "Ceres"
+    ]
+  },
+  {
+    "brand": "Spaten hell",
+    "brandOwner": "Spatenbrau",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Chardonnay fallwind st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay fallwind st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Chardonnay sanct valentin st. michael eppan 2023",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Chardonnay sanct valentin st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer sanct valentin st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer sanct valentin st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Gewürztraminer st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Gewürztraminer st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Pinot bianco schulthauser st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Pinot bianco schulthauser st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Riesling fallwind st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Riesling fallwind st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Sauvignon fallwind st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon fallwind st. michael eppan"
+    ]
+  },
+  {
+    "brand": "Sauvignon sanct valentin st. michael eppan 2024",
+    "brandOwner": "St. michael eppan",
+    "macroCategoria": "Wine",
+    "categoriaProdotto": "White Wine",
+    "aliases": [
+      "Sauvignon sanct valentin st. michael eppan"
+    ]
+  },
+  {
+    "brand": "St. stefanus bière d'abbaye belge",
+    "brandOwner": "St. stefanus",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer",
+    "aliases": [
+      "St. stefanus bière d'abbaye belge"
+    ]
+  },
+  {
+    "brand": "Gin Nordés Alcohol Free",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "0-Low Alcool",
+    "aliases": [
+      "Nordes Gin 0.0",
+      "Nordes 0.0"
+    ]
+  },
+  {
+    "brand": "Jim Beam Bourbon",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Jim Beam Bourbon",
+      "Jim Beam"
+    ]
+  },
+  {
+    "brand": "Limonce' aperitivo",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Gin nordés",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Nordes Gin",
+      "Nordes"
+    ]
+  },
+  {
+    "brand": "Gin nordes 0,0",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin nordes atlantic galician",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin roku",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin roku",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Roku Gin",
+      "Roku"
+    ]
+  },
+  {
+    "brand": "Gin Roku Sakura Bloom Edition",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Roku Sakura",
+      "Roku Sakura Bloom Edition"
+    ]
+  },
+  {
+    "brand": "Midori",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Liquore"
+  },
+  {
+    "brand": "Rum dictador 12 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Rum dictador 12 yo",
+      "Rum dictador"
+    ]
+  },
+  {
+    "brand": "Rum dictador 20 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "Rum dictador 20 yo"
+    ]
+  },
+  {
+    "brand": "Rum dictador aurum",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "dictador aurum"
+    ]
+  },
+  {
+    "brand": "Rum dictador episodio",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "dictador episodio"
+    ]
+  },
+  {
+    "brand": "Rum dictador generations en lalique",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Rum",
+    "aliases": [
+      "dictador generations en lalique"
+    ]
+  },
+  {
+    "brand": "Bowmore 12 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Bowmore 12 yo",
+      "Bowmore 12"
+    ]
+  },
+  {
+    "brand": "Bowmore 15 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Bowmore 15 yo",
+      "Bowmore 15"
+    ]
+  },
+  {
+    "brand": "Laphroaig 10 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Laphroaig 10 Anni Islay Single Malt Scotch Whisky",
+      "Laphroaig 10 yo"
+    ]
+  },
+  {
+    "brand": "Laphroaig 10 anni sherry oak finish",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Laphroaig 10 yo sherry oak finish"
+    ]
+  },
+  {
+    "brand": "Laphroaig 25 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Laphroaig 25 yo"
+    ]
+  },
+  {
+    "brand": "Laphroaig 30 anni",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Laphroaig 30 yo"
+    ]
+  },
+  {
+    "brand": "Laphroaig 'lore'",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Laphroaig quarter cask",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky"
+  },
+  {
+    "brand": "Keglevich bianca",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Keglevich Classic"
+    ]
+  },
+  {
+    "brand": "Keglevich fragola",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich frutti di bosco",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich fusion ginepro",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich limone",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich mela verde",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich melone",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich menta",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Keglevich pesca",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka"
+  },
+  {
+    "brand": "Maker's Mark Bourbon Whisky",
+    "brandOwner": "Stock",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Maker's mark"
+    ]
+  },
+  {
+    "brand": "Gin superfine al cedro",
+    "brandOwner": "Tassoni",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Tonica superfine",
+    "brandOwner": "Tassoni",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Cedrata tassoni",
+    "brandOwner": "Tassoni",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Gin copper barrel aged",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "copper barrel aged"
+    ]
+  },
+  {
+    "brand": "Gin copper head black batch london dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "copper head black batch london dry"
+    ]
+  },
+  {
+    "brand": "Gin copper head london dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "copper head london dry"
+    ]
+  },
+  {
+    "brand": "Gin cremorne colonel foxs london dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "cremorne colonel foxs london dry"
+    ]
+  },
+  {
+    "brand": "Gin downpour coast & croft",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "downpour coast & croft"
+    ]
+  },
+  {
+    "brand": "Gin downpour scottish cry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "downpour scottish cry"
+    ]
+  },
+  {
+    "brand": "Gin dr. rob mediterranean",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "dr. rob mediterranean"
+    ]
+  },
+  {
+    "brand": "Gin dr. rob menta & lime",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "dr. rob menta & lime"
+    ]
+  },
+  {
+    "brand": "Gin dr. rob mugo & mirto",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "dr. rob mugo & mirto"
+    ]
+  },
+  {
+    "brand": "Gin electric spirit co.",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "electric spirit co."
+    ]
+  },
+  {
+    "brand": "Gin imea gineprina d'olanda",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "imea gineprina d'olanda"
+    ]
+  },
+  {
+    "brand": "Gin iron balls",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "iron balls"
+    ]
+  },
+  {
+    "brand": "Gin lind & lime london dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "lind & lime london dry"
+    ]
+  },
+  {
+    "brand": "Gin london hill",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "london hill"
+    ]
+  },
+  {
+    "brand": "Gin lord of barbes",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "lord of barbes"
+    ]
+  },
+  {
+    "brand": "Gin prince explorer monaco",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "prince explorer monaco"
+    ]
+  },
+  {
+    "brand": "Gin scilly spirit atlantic",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "scilly spirit atlantic"
+    ]
+  },
+  {
+    "brand": "Gin scilly spirit island",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "scilly spirit island"
+    ]
+  },
+  {
+    "brand": "Gin sears original",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "sears original"
+    ]
+  },
+  {
+    "brand": "Gin tropez",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "tropez"
+    ]
+  },
+  {
+    "brand": "Gin windspiel pink grapefruit",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel pink grapefruit"
+    ]
+  },
+  {
+    "brand": "Gin windspiel premium dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel premium dry"
+    ]
+  },
+  {
+    "brand": "Gin windspiel premium navy strength",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel premium navy strength"
+    ]
+  },
+  {
+    "brand": "Gin windspiel premium pfeffer",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel premium pfeffer"
+    ]
+  },
+  {
+    "brand": "Gin windspiel reserve premium dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel reserve premium dry"
+    ]
+  },
+  {
+    "brand": "Gin windspiel sloe premium dry",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "windspiel sloe premium dry"
+    ]
+  },
+  {
+    "brand": "Mermaid gin",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Mermaid gin"
+    ]
+  },
+  {
+    "brand": "Mermaid pink gin",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Mermaid pink"
+    ]
+  },
+  {
+    "brand": "Mermaid zest gin",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Mermaid zest"
+    ]
+  },
+  {
+    "brand": "Mezcal gin",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Nijtaki japanese gin",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Sloe gin cremorne gentleman budgers",
+    "brandOwner": "Tek bar",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Sloe gin cremorne"
+    ]
+  },
+  {
+    "brand": "Tennent's strong - doppio malto",
+    "brandOwner": "Tennent's",
+    "macroCategoria": "Beer",
+    "categoriaProdotto": "Beer"
+  },
+  {
+    "brand": "Cherry soda",
+    "brandOwner": "Three cents",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica aegean",
+    "brandOwner": "Three cents",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Tonica dry",
+    "brandOwner": "Three cents",
+    "macroCategoria": "Soft Drink",
+    "categoriaProdotto": "Mixers"
+  },
+  {
+    "brand": "Buffalo trace",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "American Whisky",
+    "aliases": [
+      "Buffalo trace Bourbon"
+    ]
+  },
+  {
+    "brand": "Contrattino aperitivo bitter",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Contratto Americano rosso",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Aperitivi"
+  },
+  {
+    "brand": "Contratto Bitter",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Bitter",
+    "aliases": [
+      "Bitter Contratto"
+    ]
+  },
+  {
+    "brand": "Dry gin portofino",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Empire gin",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Engine gin",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin"
+  },
+  {
+    "brand": "Gin Dry Portofino",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Portofino gin",
+      "Portofino"
+    ]
+  },
+  {
+    "brand": "Hendricks flora adora",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Hendrick's flora adora"
+    ]
+  },
+  {
+    "brand": "Hendricks gin",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Hendrick's gin",
+      "Hendrick's"
+    ]
+  },
+  {
+    "brand": "Hendricks gin neptunia",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Hendrick's gin neptunia"
+    ]
+  },
+  {
+    "brand": "Hendricks grand cabaret",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Hendrick's grand cabaret"
+    ]
+  },
+  {
+    "brand": "Hendricks orbium",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Gin",
+    "aliases": [
+      "Hendrick's orbium"
+    ]
+  },
+  {
+    "brand": "Nikka miyagikyo",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Japanese Whisky"
+  },
+  {
+    "brand": "Nikka yoichi",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Japanese Whisky"
+  },
+  {
+    "brand": "Whisky nikka coffey grain",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Japanese Whisky",
+    "aliases": [
+      "nikka coffey grain"
+    ]
+  },
+  {
+    "brand": "Limoncello Villa Massa",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Limoncello",
+    "aliases": [
+      "Limoncello Villa Massa",
+      "Villa Massa"
+    ]
+  },
+  {
+    "brand": "Macallan 12 anni double cask",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Macallan 12 yo",
+      "Macallan 12"
+    ]
+  },
+  {
+    "brand": "Macallan 18 anni double cask",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Macallan 18 yo",
+      "Macallan 18"
+    ]
+  },
+  {
+    "brand": "Monkey shoulder",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Scotch Whisky",
+    "aliases": [
+      "Monkey shoulder"
+    ]
+  },
+  {
+    "brand": "Contratto Vermouth bianco",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Contratto bianco"
+    ]
+  },
+  {
+    "brand": "Contratto Vermouth rosso",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vermouth",
+    "aliases": [
+      "Contratto rosso"
+    ]
+  },
+  {
+    "brand": "Vodka moskovskaya",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "moskovskaya vodka",
+      "moskovskaya"
+    ]
+  },
+  {
+    "brand": "Vodka stolichnaya",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "stolichnaya"
+    ]
+  },
+  {
+    "brand": "Vodka stolichnaya elit",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "elit"
+    ]
+  },
+  {
+    "brand": "Vodka tito's handmade",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Vodka",
+    "aliases": [
+      "Vodka tito's",
+      "Tito's Vodka"
+    ]
+  },
+  {
+    "brand": "Nikka Whisky From The Barrel",
+    "brandOwner": "Velier",
+    "macroCategoria": "Spirits",
+    "categoriaProdotto": "Whisky",
+    "aliases": [
+      "Nikka From The Barrel"
+    ]
+  }
+]

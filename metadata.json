@@ -1,0 +1,5 @@
+{
+  "name": "Horeca Intelligence Dashboard",
+  "description": "An interactive dashboard to monitor and analyze data from HORECA drink lists and menus. It provides insights on brand, brand owner, and category performance, as well as menu share, with AI-powered analysis using Gemini.",
+  "requestFramePermissions": []
+}

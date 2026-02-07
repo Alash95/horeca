@@ -1,0 +1,115 @@
+Total Rows: 1447
+Unique Venues (Venue_Name): 105
+Unique Brands: 52
+Unique Brand Owners: 9
+Total Listings: 1447
+Average Price: 12.35
+Unique Venues with Cocktails: 105
+Cocktail Menu Penetration: 100.00%
+
+Venues List:
+ - Bar Antico Lounge
+ - Bar Artistico Bar
+ - Bar Bohemien
+ - Bar Centrale Bar
+ - Bar Classic Bar
+ - Bar Classic Place
+ - Bar Elegante Bar
+ - Bar Grande Room
+ - Bar Rouge Place
+ - Bar Royal Lounge
+ - Bistrot Antico
+ - Bistrot Artistico Lounge
+ - Bistrot Bohemien Cocktails
+ - Bistrot Bohemien Room
+ - Bistrot Classic Place
+ - Bistrot Grande Lounge
+ - Bistrot Nuovo Spirits
+ - Bistrot Segreto Corner
+ - Bistrot Segreto Drinks
+ - Caffè Artistico Club
+ - Caffè Artistico Cocktails
+ - Caffè Basso Corner
+ - Caffè Basso Lounge
+ - Caffè Blue Bar
+ - Caffè Centrale Cocktails
+ - Caffè Elegante Club
+ - Caffè Golden Lounge
+ - Caffè Nascosto Drinks
+ - Caffè Nuovo
+ - Caffè Piccolo Cocktails
+ - Caffè Raffinato Bar
+ - Caffè Raffinato Spirits
+ - Caffè Rouge Club
+ - Caffè Royal Drinks
+ - Caffè Segreto Lounge
+ - Club Alto Corner
+ - Club Antico Corner
+ - Club Blue Club
+ - Club Centrale Cocktails
+ - Club Centrale Place
+ - Club Classic
+ - Club Modern Corner
+ - Club Modern Spirits
+ - Club Noir Cocktails
+ - Club Notturno Cocktails
+ - Club Raffinato Bar
+ - Club Royal Club
+ - Cocktail Alto
+ - Cocktail Artistico Corner
+ - Cocktail Centrale Bar
+ - Cocktail Golden Club
+ - Cocktail Piccolo House
+ - Il Grande Bar
+ - Il Notturno Place
+ - Il Raffinato Drinks
+ - Il Raffinato House
+ - Il Royal House
+ - Il Royal Room
+ - Il Verde Lounge
+ - Il Vintage
+ - La Alto Club
+ - La Alto Cocktails
+ - La Alto Corner
+ - La Antico Spirits
+ - La Golden Club
+ - La Sociale Drinks
+ - Lounge Antico Place
+ - Lounge Classic
+ - Lounge Classic Corner
+ - Lounge Elegante Lounge
+ - Lounge Elegante Room
+ - Lounge Grande Drinks
+ - Lounge Piccolo Bar
+ - Lounge Segreto Lounge
+ - Lounge Urban Club
+ - Lounge Verde Bar
+ - Lounge Verde Place
+ - Osteria Antico Cocktails
+ - Osteria Basso Cocktails
+ - Osteria Classic Club
+ - Osteria Classic Room
+ - Osteria Nascosto Bar
+ - Osteria Nuovo Club
+ - Osteria Rouge Bar
+ - Osteria Rouge Drinks
+ - Osteria Rouge Spirits
+ - Osteria Segreto Room
+ - Osteria Sociale Room
+ - Speakeasy Artistico Bar
+ - Speakeasy Golden Room
+ - Speakeasy Notturno Bar
+ - Speakeasy Vintage Cocktails
+ - The Alto Lounge
+ - The Antico Lounge
+ - The Basso Corner
+ - The Basso House
+ - The Blue Spirits
+ - The Bohemien Spirits
+ - The Elegante Club
+ - The Piccolo Cocktails
+ - The Rouge Place
+ - The Royal Spirits
+ - The Segreto Bar
+ - The Verde House
+ - The Verde Place
