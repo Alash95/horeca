@@ -38,7 +38,7 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                     redirectTo: `${window.location.origin}/dashboard`,
                 });
                 if (error) {
-                    if (error.message.includes('rate limit')) {
+                    if (error.status === 429 || error.message.includes('rate limit')) {
                         throw new Error('Too many requests. Please wait a minute before trying again.');
                     }
                     throw error;
@@ -58,6 +58,9 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                     if (error.message.includes('Invalid login credentials')) {
                         throw new Error('User not found or incorrect password');
                     }
+                    if (error.status === 429) {
+                        throw new Error('Too many login attempts. Please wait a moment.');
+                    }
                     throw error;
                 }
                 // Success - Auth state listener in App will handle redirect
@@ -75,13 +78,20 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                         }
                     }
                 });
-                if (error) throw error;
+
+                if (error) {
+                    if (error.status === 429) {
+                        throw new Error('Too many signup requests. Please wait a minute before trying again.');
+                    }
+                    throw error;
+                }
 
                 const { data: sessionData } = await supabase.auth.getSession();
                 if (sessionData.session) {
                     onClose();
                 } else {
                     setSuccessMsg('Signup successful! Please check your email to confirm your account.');
+                    setCooldown(60); // 🛡️ Add cooldown to signup too
                     setLoading(false);
                     return;
                 }
@@ -89,7 +99,7 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
         } catch (err: any) {
             setError(err.message || 'Authentication failed');
         } finally {
-            if (!error && !successMsg) setLoading(false);
+            setLoading(false);
         }
     };
 
@@ -214,14 +224,16 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
 
                         <button
                             type="submit"
-                            disabled={loading || (isForgotPassword && cooldown > 0)}
+                            disabled={loading || cooldown > 0}
                             className="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-6"
                         >
                             {loading ? <Loader2 className="animate-spin" size={20} /> : (
                                 <>
-                                    {isForgotPassword
-                                        ? (cooldown > 0 ? `Wait ${cooldown}s` : 'Send Recovery Link')
-                                        : (isLogin ? 'Sign In' : 'Create Account')}
+                                    {cooldown > 0 ? (
+                                        `Wait ${cooldown}s`
+                                    ) : (
+                                        isForgotPassword ? 'Send Recovery Link' : (isLogin ? 'Sign In' : 'Create Account')
+                                    )}
                                     {isForgotPassword ? <KeyRound size={18} /> : <ArrowRight size={18} />}
                                 </>
                             )}
