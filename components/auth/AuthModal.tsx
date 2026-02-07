@@ -44,7 +44,7 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                     throw error;
                 }
                 setSuccessMsg('Reset link sent! Please check your email.');
-                setCooldown(60); // 60 second cooldown
+                setCooldown(120); // 🛡️ 120 second cooldown (2 minutes)
                 setLoading(false);
                 return;
             }
@@ -91,7 +91,7 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                     onClose();
                 } else {
                     setSuccessMsg('Signup successful! Please check your email to confirm your account.');
-                    setCooldown(60); // 🛡️ Add cooldown to signup too
+                    setCooldown(120); // 🛡️ 120 second cooldown (2 minutes)
                     setLoading(false);
                     return;
                 }
@@ -217,8 +217,19 @@ export const AuthModal: FC<AuthModalProps> = ({ onClose }) => {
                         )}
 
                         {successMsg && (
-                            <div className="p-3 bg-teal-500/10 border border-teal-500/20 rounded-lg text-teal-400 text-xs text-center font-medium">
-                                {successMsg}
+                            <div className="p-4 bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 rounded-xl mb-6 text-sm flex flex-col items-center gap-3">
+                                <span className="text-center">{successMsg}</span>
+                                {cooldown === 0 && (
+                                    <button
+                                        onClick={(e) => {
+                                            setSuccessMsg(null);
+                                            handleAuth(e);
+                                        }}
+                                        className="text-teal-400 hover:text-teal-300 font-bold underline decoration-2 underline-offset-4"
+                                    >
+                                        Resend Link
+                                    </button>
+                                )}
                             </div>
                         )}
 

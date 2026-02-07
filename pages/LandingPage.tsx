@@ -9,20 +9,29 @@ export const LandingPage = () => {
     const navigate = useNavigate();
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isDemoOpen, setIsDemoOpen] = useState(false);
+    const [verificationSuccess, setVerificationSuccess] = useState(false);
 
     useEffect(() => {
         // Check for existing session
         supabase.auth.getSession().then(({ data: { session } }) => {
-            if (session) navigate('/dashboard');
+            if (session && !verificationSuccess) navigate('/dashboard');
         });
 
-        // Listen for auth changes (e.g. after email confirmation link redirect)
-        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-            if (session) navigate('/dashboard');
+        // Listen for auth changes
+        const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+            // 🛡️ SECURITY: If user just verified their email, show success but sign them out
+            // so they have to login manually as requested.
+            if (event === 'SIGNED_IN' && !session?.user.last_sign_in_at) {
+                // This usually happens on first email confirmation
+                setVerificationSuccess(true);
+                await supabase.auth.signOut();
+            } else if (session && event !== 'SIGNED_OUT') {
+                navigate('/dashboard');
+            }
         });
 
         return () => subscription.unsubscribe();
-    }, [navigate]);
+    }, [navigate, verificationSuccess]);
 
     return (
         <div className="min-h-screen bg-slate-950 font-sans selection:bg-teal-500/30 text-slate-100 overflow-x-hidden">
@@ -62,6 +71,14 @@ export const LandingPage = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
+                    {/* 🛡️ Verification Success Banner */}
+                    {verificationSuccess && (
+                        <div className="mb-8 p-4 bg-teal-500/10 border border-teal-500/20 rounded-2xl max-w-md mx-auto animate-in zoom-in duration-300">
+                            <h3 className="text-teal-400 font-bold mb-1">Email Verified Successfully! ✅</h3>
+                            <p className="text-slate-400 text-sm">Your account is ready. Please sign in to continue.</p>
+                        </div>
+                    )}
+
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 text-teal-400 text-xs font-medium mb-6">
                         <span className="relative flex h-2 w-2">
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
