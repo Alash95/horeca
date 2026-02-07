@@ -146,7 +146,15 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
             }
 
             setMenuItems(allItems);
-            calculateMetrics(allItems);
+
+            // 🛡️ INITIAL METRICS: If role is user, metrics should reflect filtered set
+            let dataForMetrics = allItems;
+            if (userRole === 'user' && assignedBrand !== 'ALL') {
+                const target = normalizeString(assignedBrand);
+                dataForMetrics = allItems.filter(item => normalizeString(item.brandOwner) === target);
+            }
+
+            calculateMetrics(dataForMetrics);
             setLoading(false);
 
         } catch (err) {
@@ -192,7 +200,8 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
             }
         });
 
-        return menuItems.map(item => {
+        // 🎯 ENRICH DATA: Map raw rows to master data
+        const enriched = menuItems.map(item => {
             const masterInfo = productMap.get((item.brand || '').toLowerCase());
             if (masterInfo) {
                 return {
@@ -205,13 +214,31 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
             }
             return item;
         });
-    }, [masterData, menuItems]);
+
+        // 🛡️ PERMISSION FILTERING: Restrict 'user' role to their assigned brand owner
+        if (userPermissions.role === 'user' && userPermissions.brand !== 'ALL') {
+            const targetBrandOwner = normalizeString(userPermissions.brand);
+            return enriched.filter(item => normalizeString(item.brandOwner) === targetBrandOwner);
+        }
+
+        return enriched;
+    }, [masterData, menuItems, userPermissions]);
+
+    // 🎯 FILTER MASTER DATA: Ensure filter dropdowns only show relevant options for restricted users
+    const filteredMasterData = useMemo(() => {
+        if (userPermissions.role === 'admin' || userPermissions.role === 'super_admin' || userPermissions.role === 'editor' || userPermissions.brand === 'ALL') {
+            return masterData;
+        }
+
+        const targetBrandOwner = normalizeString(userPermissions.brand);
+        return masterData.filter(item => normalizeString(item.brandOwner) === targetBrandOwner);
+    }, [masterData, userPermissions]);
 
     return (
         <DataContext.Provider value={{
             menuItems,
             enrichedData,
-            masterData,
+            masterData: filteredMasterData,
             loading,
             error,
             metrics,
