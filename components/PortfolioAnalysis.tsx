@@ -9,9 +9,11 @@ interface PortfolioAnalysisProps {
     allDataInPeriod: MenuItem[];
     ownerName: string;
     subtitle?: string;
+    marketBenchmarks?: any[]; // From Data Mart
+    filters?: any;
 }
 
-const PortfolioAnalysis: FC<PortfolioAnalysisProps> = ({ ownerData, comparisonOwnerData, allDataInPeriod, ownerName, subtitle }) => {
+const PortfolioAnalysis: FC<PortfolioAnalysisProps> = ({ ownerData, comparisonOwnerData, allDataInPeriod, ownerName, subtitle, marketBenchmarks, filters }) => {
     const analysis = useMemo(() => {
         if (ownerData.length === 0) return null;
 
@@ -85,7 +87,25 @@ const PortfolioAnalysis: FC<PortfolioAnalysisProps> = ({ ownerData, comparisonOw
         }
 
         const totalDepth = depthsByOwner.reduce((sum, item) => sum + item.depth, 0);
-        const marketAverageDepth = depthsByOwner.length > 0 ? totalDepth / depthsByOwner.length : 0;
+        let marketAverageDepth = depthsByOwner.length > 0 ? totalDepth / depthsByOwner.length : 0;
+
+        // --- Data Mart Integration: True Market Average ---
+        if (marketBenchmarks && marketBenchmarks.length > 0) {
+            // Find benchmark for the active macro category if filtered
+            const activeMacros = filters?.macroCategoria || [];
+            const relevantBenchmarks = marketBenchmarks.filter(b =>
+                activeMacros.length === 0 || activeMacros.includes(b.macro_categoria)
+            );
+
+            if (relevantBenchmarks.length > 0) {
+                const totalMarketListings = relevantBenchmarks.reduce((s, b) => s + Number(b.listing_count), 0);
+                const totalMarketVenues = relevantBenchmarks.reduce((s, b) => s + Number(b.venue_count), 0);
+                if (totalMarketVenues > 0) {
+                    marketAverageDepth = totalMarketListings / totalMarketVenues;
+                }
+            }
+        }
+        // --- End Mart Integration ---
         // --- End New Calculations ---
 
         return {

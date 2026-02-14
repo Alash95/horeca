@@ -14,21 +14,49 @@ const BrandCocktailHeatmap: FC<BrandCocktailHeatmapProps> = ({ allData, selected
     const { matrix, cocktails, brands, totals } = useMemo(() => {
         if (!selectedCategory) return { matrix: {}, cocktails: [], brands: [], totals: { row: {}, col: {}, grand: 0 } };
 
-        // 1. Filter data for the category AND the target cocktails
-        // We use case-insensitive matching for robustness
-        const targetCocktailsLower = TARGET_COCKTAILS.map(c => c.toLowerCase());
+        // 1. Filter data for the category and use the strict cocktail logic
+        const isStrictCocktail = (item: MenuItem) => {
+            const category = (item.categoriaProdotto || '').toLowerCase();
+            const macro = (item.macroCategoria || '').toLowerCase();
+            const catName = (item.categoryName || '').toLowerCase();
+            const subCat = (item.subCategory || '').toLowerCase();
+            const isCocktailCategory =
+                category.includes('cocktail') ||
+                macro.includes('cocktail') ||
+                catName.includes('cocktail') ||
+                subCat.includes('cocktail');
+            const isExcludedMacro = macro.includes('wine') || macro.includes('vine') || macro.includes('beer') || macro.includes('birra');
+            return isCocktailCategory && !isExcludedMacro;
+        };
 
         const categoryData = allData.filter(d =>
             d.categoriaProdotto === selectedCategory &&
             d.nomeCocktail &&
-            targetCocktailsLower.includes(d.nomeCocktail.toLowerCase())
+            isStrictCocktail(d)
         );
 
-        // 2. Use Fixed Cocktails for Columns
-        const cocktails = TARGET_COCKTAILS;
+        // 2. Identify Top Cocktails for Column Headers (instead of hardcoded list)
+        const cocktailCounts = categoryData.reduce((acc, item) => {
+            const name = item.nomeCocktail!;
+            acc[name] = (acc[name] || 0) + 1;
+            return acc;
+        }, {} as Record<string, number>);
+
+        let topCocktails = Object.entries(cocktailCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 7)
+            .map(e => e[0]);
+
+        // Ensure selected cocktail is included in columns
+        if (selectedCocktail && !topCocktails.some(c => c.toLowerCase() === selectedCocktail.toLowerCase())) {
+            if (topCocktails.length >= 7) topCocktails.pop();
+            topCocktails.unshift(selectedCocktail);
+        } else if (selectedCocktail) {
+            // Move to first column
+            topCocktails = [selectedCocktail, ...topCocktails.filter(c => c.toLowerCase() !== selectedCocktail.toLowerCase())];
+        }
 
         // 3. Identify Top Brands (Competitors)
-        // Logic: "Competitors most used for the selected brand" -> Top Brands in the same category within these cocktails
         const brandCounts = categoryData.reduce((acc, item) => {
             acc[item.brand] = (acc[item.brand] || 0) + 1;
             return acc;
@@ -44,7 +72,6 @@ const BrandCocktailHeatmap: FC<BrandCocktailHeatmapProps> = ({ allData, selected
             if (topBrands.length >= 5) topBrands.pop();
             topBrands.unshift(selectedBrand);
         } else {
-            // Move selected brand to top
             const idx = topBrands.indexOf(selectedBrand);
             topBrands.splice(idx, 1);
             topBrands.unshift(selectedBrand);
@@ -59,11 +86,10 @@ const BrandCocktailHeatmap: FC<BrandCocktailHeatmapProps> = ({ allData, selected
         topBrands.forEach(brand => {
             matrix[brand] = {};
             rowTotals[brand] = 0;
-            cocktails.forEach(cocktail => {
-                // Case-insensitive match for data
+            topCocktails.forEach(cocktail => {
                 const venues = new Set(categoryData
                     .filter(d => d.brand === brand && d.nomeCocktail?.toLowerCase() === cocktail.toLowerCase())
-                    .map(d => d.insegna)
+                    .map(d => d.venueId || d.insegna)
                 ).size;
 
                 matrix[brand][cocktail] = venues;
@@ -73,9 +99,9 @@ const BrandCocktailHeatmap: FC<BrandCocktailHeatmapProps> = ({ allData, selected
             });
         });
 
-        return { matrix, cocktails, brands: topBrands, totals: { row: rowTotals, col: colTotals, grand: grandTotal } };
+        return { matrix, cocktails: topCocktails, brands: topBrands, totals: { row: rowTotals, col: colTotals, grand: grandTotal } };
 
-    }, [allData, selectedCategory, selectedBrand]);
+    }, [allData, selectedCategory, selectedBrand, selectedCocktail]);
 
     const getIntensityColor = (value: number) => {
         if (value === 0) return 'bg-gray-800';

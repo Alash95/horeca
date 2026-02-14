@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { supabase } from '../lib/supabase';
 import { Save, X, Search, UserCog, Shield, AlertTriangle, CheckCircle, Trash2, ShieldAlert, UserMinus, Plus } from 'lucide-react';
 import { useData } from '../context/DataProvider';
+import { useLanguage } from '../context/LanguageContext';
 
 interface UserProfile {
     id: string;
@@ -13,6 +14,7 @@ interface UserProfile {
 
 export const AdminUserView = () => {
     const { userPermissions } = useData();
+    const { t } = useLanguage();
     const [users, setUsers] = useState<UserProfile[]>([]);
     const [loading, setLoading] = useState(true);
     const [brands, setBrands] = useState<string[]>([]);
@@ -248,9 +250,9 @@ export const AdminUserView = () => {
                 <header className="flex justify-between items-center">
                     <div>
                         <h1 className="text-2xl font-bold text-slate-100 flex items-center gap-2">
-                            <Shield className="text-teal-500" /> Admin User Management
+                            <Shield className="text-teal-500" /> {t('adminUserManagement')}
                         </h1>
-                        <p className="text-slate-400 text-sm mt-1">Manage individual user permissions</p>
+                        <p className="text-slate-400 text-sm mt-1">{t('manageUserPerms')}</p>
                     </div>
 
                     {msg && (
@@ -266,7 +268,7 @@ export const AdminUserView = () => {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={18} />
                     <input
                         type="text"
-                        placeholder="Search users..."
+                        placeholder={t('searchUsers')}
                         value={searchTerm}
                         onChange={(e) => setSearchTerm(e.target.value)}
                         className="w-full bg-slate-800 border border-slate-700 text-slate-100 pl-10 pr-4 py-2 rounded-lg focus:ring-2 focus:ring-teal-500 outline-none"
@@ -279,11 +281,11 @@ export const AdminUserView = () => {
                         <table className="w-full text-left text-sm text-slate-400">
                             <thead className="bg-slate-950 text-slate-200 uppercase font-bold text-xs tracking-wider">
                                 <tr>
-                                    <th className="px-6 py-4">User Email</th>
-                                    <th className="px-6 py-4">Status</th>
-                                    <th className="px-6 py-4">Current Role</th>
-                                    <th className="px-6 py-4">Assigned Brand</th>
-                                    <th className="px-6 py-4 text-right">Actions</th>
+                                    <th className="px-6 py-4">{t('userEmail')}</th>
+                                    <th className="px-6 py-4">{t('status')}</th>
+                                    <th className="px-6 py-4">{t('currentRole')}</th>
+                                    <th className="px-6 py-4">{t('assignedBrand')}</th>
+                                    <th className="px-6 py-4 text-right">{t('actions')}</th>
                                 </tr>
                             </thead>
                             <tbody className="divide-y divide-slate-800">
@@ -346,17 +348,17 @@ export const AdminUserView = () => {
                                                         <div className="flex items-center justify-end gap-2">
                                                             <button
                                                                 onClick={() => saveEdit(user.id)}
-                                                                className="p-1.5 bg-teal-500/20 text-teal-400 rounded hover:bg-teal-500/30 transition-colors"
-                                                                title="Save"
+                                                                className="p-1.5 text-emerald-400 hover:bg-emerald-500/10 rounded-lg transition-colors border border-emerald-500/20"
+                                                                title={t('save')}
                                                             >
                                                                 <Save size={16} />
                                                             </button>
                                                             <button
                                                                 onClick={cancelEdit}
-                                                                className="p-1.5 bg-red-500/20 text-red-400 rounded hover:bg-red-500/30 transition-colors"
-                                                                title="Cancel"
+                                                                className="p-1.5 text-slate-400 hover:bg-slate-700 rounded-lg transition-colors border border-slate-700"
+                                                                title={t('cancel')}
                                                             >
-                                                                <X size={16} />
+                                                                <UserCog size={18} />
                                                             </button>
                                                         </div>
                                                     </td>
@@ -399,17 +401,17 @@ export const AdminUserView = () => {
             {/* --- SECTION 2: DOMAIN AUTOMATION MANAGEMENT --- */}
             <div className="space-y-6 pt-6 border-t border-slate-800">
                 <div>
-                    <h2 className="text-xl font-bold text-slate-100">🌍 Domain Automation Rules</h2>
-                    <p className="text-slate-400 text-sm mt-1">Automatically assign brands based on email domains (e.g. @diageo.com)</p>
+                    <h2 className="text-xl font-bold text-slate-100">{t('domainAutomationRules')}</h2>
+                    <p className="text-slate-400 text-sm mt-1">{t('domainAutomationDesc')}</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Add New Rule Form */}
                     <div className="bg-slate-900 border border-slate-800 p-6 rounded-xl h-fit">
-                        <h3 className="font-semibold text-slate-200 mb-4">Add New Rule</h3>
+                        <h3 className="font-semibold text-slate-200 mb-4">{t('addNewRule')}</h3>
                         <div className="space-y-4">
                             <div>
-                                <label className="text-xs text-slate-500 block mb-1">Domain (no @)</label>
+                                <label className="text-xs text-slate-500 block mb-1">{t('domainNoAt')}</label>
                                 <input
                                     type="text"
                                     placeholder="example.com"
@@ -419,7 +421,7 @@ export const AdminUserView = () => {
                                 />
                             </div>
                             <div>
-                                <label className="text-xs text-slate-500 block mb-1">Assign Brand</label>
+                                <label className="text-xs text-slate-500 block mb-1">{t('assignBrand')}</label>
                                 <select
                                     value={newDomain.brand}
                                     onChange={(e) => setNewDomain({ ...newDomain, brand: e.target.value })}
@@ -434,7 +436,7 @@ export const AdminUserView = () => {
                                 disabled={!newDomain.domain || !newDomain.brand}
                                 className="w-full py-2 bg-teal-600 hover:bg-teal-500 text-white rounded font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                             >
-                                Add Automation Rule
+                                {t('addAutomationRule')}
                             </button>
                         </div>
                     </div>
@@ -445,7 +447,7 @@ export const AdminUserView = () => {
                             <thead className="bg-slate-950 text-slate-200 uppercase font-bold text-xs tracking-wider">
                                 <tr>
                                     <th className="px-6 py-4">Domain</th>
-                                    <th className="px-6 py-4">➜ Auto-Assigns</th>
+                                    <th className="px-6 py-4">➜ {t('autoAssigns')}</th>
                                     <th className="px-6 py-4 text-right">Action</th>
                                 </tr>
                             </thead>
@@ -476,20 +478,20 @@ export const AdminUserView = () => {
                 <div className="space-y-6 pt-6 border-t border-slate-800 pb-12">
                     <div>
                         <h2 className="text-xl font-bold text-slate-100 flex items-center gap-2">
-                            <ShieldAlert className="text-red-500" /> Security: Email Blacklist
+                            <ShieldAlert className="text-red-500" /> {t('securityEmailBlacklist')}
                         </h2>
-                        <p className="text-slate-400 text-sm mt-1">Permanently block emails from signing up or accessing data</p>
+                        <p className="text-slate-400 text-sm mt-1">{t('blacklistDesc')}</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {/* Add to Blacklist Form */}
                         <div className="bg-slate-900 border border-red-900/30 p-6 rounded-xl h-fit">
                             <h3 className="font-semibold text-slate-200 mb-4 flex items-center gap-2">
-                                <UserMinus size={18} className="text-red-400" /> Block Email
+                                <UserMinus size={18} className="text-red-400" /> {t('blockEmail')}
                             </h3>
                             <div className="space-y-4">
                                 <div>
-                                    <label className="text-xs text-slate-500 block mb-1">Target Email</label>
+                                    <label className="text-xs text-slate-500 block mb-1">{t('targetEmail')}</label>
                                     <input
                                         type="email"
                                         placeholder="user@badactor.com"
@@ -499,7 +501,7 @@ export const AdminUserView = () => {
                                     />
                                 </div>
                                 <div>
-                                    <label className="text-xs text-slate-500 block mb-1">Reason (Internal)</label>
+                                    <label className="text-xs text-slate-500 block mb-1">{t('reasonInternal')}</label>
                                     <input
                                         type="text"
                                         placeholder="Spam / Competitor"
@@ -513,7 +515,7 @@ export const AdminUserView = () => {
                                     disabled={!newBlacklist.email}
                                     className="w-full py-2 bg-red-600 hover:bg-red-500 text-white rounded font-medium disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                 >
-                                    Blacklist User
+                                    {t('blacklistUser')}
                                 </button>
                             </div>
                         </div>
@@ -523,14 +525,14 @@ export const AdminUserView = () => {
                             <table className="w-full text-left text-sm text-slate-400">
                                 <thead className="bg-slate-950 text-slate-200 uppercase font-bold text-xs tracking-wider">
                                     <tr>
-                                        <th className="px-6 py-4">Blacklisted Email</th>
-                                        <th className="px-6 py-4">Reason</th>
-                                        <th className="px-6 py-4 text-right">Action</th>
+                                        <th className="px-6 py-4">{t('blacklistedEmail')}</th>
+                                        <th className="px-6 py-4">{t('reason')}</th>
+                                        <th className="px-6 py-4 text-right">{t('action')}</th>
                                     </tr>
                                 </thead>
                                 <tbody className="divide-y divide-slate-800">
                                     {blacklist.length === 0 ? (
-                                        <tr><td colSpan={3} className="px-6 py-8 text-center text-slate-600 italic">No blacklisted emails found.</td></tr>
+                                        <tr><td colSpan={3} className="px-6 py-8 text-center text-slate-600 italic">{t('noBlacklistedEmailsFound')}</td></tr>
                                     ) : (
                                         blacklist.map(entry => (
                                             <tr key={entry.email} className="hover:bg-red-900/10 active:bg-red-900/20 transition-colors">

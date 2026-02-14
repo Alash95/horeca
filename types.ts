@@ -35,6 +35,8 @@ export interface MenuItem {
   macroCategoria?: string;
   categoriaProdotto?: string;
   nomeCocktail?: string;
+  categoryName?: string;
+  subCategory?: string;
   prezzo?: number;
   data?: string;
   venueId?: string;
@@ -70,6 +72,20 @@ export interface ChartDataItem {
   [key: string]: any;
 }
 
+
+export interface MarketUniverseItem {
+  regione: string;
+  citta: string;
+  tipologia_cliente: string;
+  venue_count: number;
+}
+
+export interface MarketBenchmarkItem {
+  macro_categoria: string;
+  categoria_prodotto: string;
+  listing_count: number;
+  venue_count: number;
+}
 
 export interface TimeSelection {
   mode: 'none' | 'YoY' | 'QoQ';

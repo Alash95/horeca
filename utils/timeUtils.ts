@@ -22,9 +22,10 @@ export const getDateRangeForPeriod = (period: { year: number; quarter?: number }
     };
 };
 
-export const formatPeriod = (period: { year: number; quarter?: number }, mode: TimeSelection['mode']): string => {
+export const formatPeriod = (period: { year: number; quarter?: number }, mode: TimeSelection['mode'], language: 'en' | 'it' = 'en'): string => {
     if (mode === 'QoQ' && period.quarter) {
-        return `Q${period.quarter} ${period.year}`;
+        const quarterLabel = language === 'it' ? 'T' : 'Q';
+        return `${quarterLabel}${period.quarter} ${period.year}`;
     }
     return period.year.toString();
 };

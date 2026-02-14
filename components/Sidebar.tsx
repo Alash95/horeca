@@ -1,11 +1,14 @@
-import { ReactNode } from 'react';
+import { ReactNode, FC } from 'react';
 import { LayoutDashboard, Wallet, PieChart, Settings, ShoppingBag, Shield } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { useData } from '../context/DataProvider';
+import { useLanguage } from '../context/LanguageContext';
 
-const NavItem = ({ icon, active = false, to }: { icon: ReactNode; active?: boolean; to: string }) => (
+const NavItem = ({ icon, active = false, to, label }: { icon: ReactNode; active?: boolean; to: string; label: string }) => (
     <Link
         to={to}
+        title={label}
+        aria-label={label}
         className={`p-3 rounded-xl transition-all duration-300 relative group flex items-center justify-center ${active
             ? 'text-white bg-slate-800 shadow-lg shadow-black/20'
             : 'text-slate-500 hover:text-teal-400 hover:bg-slate-900'
@@ -15,11 +18,15 @@ const NavItem = ({ icon, active = false, to }: { icon: ReactNode; active?: boole
         {active && (
             <div className="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-8 bg-teal-500 rounded-r-full -ml-4 shadow-[0_0_10px_rgba(20,184,166,0.5)]" />
         )}
+        <div className="absolute left-full ml-4 px-2 py-1 bg-slate-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+            {label}
+        </div>
     </Link>
 );
 
-const Sidebar = () => {
+const Sidebar: FC = () => {
     const { userPermissions } = useData();
+    const { t } = useLanguage();
     const location = useLocation();
 
     return (
@@ -34,25 +41,32 @@ const Sidebar = () => {
                 <NavItem
                     to="/dashboard"
                     icon={<LayoutDashboard size={24} />}
+                    label={t('dashboard')}
                     active={location.pathname === '/dashboard' || location.pathname === '/dashboard/'}
                 />
 
                 {/* Placeholders */}
-                <NavItem to="#" icon={<PieChart size={24} />} />
-                <NavItem to="#" icon={<Wallet size={24} />} />
-                <NavItem to="#" icon={<ShoppingBag size={24} />} />
+                <NavItem to="#" icon={<PieChart size={24} />} label={t('analyze')} />
+                <NavItem to="#" icon={<Wallet size={24} />} label={t('pricing')} />
+                <NavItem to="#" icon={<ShoppingBag size={24} />} label={t('inventory')} />
 
                 {/* Admin Link - For Admins and Super Admins */}
                 {(userPermissions.role === 'admin' || userPermissions.role === 'super_admin') && (
                     <NavItem
                         to="/dashboard/admin"
                         icon={<Shield size={24} />}
+                        label={t('admin')}
                         active={location.pathname.includes('/admin')}
                     />
                 )}
 
                 <div className="mt-auto">
-                    <NavItem to="#" icon={<Settings size={24} />} />
+                    <NavItem
+                        to="/dashboard/profile"
+                        icon={<Settings size={24} />}
+                        label={t('settings')}
+                        active={location.pathname.includes('/profile')}
+                    />
                 </div>
             </nav>
         </aside>

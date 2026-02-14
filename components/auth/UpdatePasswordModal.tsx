@@ -1,12 +1,14 @@
 import { useState, FC, FormEvent } from 'react';
 import { supabase } from '../../lib/supabase';
 import { Lock, Eye, EyeOff, Loader2, CheckCircle2, AlertCircle } from 'lucide-react';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface UpdatePasswordModalProps {
     onSuccess: () => void;
 }
 
 export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess }) => {
+    const { t } = useLanguage();
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -19,12 +21,12 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
         setError(null);
 
         if (password.length < 6) {
-            setError('Password must be at least 6 characters long.');
+            setError(t('passwordMinLength', { length: 6 }));
             return;
         }
 
         if (password !== confirmPassword) {
-            setError('Passwords do not match.');
+            setError(t('passwordsDoNotMatch'));
             return;
         }
 
@@ -41,7 +43,7 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                 onSuccess();
             }, 2000);
         } catch (err: any) {
-            setError(err.message || 'Failed to update password');
+            setError(err.message || t('passwordUpdateFailed'));
             setLoading(false);
         }
     };
@@ -53,9 +55,9 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                     <div className="w-16 h-16 bg-teal-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                         <Lock className="text-teal-500" size={32} />
                     </div>
-                    <h2 className="text-2xl font-bold text-white mb-2">Create New Password</h2>
+                    <h2 className="text-2xl font-bold text-white mb-2">{t('createNewPassword')}</h2>
                     <p className="text-slate-400 text-sm">
-                        Please enter a new password for your account. You will not be able to access the dashboard until you change it.
+                        {t('createNewPasswordDesc')}
                     </p>
                 </div>
 
@@ -64,13 +66,13 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                         <div className="w-16 h-16 bg-emerald-500/10 rounded-full flex items-center justify-center mx-auto mb-4">
                             <CheckCircle2 className="text-emerald-500" size={32} />
                         </div>
-                        <h3 className="text-xl font-semibold text-emerald-400 mb-2">Password Updated!</h3>
-                        <p className="text-slate-400 text-sm">Redirecting you to the dashboard...</p>
+                        <h3 className="text-xl font-semibold text-emerald-400 mb-2">{t('passwordUpdatedTitle')}</h3>
+                        <p className="text-slate-400 text-sm">{t('redirectingToDashboard')}</p>
                     </div>
                 ) : (
                     <form onSubmit={handleUpdate} className="space-y-4">
                         <div className="space-y-1">
-                            <label className="text-xs font-medium text-slate-300 ml-1">New Password</label>
+                            <label className="text-xs font-medium text-slate-300 ml-1">{t('newPassword')}</label>
                             <div className="relative">
                                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={18} />
                                 <input
@@ -92,7 +94,7 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                         </div>
 
                         <div className="space-y-1">
-                            <label className="text-xs font-medium text-slate-300 ml-1">Confirm New Password</label>
+                            <label className="text-xs font-medium text-slate-300 ml-1">{t('confirmNewPassword')}</label>
                             <div className="relative">
                                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" size={18} />
                                 <input
@@ -118,7 +120,7 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                             disabled={loading}
                             className="w-full bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all disabled:opacity-50 disabled:cursor-not-allowed mt-6"
                         >
-                            {loading ? <Loader2 className="animate-spin" size={20} /> : 'Save New Password'}
+                            {loading ? <Loader2 className="animate-spin" size={20} /> : t('saveNewPassword')}
                         </button>
 
                         <button
@@ -126,7 +128,7 @@ export const UpdatePasswordModal: FC<UpdatePasswordModalProps> = ({ onSuccess })
                             onClick={() => supabase.auth.signOut()}
                             className="w-full text-slate-500 hover:text-slate-300 text-xs font-medium transition-colors mt-2"
                         >
-                            Cancel and Logout
+                            {t('cancelAndLogout')}
                         </button>
                     </form>
                 )}

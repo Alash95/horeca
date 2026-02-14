@@ -4,7 +4,7 @@ import { formatNumber } from '../utils/formatters';
 
 interface BrandOwnerVenueTableProps {
     data: MenuItem[]; // Context Universe (all items in the region/city)
-    brandOwner: string;
+    brandOwner: string | string[];
     title?: string;
 }
 
@@ -21,6 +21,7 @@ interface VenueMetric {
 }
 
 const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner, title = "Venue List" }) => {
+    const brandOwnersArray = Array.isArray(brandOwner) ? brandOwner : [brandOwner];
     const [sortField, setSortField] = useState<keyof VenueMetric>('ownerShare');
     const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('desc');
     const [currentPage, setCurrentPage] = useState(1);
@@ -30,7 +31,6 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
         const metricsMap = new Map<string, VenueMetric>();
 
         data.forEach(item => {
-            // Create a unique key for the venue
             const venueKey = `${item.insegna}-${item.citta}-${item.via}`;
 
             if (!metricsMap.has(venueKey)) {
@@ -49,27 +49,28 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
 
             const metric = metricsMap.get(venueKey)!;
             metric.totalItems += 1;
-            if (item.brandOwner === brandOwner) {
+            if (brandOwnersArray.includes(item.brandOwner || '')) {
                 metric.ownerItems += 1;
             }
         });
 
-        // Calculate shares
         return Array.from(metricsMap.values()).map(m => ({
             ...m,
             ownerShare: (m.ownerItems / m.totalItems) * 100,
             otherShare: ((m.totalItems - m.ownerItems) / m.totalItems) * 100
         }));
-    }, [data, brandOwner]);
+    }, [data, brandOwnersArray]);
 
     const activeData = venueMetrics;
+    const firstOwner = brandOwnersArray[0];
+    const displayOwnerName = brandOwnersArray.length > 1 ? `Selected Set` : firstOwner;
 
     const handleSort = (field: keyof VenueMetric) => {
         if (field === sortField) {
             setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
         } else {
             setSortField(field);
-            setSortDirection('desc'); // Default to desc for numbers usually
+            setSortDirection('desc');
         }
     };
 
@@ -80,7 +81,6 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
 
             if (aValue === bValue) return 0;
 
-            // Handle strings vs numbers
             if (typeof aValue === 'string' && typeof bValue === 'string') {
                 const comparison = aValue.localeCompare(bValue);
                 return sortDirection === 'asc' ? comparison : -comparison;
@@ -98,10 +98,8 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
 
     const totalPages = Math.ceil(activeData.length / itemsPerPage);
 
-
-
     const downloadCSV = () => {
-        const headers = ['Venue Name', 'City', 'Region', 'Type', `${brandOwner} %`, 'Competitors %'];
+        const headers = ['Venue Name', 'City', 'Region', 'Type', `${displayOwnerName} %`, 'Competitors %'];
         const rows = sortedData.map(item => [
             `"${item.insegna.replace(/"/g, '""')}"`,
             `"${item.citta.replace(/"/g, '""')}"`,
@@ -117,7 +115,7 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
         const encodedUri = encodeURI(csvContent);
         const link = document.createElement("a");
         link.setAttribute("href", encodedUri);
-        link.setAttribute("download", `${brandOwner}_venue_list.csv`);
+        link.setAttribute("download", `${displayOwnerName.replace(/\s+/g, '_')}_venue_list.csv`);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -126,10 +124,17 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
     return (
         <div className="bg-gray-800 rounded-lg shadow-lg border border-gray-700 overflow-hidden">
             <div className="p-4 border-b border-gray-700 flex flex-col sm:flex-row justify-between items-center gap-4">
-                <h3 className="text-lg font-semibold text-gray-200">
-                    {title}
-                    <span className="text-sm font-normal text-gray-400 ml-2">({formatNumber(activeData.length, 0)} venues)</span>
-                </h3>
+                <div className="flex flex-col">
+                    <h3 className="text-lg font-semibold text-gray-200">
+                        {title}
+                        <span className="text-sm font-normal text-gray-400 ml-2">({formatNumber(activeData.length, 0)} venues)</span>
+                    </h3>
+                    {brandOwnersArray.length > 1 && (
+                        <p className="text-xs text-gray-500 italic truncate max-w-md">
+                            Analyzed: {brandOwnersArray.join(', ')}
+                        </p>
+                    )}
+                </div>
 
                 <div className="flex gap-2">
                     <button
@@ -159,7 +164,7 @@ const BrandOwnerVenueTable: FC<BrandOwnerVenueTableProps> = ({ data, brandOwner,
                                 <th className="px-6 py-3 cursor-pointer hover:text-teal-400" onClick={() => handleSort('regione')}>Region</th>
                                 <th className="px-6 py-3 cursor-pointer hover:text-teal-400" onClick={() => handleSort('tipologiaCliente')}>Type</th>
                                 <th className="px-6 py-3 text-right cursor-pointer hover:text-teal-400" onClick={() => handleSort('ownerShare')}>
-                                    {brandOwner} %
+                                    {displayOwnerName} %
                                 </th>
                                 <th className="px-6 py-3 text-right cursor-pointer hover:text-teal-400" onClick={() => handleSort('otherShare')}>Competitors %</th>
                             </tr>

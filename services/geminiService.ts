@@ -13,9 +13,9 @@ const getAIClient = () => {
   return new GoogleGenAI({ apiKey });
 };
 
-export const getDashboardInsights = async (filteredData: MenuItem[], allContextData: MenuItem[]): Promise<string> => {
+export const getDashboardInsights = async (filteredData: MenuItem[], allContextData: MenuItem[], language: 'en' | 'it' = 'it'): Promise<string> => {
   if (filteredData.length === 0) {
-    return Promise.resolve("Nessun dato disponibile per l'analisi. Regola i filtri.");
+    return Promise.resolve(language === 'it' ? "Nessun dato disponibile per l'analisi. Regola i filtri." : "No data available for analysis. Adjust filters.");
   }
 
   const ai = getAIClient();
@@ -26,41 +26,58 @@ export const getDashboardInsights = async (filteredData: MenuItem[], allContextD
   const selectionSample = filteredData.slice(0, 100);
 
   const prompt = `
-    In qualità di senior market analyst per l'industria del beverage, analizza i seguenti dati JSON provenienti dai menu dei locali italiani.
-    Fornisci un report strategico professionale. Usa un tono diretto e orientato all'azione.
+    As a senior market analyst for the beverage industry, analyze the following menu data from Italian venues.
     
-    Struttura la risposta esattamente in queste 7 sezioni, utilizzando i marcatori [SECTION_X] per il parsing:
+    DATA SCHEMA NOTE: 
+    The data provided is a JSON list of products found on menus. Each object contains:
+    - "insegna": The name of the venue (bar/restaurant/hotel).
+    - "brandOwner": The company owning the spirit/beverage brand.
+    - "brand": The specific brand name.
+    - "nomeCocktail": The name of the cocktail or item as listed on the menu.
+    - "citta": The city where the venue is located.
+    - "regione": The Italian region.
+    - "prezzo": The price in Euros.
+    - "macroCategoria": Category (e.g., Spirits, Wine, Beer).
+    - "tipologiaCliente": Venue type.
+
+    Provide a professional strategic report. Use a direct and action-oriented tone.
+    
+    Structure the response exactly into these 7 sections, using [SECTION_X] markers for parsing:
 
     [SECTION_1] Executive Snapshot: 
-    3 blocchi coincisi. "BOX: Categoria | Sintesi | Dato". Focus sul Market Sentiment (Semaforo: 🟢/🟡/🔴).
+    3 concise blocks. "BOX: Category | Summary | Data". 
+    CRITICAL: You MUST include exactly one connectivity line with a traffic light emoji indicating Market Sentiment:
+    "Traffic Light: 🟢 (Positive) | 🟡 (Neutral) | 🔴 (Negative)"
 
-    [SECTION_2] Market Map (Dove competere): 
-    Tabella Markdown: Area, Categoria, Presenza Brand, Intensità, Opportunità (Verde/Giallo/Rosso).
+    [SECTION_2] Market Map (Where to compete): 
+    Markdown Table: Area, Category, Brand Presence, Intensity, Opportunity (Green/Yellow/Red).
 
-    [SECTION_3] Top Insights (Specifici per Località): 
-    Massimo 3 per le città principali. Formato: "Città: Insight → Impatto: Valore di Business".
+    [SECTION_3] Top Insights (Location Specific): 
+    Maximum 3 for major cities. Format: "City: Insight → Impact: Business Value".
 
-    [SECTION_4] Griglia SWOT Analysis: 
-    Strutturata per una griglia 2x2. 
-    Formato: "STRENGTH: Descrizione", "WEAKNESS: Descrizione", "OPPORTUNITY: Descrizione", "THREAT: Descrizione".
+    [SECTION_4] SWOT Analysis Grid: 
+    Structured for a 2x2 grid. 
+    Format: "STRENGTH: Description", "WEAKNESS: Description", "OPPORTUNITY: Description", "THREAT: Description".
 
-    [SECTION_5] Action Plan (Priorità): 
-    Tabella Markdown: Priorità, Canale, Azione, Perché. Focus elevato sul ROI.
+    [SECTION_5] Action Plan (Priorities): 
+    Markdown Table: Priority, Channel, Action, Why. High focus on ROI.
 
     [SECTION_6] Competitive Intelligence: 
-    Solo punti elenco. Analizza il posizionamento dei competitor rispetto alla selezione corrente. Evidenzia spazi vuoti (whitespace) e mosse della concorrenza.
+    Bullet points only. Analyze competitor positioning relative to current selection. Highlight empty spaces (white spots) and competitor moves.
 
-    [SECTION_7] Affidabilità dei Dati: 
-    Metrica: % Copertura, Confidence (0-100), Suggerimento per prossima analisi.
+    [SECTION_7] Data Reliability: 
+    Metric: % Coverage, Confidence (0-100), Suggestion for next analysis.
 
-    Regola Oro: Se non è azionabile, non scriverlo. Sii brutale nella sintesi. Usa sempre l'italiano.
+    Golden Rule: If it's not actionable, don't write it. Be brutal in summary. 
+    
+    CRITICAL: YOU MUST RESPOND ENTIRELY IN ${language === 'it' ? 'ITALIAN' : 'ENGLISH'}.
 
-    DATI SELEZIONATI (Filtri applicati):
+    SELECTED DATA (Applied Filters):
     \`\`\`json
     ${JSON.stringify(selectionSample, null, 2)}
     \`\`\`
 
-    CONTESTO DI MERCATO (Dati generali per analisi concorrenza):
+    MARKET CONTEXT (General data for competitor analysis):
     \`\`\`json
     ${JSON.stringify(contextSample, null, 2)}
     \`\`\`
@@ -68,7 +85,7 @@ export const getDashboardInsights = async (filteredData: MenuItem[], allContextD
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-2.0-flash", // Reverting to stable flash model if 2.5 is not confirmed, or keeping if standard
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         temperature: 0.3,
@@ -80,17 +97,17 @@ export const getDashboardInsights = async (filteredData: MenuItem[], allContextD
     console.error("Error fetching insights from Gemini:", error);
     if (error instanceof Error) {
       if (error.message.includes('API key')) {
-        return "Errore: La chiave API Gemini non è configurata o è non valida. Verifica le variabili d'ambiente.";
+        return language === 'it' ? "Errore: La chiave API Gemini non è configurata o è non valida. Verifica le variabili d'ambiente." : "Error: Gemini API key is not configured or invalid. Check environment variables.";
       }
-      return `Si è verificato un errore durante la generazione degli insight: ${error.message}`;
+      return language === 'it' ? `Si è verificato un errore durante la generazione degli insight: ${error.message}` : `An error occurred during insight generation: ${error.message}`;
     }
-    return "Si è verificato un errore sconosciuto durante la generazione degli insight.";
+    return language === 'it' ? "Si è verificato un errore sconosciuto durante la generazione degli insight." : "An unknown error occurred during insight generation.";
   }
 };
 
-export const getAnswerForQuestion = async (question: string, filteredData: MenuItem[], allContextData: MenuItem[]): Promise<string> => {
+export const getAnswerForQuestion = async (question: string, filteredData: MenuItem[], allContextData: MenuItem[], language: 'en' | 'it' = 'it'): Promise<string> => {
   if (filteredData.length === 0) {
-    return Promise.resolve("Nessun dato disponibile per rispondere a questa domanda.");
+    return Promise.resolve(language === 'it' ? "Nessun dato disponibile per rispondere a questa domanda." : "No data available to answer this question.");
   }
 
   const ai = getAIClient();
@@ -98,25 +115,50 @@ export const getAnswerForQuestion = async (question: string, filteredData: MenuI
   const selectionSample = filteredData.slice(0, 100);
 
   const prompt = `
-    In qualità di senior market analyst per l'industria del beverage, rispondi alla seguente domanda strategica basandoti sui dati forniti.
+    As a senior market analyst for the beverage industry, answer the following strategic question based on the provided data.
     
-    DOMANDA: "${question}"
+    DATA SCHEMA NOTE: 
+    The data provided is a JSON list of products found on menus. Each object contains:
+    - "insegna": The name of the venue (bar/restaurant/hotel).
+    - "brandOwner": The company owning the spirit/beverage brand.
+    - "brand": The specific brand name.
+    - "nomeCocktail": The name of the cocktail or item as listed on the menu.
+    - "citta": The city where the venue is located.
+    - "regione": The Italian region.
+    - "prezzo": The price in Euros.
+    - "macroCategoria": Category (e.g., Spirits, Wine, Beer).
+    - "tipologiaCliente": Venue type.
 
-    Fornisci una risposta analitica, basata sui dati e orientata all'azione. Usa l'italiano.
-    Se la domanda riguarda i competitor, usa il "CONTESTO DI MERCATO" per il confronto.
-    Se riguarda locali specifici, evidenzia i nomi (Insegna).
+    QUESTION: "${question}"
 
-    DATI SELEZIONATI (Filtri applicati):
+    Provide an analytical, data-driven, and action-oriented response. 
+    Use the "MARKET CONTEXT" for comparison if the question is about competitors.
+    If it concerns specific venues, highlight the names (insegna).
+
+    STRUCTURE YOUR RESPONSE EXACTLY AS FOLLOWS (Markdown):
+
+    ### ⚡ Direct Answer
+    (A concise 2-sentence direct answer to the question).
+
+    ### 📊 Key Findings
+    (Bulleted list of data points supporting the answer. Cite specific numbers from the data).
+    *   **Finding 1:** ...
+    *   **Finding 2:** ...
+
+    ### 🚀 Strategic Recommendation
+    (Specific action the user should take based on this finding).
+
+    CRITICAL: YOU MUST RESPOND ENTIRELY IN ${language === 'it' ? 'ITALIAN' : 'ENGLISH'}.
+
+    SELECTED DATA (Applied Filters):
     \`\`\`json
     ${JSON.stringify(selectionSample, null, 2)}
     \`\`\`
 
-    CONTESTO DI MERCATO (Dati generali per confronto):
+    MARKET CONTEXT (General data for comparison):
     \`\`\`json
     ${JSON.stringify(contextSample, null, 2)}
     \`\`\`
-    
-    Rispondi in formato Markdown, usando grassetti per i punti chiave e tabelle se necessario.
   `;
 
   try {
@@ -131,24 +173,35 @@ export const getAnswerForQuestion = async (question: string, filteredData: MenuI
     return response.text;
   } catch (error) {
     console.error(`Error fetching answer for question "${question}":`, error);
-    return "Si è verificato un errore durante la generazione della risposta.";
+    return language === 'it' ? "Si è verificato un errore durante la generazione della risposta." : "An error occurred during response generation.";
   }
 };
 
 // FIX: Add missing getRecipeAnalysis function to resolve import error.
-export const getRecipeAnalysis = async (cocktailName: string, data: MenuItem[]): Promise<string> => {
+export const getRecipeAnalysis = async (cocktailName: string, data: MenuItem[], language: 'en' | 'it' = 'it'): Promise<string> => {
   if (data.length === 0) {
-    return Promise.resolve(`No data available for ${cocktailName} to analyze.`);
+    return Promise.resolve(language === 'it' ? `Nessun dato disponibile per analizzare ${cocktailName}.` : `No data available for ${cocktailName} to analyze.`);
   }
 
   const prompt = `
     As a beverage industry analyst, analyze the following menu data for the cocktail "${cocktailName}".
     Focus on brand usage and pricing strategy.
 
+    DATA SCHEMA NOTE: 
+    The data provided is a JSON list of products found on menus. Each object contains:
+    - "insegna": The name of the venue (bar/restaurant/hotel).
+    - "brandOwner": The company owning the spirit/beverage brand.
+    - "brand": The specific brand name.
+    - "nomeCocktail": The name of the cocktail or item as listed on the menu.
+    - "prezzo": The price in Euros.
+    - "macroCategoria": Category (e.g., Spirits, Wine, Beer).
+
     1.  **Brand Dominance:** Which brand is most frequently used for this cocktail? Calculate its "share of recipe" as a percentage of all listings for this cocktail.
     2.  **Competitor Landscape:** List the other brands used for this cocktail and their respective shares.
     3.  **Pricing Analysis:** What is the average price of a "${cocktailName}" using the dominant brand versus other brands? Is there a premium or discount associated with the main brand?
     4.  **Strategic Insight:** Based on the data, what is a key strategic insight for a brand manager of a competing spirit? For example, is there an opportunity to target a different price point or venue type?
+
+    CRITICAL: YOU MUST RESPOND ENTIRELY IN ${language === 'it' ? 'ITALIAN' : 'ENGLISH'}.
 
     Here is the data for "${cocktailName}":
     \`\`\`json

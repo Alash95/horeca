@@ -5,7 +5,7 @@ interface IdleTimeoutProps {
     timeoutMs?: number; // Default 5 minutes (300,000 ms)
 }
 
-export const IdleTimeout = ({ timeoutMs = 300000 }: IdleTimeoutProps) => {
+export const IdleTimeout = ({ timeoutMs = 600000 }: IdleTimeoutProps) => {
     const timerRef = useRef<NodeJS.Timeout | null>(null);
 
     const logout = async () => {

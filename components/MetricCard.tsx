@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { useLanguage } from '../context/LanguageContext';
 
 interface MetricCardProps {
     title: string;
@@ -10,6 +11,7 @@ interface MetricCardProps {
 }
 
 const MetricCard: FC<MetricCardProps> = ({ title, primaryValue, comparisonValue, comparisonLabel, subtitle, className = '' }) => {
+    const { t } = useLanguage();
     const primaryNumeric = parseFloat(primaryValue.replace(/[^0-9.-]+/g, ''));
     let change: number | null = null;
     if (comparisonValue !== undefined && comparisonValue !== null && comparisonValue !== 0) {
@@ -26,7 +28,7 @@ const MetricCard: FC<MetricCardProps> = ({ title, primaryValue, comparisonValue,
         return (
             <div className={`mt-2 text-xs flex items-center font-medium ${color}`}>
                 <span>{arrow} {Math.abs(change).toFixed(1)}%</span>
-                <span className="text-gray-400 ml-1">vs {comparisonLabel}</span>
+                <span className="text-gray-400 ml-1">{t('vs')} {comparisonLabel}</span>
             </div>
         );
     };

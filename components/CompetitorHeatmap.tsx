@@ -3,22 +3,23 @@ import type { MenuItem } from '../types';
 
 interface CompetitorHeatmapProps {
     data: MenuItem[];
-    primaryEntity: string;
+    primaryEntity: string | string[];
     entityType: 'brandOwner' | 'brand';
     rowType: 'citta' | 'insegna';
     title: string;
 }
 
 const CompetitorHeatmap: FC<CompetitorHeatmapProps> = ({ data, primaryEntity, entityType, rowType, title }) => {
-    console.log(`CompetitorHeatmap rendering: ${title}`, { dataLength: data.length, primaryEntity, entityType, rowType });
+    const primaryEntitiesArray = Array.isArray(primaryEntity) ? primaryEntity : [primaryEntity];
+
     const heatmapData = useMemo(() => {
         if (data.length === 0) return null;
 
-        // 1. Identify Top 5 Competitors
+        // 1. Identify Top 5 Competitors (Excluding all primary entities)
         const entityCounts = new Map<string, number>();
         data.forEach(item => {
             const entity = item[entityType] as string;
-            if (entity && entity !== primaryEntity) {
+            if (entity && !primaryEntitiesArray.includes(entity)) {
                 entityCounts.set(entity, (entityCounts.get(entity) || 0) + 1);
             }
         });
@@ -28,7 +29,9 @@ const CompetitorHeatmap: FC<CompetitorHeatmapProps> = ({ data, primaryEntity, en
             .slice(0, 5)
             .map(entry => entry[0]);
 
-        const columns = [primaryEntity, ...topCompetitors];
+        // Columns: "Primary Set" (Aggregated) followed by top competitors
+        const primaryColLabel = primaryEntitiesArray.length > 1 ? `Selected Set` : primaryEntitiesArray[0];
+        const columns = [primaryColLabel, ...topCompetitors];
 
         // 2. Prepare Rows (Cities or Venues)
         const rows = Array.from(new Set(data.map(item => item[rowType] as string))).sort();
@@ -46,28 +49,23 @@ const CompetitorHeatmap: FC<CompetitorHeatmapProps> = ({ data, primaryEntity, en
                 return;
             }
 
-            columns.forEach(col => {
-                const entityItems = rowItems.filter(item => (item[entityType] as string) === col).length;
-                // Metric: Share of Listings (Weight)
-                matrix[row][col] = (entityItems / totalItemsInRow) * 100;
+            columns.forEach((col, idx) => {
+                if (idx === 0) {
+                    // This is the primary set column
+                    const entityItems = rowItems.filter(item => primaryEntitiesArray.includes((item[entityType] as string))).length;
+                    matrix[row][col] = (entityItems / totalItemsInRow) * 100;
+                } else {
+                    const entityItems = rowItems.filter(item => (item[entityType] as string) === col).length;
+                    matrix[row][col] = (entityItems / totalItemsInRow) * 100;
+                }
             });
         });
 
         return { rows, columns, matrix };
-    }, [data, primaryEntity, entityType, rowType]);
+    }, [data, primaryEntitiesArray, entityType, rowType]);
 
     const getCellStyle = (percentage: number): CSSProperties => {
-        if (percentage <= 0) {
-            return { backgroundColor: 'transparent', color: '#6b7280' };
-        }
-        // Color scale: Red (low) -> Yellow -> Green (high) ?? 
-        // Actually for "Weight", higher is usually better for the primary entity, 
-        // but for competitors, higher means they are strong.
-        // Let's use a neutral heatmap scale (e.g., opacity of a color) or a diverging one if we were comparing diffs.
-        // User asked for "Weight", so simple intensity is best.
-        // Let's use Teal for Primary, and maybe Amber/Red for Competitors?
-        // Simpler: Single color scale (Teal) for all to show "density".
-
+        if (percentage <= 0) return { backgroundColor: 'transparent', color: '#6b7280' };
         const intensity = 0.1 + (percentage / 100) * 0.9;
         return {
             backgroundColor: `rgba(20, 184, 166, ${intensity})`, // teal-500
@@ -75,13 +73,16 @@ const CompetitorHeatmap: FC<CompetitorHeatmapProps> = ({ data, primaryEntity, en
         };
     };
 
-    if (!heatmapData || heatmapData.rows.length === 0) {
-        return null;
-    }
+    if (!heatmapData || heatmapData.rows.length === 0) return null;
 
     return (
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 flex flex-col h-[500px]">
-            <h3 className="text-lg font-semibold text-gray-200 mb-4">{title}</h3>
+            <h3 className="text-lg font-semibold text-gray-200 mb-2">{title}</h3>
+            {primaryEntitiesArray.length > 1 && (
+                <p className="text-xs text-gray-400 mb-4 italic truncate">
+                    Selected: {primaryEntitiesArray.join(', ')}
+                </p>
+            )}
             <div className="flex-grow overflow-auto">
                 <table className="min-w-full text-sm text-left border-collapse">
                     <thead className="sticky top-0 bg-gray-900 z-10">

@@ -6,9 +6,12 @@ import CategoryPerformanceChart from '../charts/CategoryPerformanceChart';
 import BrandOwnerPerformanceChart from '../charts/BrandOwnerPerformanceChart';
 import PortfolioAnalysis from '../PortfolioAnalysis';
 import ChannelPenetrationMetrics from '../ChannelPenetrationMetrics';
+import ChannelPenetrationChart from '../charts/ChannelPenetrationChart';
 import BrandOwnerVenueTable from '../BrandOwnerVenueTable';
 import CompetitorHeatmap from '../CompetitorHeatmap';
 import ErrorBoundary from '../ErrorBoundary';
+import { useLanguage } from '../../context/LanguageContext';
+import { useData } from '../../context/DataProvider';
 
 interface BrandOwnerSheetProps {
     primaryPeriodData: MenuItem[];
@@ -20,19 +23,18 @@ interface BrandOwnerSheetProps {
 }
 
 const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, comparisonPeriodData, allData, filters, timeSelection, handleFilterChange }) => {
+    const { language, t } = useLanguage();
+    const { enrichedData: nationalUniverse, fullUniverse, marketBenchmarks } = useData();
 
     const dataForBrandOwnerChart = useMemo(() => {
         return (timeSelection.mode === 'none' ? allData : primaryPeriodData)
             .filter(i => filters.macroCategoria.length === 0 || (i.macroCategoria && filters.macroCategoria.includes(i.macroCategoria)));
     }, [allData, primaryPeriodData, timeSelection.mode, filters.macroCategoria]);
 
-    const nationalUniverse = useMemo(() => {
-        return allData;
-    }, [allData]);
-
     // 2. Calculate Context Universe (Filtered by Region, Client Type, etc., but NOT Brand/Owner)
+    // 🎯 CRITICAL: Use fullUniverse (unfiltered by permissions) to ensure market context for competitors
     const contextUniverse = useMemo(() => {
-        return nationalUniverse.filter(item => {
+        return fullUniverse.filter(item => {
             return (
                 (filters.regione.length === 0 || (item.regione && filters.regione.includes(item.regione))) &&
                 (filters.citta.length === 0 || (item.citta && filters.citta.includes(item.citta))) &&
@@ -41,40 +43,26 @@ const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, co
                 (filters.categoriaProdotto.length === 0 || (item.categoriaProdotto && filters.categoriaProdotto.includes(item.categoriaProdotto)))
             );
         });
-    }, [nationalUniverse, filters]);
+    }, [fullUniverse, filters]);
 
-    const opportunityData = useMemo(() => {
-        if (filters.brandOwner.length === 0) return [];
+    // For "selectedBrandOwner", if multi-select just take the summary or handle plurality
+    const selectedBrandOwners = filters.brandOwner;
+    const isMultiSelect = selectedBrandOwners.length > 1;
+    const firstOwner = selectedBrandOwners[0];
 
-        const currentVenues = new Set(primaryPeriodData.map(d => d.insegna));
-        // Get all venues in the current context
-        const opportunities = contextUniverse.filter(d => !currentVenues.has(d.insegna));
-
-        // Deduplicate by venue name
-        const uniqueOpportunities = new Map();
-        opportunities.forEach(item => {
-            if (!uniqueOpportunities.has(item.insegna)) {
-                uniqueOpportunities.set(item.insegna, item);
-            }
-        });
-        return Array.from(uniqueOpportunities.values());
-    }, [primaryPeriodData, contextUniverse, filters.brandOwner]);
-
-    // For "selectedBrandOwner", if multi-select just take the first one for the deep dive or handle plurality
-    const selectedBrandOwner = filters.brandOwner.length > 0 ? filters.brandOwner[0] : null;
-
-    if (!selectedBrandOwner) {
+    if (selectedBrandOwners.length === 0) {
         return (
             <div className="space-y-6">
                 <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center border-2 border-dashed border-gray-700">
-                    <h2 className="text-xl font-semibold text-white">Select a Brand Owner</h2>
-                    <p className="mt-2 text-gray-400">Please select a Brand Owner from the filter panel above, or click a bar on the chart below, to see a detailed performance analysis.</p>
+                    <h2 className="text-xl font-semibold text-white">{t('selectBrandOwner')}</h2>
+                    <p className="mt-2 text-gray-400">{t('selectBrandOwnerDesc')}</p>
                 </div>
                 <BrandOwnerPerformanceChart
                     primaryData={dataForBrandOwnerChart}
                     comparisonData={comparisonPeriodData.filter(i => filters.macroCategoria.length === 0 || (i.macroCategoria && filters.macroCategoria.includes(i.macroCategoria)))}
                     allInPrimaryPeriod={nationalUniverse}
                     allInComparisonPeriod={comparisonPeriodData}
+                    filters={filters}
                     timeSelection={timeSelection}
                     onFilter={value => handleFilterChange('brandOwner', value)}
                 />
@@ -82,16 +70,19 @@ const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, co
         );
     }
 
-    const comparisonDataForOwner = comparisonPeriodData.filter(item => item.brandOwner === selectedBrandOwner);
+    const comparisonDataForOwner = comparisonPeriodData.filter(item => selectedBrandOwners.includes(item.brandOwner || ''));
 
     return (
         <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-teal-400">Deep Dive: {selectedBrandOwner} {filters.brandOwner.length > 1 && `(+${filters.brandOwner.length - 1} others)`}</h2>
+            <h2 className="text-2xl font-bold text-teal-400">
+                {t('deepDive')}: {isMultiSelect ? `${selectedBrandOwners.length} ${t('brandOwners')}` : firstOwner}
+                {isMultiSelect && <span className="text-sm font-normal text-gray-400 ml-4">({selectedBrandOwners.join(', ')})</span>}
+            </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div className="lg:col-span-2">
                     <RegionDistributionChart
                         allData={nationalUniverse}
-                        selectedBrandOwner={selectedBrandOwner}
+                        selectedBrandOwner={selectedBrandOwners}
                         filters={filters}
                         onRegionSelect={value => handleFilterChange('regione', value)}
                     />
@@ -109,15 +100,26 @@ const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, co
                     ownerData={primaryPeriodData}
                     comparisonOwnerData={comparisonDataForOwner}
                     allDataInPeriod={contextUniverse}
-                    ownerName={selectedBrandOwner}
-                    subtitle={timeSelection.mode !== 'none' ? `Data for ${formatPeriod(timeSelection.periodA, timeSelection.mode)}` : undefined}
+                    ownerName={isMultiSelect ? `${selectedBrandOwners.length} Owners` : firstOwner}
+                    subtitle={timeSelection.mode !== 'none' ? `${t('dataFor')} ${formatPeriod(timeSelection.periodA, timeSelection.mode, language)}` : undefined}
+                    marketBenchmarks={marketBenchmarks}
+                    filters={filters}
                 />
             </div>
             <div className="grid grid-cols-1 gap-6">
                 <ChannelPenetrationMetrics
                     allData={contextUniverse}
-                    ownerData={contextUniverse.filter(item => item.brandOwner === selectedBrandOwner)}
-                    ownerName={selectedBrandOwner}
+                    ownerData={primaryPeriodData.filter(i => selectedBrandOwners.includes(i.brandOwner || ''))}
+                    ownerName={isMultiSelect ? 'Selected Group' : (firstOwner || '')}
+                    filters={filters}
+                    onBrandOwnerClick={(brandOwner) => handleFilterChange('brandOwner', [brandOwner])}
+                />
+                <ChannelPenetrationChart
+                    allData={contextUniverse}
+                    ownerData={primaryPeriodData.filter(i => selectedBrandOwners.includes(i.brandOwner || ''))}
+                    ownerName={isMultiSelect ? 'Selected Group' : (firstOwner || '')}
+                    timeSelection={timeSelection}
+                    filters={filters}
                 />
             </div>
 
@@ -126,10 +128,10 @@ const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, co
                     <ErrorBoundary>
                         <CompetitorHeatmap
                             data={contextUniverse}
-                            primaryEntity={selectedBrandOwner}
+                            primaryEntity={isMultiSelect ? selectedBrandOwners : (firstOwner || '')}
                             entityType="brandOwner"
                             rowType="citta"
-                            title={`Competitive Landscape in ${filters.regione.join(', ')} (by City)`}
+                            title={`${t('competitiveLandscape')} in ${filters.regione.join(', ')} (${t('city')})`}
                         />
                     </ErrorBoundary>
                 </div>
@@ -139,8 +141,8 @@ const BrandOwnerSheet: React.FC<BrandOwnerSheetProps> = ({ primaryPeriodData, co
                 <ErrorBoundary>
                     <BrandOwnerVenueTable
                         data={contextUniverse}
-                        brandOwner={selectedBrandOwner}
-                        title={`Venues for ${selectedBrandOwner}`}
+                        brandOwner={isMultiSelect ? selectedBrandOwners : (firstOwner || '')}
+                        title={isMultiSelect ? `${t('venuesFor')} ${selectedBrandOwners.length} Owners` : `${t('venuesFor')} ${firstOwner}`}
                     />
                 </ErrorBoundary>
             </div>

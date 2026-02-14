@@ -1,6 +1,7 @@
 import { useState, useCallback, FC, ReactNode, Fragment } from 'react';
 import { getRecipeAnalysis } from '../services/geminiService';
 import type { MenuItem } from '../types';
+import { useLanguage } from '../context/LanguageContext';
 
 interface RecipeAnalysisProps {
   cocktailName: string;
@@ -8,6 +9,7 @@ interface RecipeAnalysisProps {
 }
 
 const RecipeAnalysis: FC<RecipeAnalysisProps> = ({ cocktailName, data }) => {
+  const { t, language } = useLanguage();
   const [analysis, setAnalysis] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -17,14 +19,14 @@ const RecipeAnalysis: FC<RecipeAnalysisProps> = ({ cocktailName, data }) => {
     setError(null);
     setAnalysis('');
     try {
-      const result = await getRecipeAnalysis(cocktailName, data);
+      const result = await getRecipeAnalysis(cocktailName, data, language);
       setAnalysis(result);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'An unexpected error occurred.');
+      setError(err instanceof Error ? err.message : (language === 'it' ? 'Si è verificato un errore imprevisto.' : 'An unexpected error occurred.'));
     } finally {
       setIsLoading(false);
     }
-  }, [cocktailName, data]);
+  }, [cocktailName, data, language]);
 
   // A simple formatter for bold text and lists
   const formattedAnalysis = analysis.split('**').map((part, index) => {
@@ -53,13 +55,13 @@ const RecipeAnalysis: FC<RecipeAnalysisProps> = ({ cocktailName, data }) => {
   return (
     <div className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg h-full flex flex-col">
       <div className="flex justify-between items-center mb-4">
-        <h3 className="text-lg font-semibold text-gray-200">AI Recipe Analysis for {cocktailName}</h3>
+        <h3 className="text-lg font-semibold text-gray-200">{t('aiRecipeAnalysis', { cocktailName })}</h3>
         <button
           onClick={handleGenerateAnalysis}
           disabled={isLoading || !cocktailName}
           className="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors disabled:bg-gray-600 disabled:cursor-not-allowed text-sm font-medium"
         >
-          {isLoading ? 'Analyzing...' : 'Analyze Recipe'}
+          {isLoading ? t('analyzing') : t('analyzeRecipe')}
         </button>
       </div>
       <div className="flex-grow overflow-y-auto prose prose-invert prose-sm max-w-none prose-p:text-gray-300">
@@ -71,7 +73,7 @@ const RecipeAnalysis: FC<RecipeAnalysisProps> = ({ cocktailName, data }) => {
         {error && <p className="text-red-400">Error: {error}</p>}
         {!isLoading && !analysis && !error && (
           <div className="flex items-center justify-center h-full text-center text-gray-500">
-            <p>Click "Analyze Recipe" to get AI-powered insights on brand usage and pricing for this cocktail.</p>
+            <p>{t('recipeAnalysisPlaceholder')}</p>
           </div>
         )}
         {analysis && <div className="space-y-2 whitespace-pre-wrap">{formattedAnalysis}</div>}

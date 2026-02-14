@@ -1,6 +1,6 @@
 import { useMemo, useState, FC } from 'react';
 import type { MenuItem } from '../types';
-import { isCocktailMatch } from '../utils/cocktailUtils';
+import { isCocktailMatch, isStrictCocktail } from '../utils/cocktailUtils';
 
 interface DrinkStrategyVenueTableProps {
     data: MenuItem[];
@@ -29,7 +29,7 @@ const DrinkStrategyVenueTable: FC<DrinkStrategyVenueTableProps> = ({ data, selec
         }>();
 
         data.forEach(item => {
-            if (isCocktailMatch(item.nomeCocktail, selectedCocktail)) {
+            if (isCocktailMatch(item.nomeCocktail, selectedCocktail) && isStrictCocktail(item)) {
                 const existing = venues.get(item.insegna);
                 const isTargetBrand = item.brand === selectedBrand;
 

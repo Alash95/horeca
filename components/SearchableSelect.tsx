@@ -6,9 +6,11 @@ interface SearchableSelectProps {
     selectedValues: string[];
     onChange: (values: string[]) => void;
     disabled?: boolean;
+    itemLabel?: string; // e.g. "Brand"
+    itemsLabel?: string; // e.g. "Brands"
 }
 
-const SearchableSelect: FC<SearchableSelectProps> = ({ label, options, selectedValues, onChange, disabled = false }) => {
+const SearchableSelect: FC<SearchableSelectProps> = ({ label, options, selectedValues, onChange, disabled = false, itemLabel, itemsLabel }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [searchTerm, setSearchTerm] = useState('');
     const dropdownRef = useRef<HTMLDivElement>(null);
@@ -18,6 +20,13 @@ const SearchableSelect: FC<SearchableSelectProps> = ({ label, options, selectedV
             String(opt).toLowerCase().includes(searchTerm.toLowerCase())
         );
     }, [options, searchTerm]);
+
+    const displaySelectedText = useMemo(() => {
+        if (selectedValues.length === 0) return `Select ${itemLabel || 'Item'}`;
+        if (selectedValues.length === 1) return selectedValues[0];
+        if (selectedValues.length > 2) return `${selectedValues.length} ${itemsLabel || 'Items'}`;
+        return selectedValues.join(', ');
+    }, [selectedValues, itemLabel, itemsLabel]);
 
     const toggleOption = (opt: string) => {
         const newValues = selectedValues.includes(opt)
@@ -56,9 +65,7 @@ const SearchableSelect: FC<SearchableSelectProps> = ({ label, options, selectedV
                 className={`w-full bg-gray-700 border border-gray-600 rounded-md shadow-sm px-3 py-2 text-white cursor-pointer flex justify-between items-center text-sm ${disabled ? 'opacity-50 cursor-not-allowed' : 'hover:border-gray-500'} ${isOpen ? 'ring-1 ring-teal-500 border-teal-500' : ''}`}
             >
                 <span className="truncate">
-                    {selectedValues.length === 0 ? 'Select All' :
-                        selectedValues.length === options.length ? 'All Selected' :
-                            selectedValues.join(', ')}
+                    {displaySelectedText}
                 </span>
                 <svg className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />

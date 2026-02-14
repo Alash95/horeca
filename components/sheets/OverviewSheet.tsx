@@ -8,6 +8,7 @@ import BrandOwnerPerformanceChart from '../charts/BrandOwnerPerformanceChart';
 import CocktailPopularity from '../CocktailPopularity';
 import BrandOwnerShareChart from '../charts/BrandOwnerShareChart';
 import ChannelDistribution from '../ChannelDistribution';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface OverviewSheetProps {
     primaryPeriodData: MenuItem[];
@@ -20,7 +21,8 @@ interface OverviewSheetProps {
     averagePrice: number;
 }
 
-const OverviewSheet: FC<OverviewSheetProps> = ({ primaryPeriodData, comparisonPeriodData, allData, allInComparisonPeriod, filters, timeSelection, handleFilterChange, averagePrice }) => {
+const OverviewSheet: FC<OverviewSheetProps> = ({ primaryPeriodData, comparisonPeriodData, allData, allInComparisonPeriod, filters, timeSelection, handleFilterChange }) => {
+    const { language, t } = useLanguage();
 
     const metrics = useMemo(() => {
         const calcMetrics = (data: MenuItem[]) => {
@@ -55,37 +57,37 @@ const OverviewSheet: FC<OverviewSheetProps> = ({ primaryPeriodData, comparisonPe
         };
     }, [primaryPeriodData, comparisonPeriodData]);
 
-    const comparisonLabel = timeSelection.mode !== 'none' ? formatPeriod(timeSelection.periodB, timeSelection.mode) : undefined;
+    const comparisonLabel = timeSelection.mode !== 'none' ? formatPeriod(timeSelection.periodB, timeSelection.mode, language) : undefined;
 
     return (
         <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
                 <MetricCard
-                    title="Unique Venues"
+                    title={t('uniqueVenues')}
                     primaryValue={formatNumber(metrics.primary.uniqueVenues, 0)}
                     comparisonValue={metrics.comparison.uniqueVenues}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Unique Brands"
+                    title={t('uniqueBrands')}
                     primaryValue={formatNumber(metrics.primary.uniqueBrands, 0)}
                     comparisonValue={metrics.comparison.uniqueBrands}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Total Brand Owners"
+                    title={t('totalBrandOwners')}
                     primaryValue={formatNumber(metrics.primary.totalBrandOwners, 0)}
                     comparisonValue={metrics.comparison.totalBrandOwners}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Total Brands (Listings)"
+                    title={t('totalBrandsListings')}
                     primaryValue={formatNumber(metrics.primary.totalListings, 0)}
                     comparisonValue={metrics.comparison.totalListings}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Total Cocktails"
+                    title={t('totalCocktails')}
                     primaryValue={formatNumber(metrics.primary.totalCocktails, 0)}
                     comparisonValue={metrics.comparison.totalCocktails}
                     comparisonLabel={comparisonLabel}
@@ -98,6 +100,7 @@ const OverviewSheet: FC<OverviewSheetProps> = ({ primaryPeriodData, comparisonPe
                     comparisonData={comparisonPeriodData}
                     allInPrimaryPeriod={allData}
                     allInComparisonPeriod={allInComparisonPeriod}
+                    filters={filters}
                     timeSelection={timeSelection}
                     onFilter={value => handleFilterChange('brandOwner', value)}
                 />

@@ -5,7 +5,8 @@ import RegionalBrandComparisonChart from '../charts/RegionalBrandComparisonChart
 import BrandCocktailHeatmap from '../BrandCocktailHeatmap';
 import DrinkStrategyVenueTable from '../DrinkStrategyVenueTable';
 import MetricCard from '../MetricCard';
-import { isCocktailMatch, TARGET_COCKTAILS } from '../../utils/cocktailUtils';
+import { isCocktailMatch, TARGET_COCKTAILS, isStrictCocktail } from '../../utils/cocktailUtils';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface DrinkStrategySheetProps {
     allData: MenuItem[];
@@ -16,6 +17,7 @@ interface DrinkStrategySheetProps {
 }
 
 const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPeriodData, filters, handleFilterChange, timeSelection }) => {
+    const { t } = useLanguage();
     const selectedCocktail = filters.cocktail.length > 0 ? filters.cocktail[0] : null;
     const selectedBrand = filters.brand.length > 0 ? filters.brand[0] : null;
 
@@ -40,8 +42,9 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
         const allVenues = new Set(contextData.map(d => d.venueId).filter(Boolean));
         const totalVenues = allVenues.size;
 
+        // FILTER: Match Name AND Category (Strict)
         const venuesWithCocktail = new Set(contextData
-            .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail))
+            .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && isStrictCocktail(d))
             .map(d => d.venueId)
             .filter(Boolean)
         ).size;
@@ -49,7 +52,7 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
 
         const venuesWithBrandInCocktail = selectedBrand
             ? new Set(contextData
-                .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && d.brand === selectedBrand)
+                .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && isStrictCocktail(d) && d.brand === selectedBrand)
                 .map(d => d.venueId)
                 .filter(Boolean)
             ).size
@@ -57,29 +60,35 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
 
         const venuesWithCompetitorInCocktail = selectedBrand
             ? new Set(contextData
-                .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && d.brand !== selectedBrand)
+                .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && isStrictCocktail(d) && d.brand !== selectedBrand)
                 .map(d => d.venueId)
                 .filter(Boolean)
             ).size
             : 0;
 
         const cocktailPrices = contextData
-            .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail))
+            .filter(d => isCocktailMatch(d.nomeCocktail, selectedCocktail) && isStrictCocktail(d))
             .map(d => d.prezzo);
         const cocktailAvgPrice = cocktailPrices.length > 0
             ? cocktailPrices.reduce((a, b) => a + b, 0) / cocktailPrices.length
             : 0;
 
-        const targetCocktailsLower = TARGET_COCKTAILS.map(c => c.toLowerCase());
+        const targetCocktails = new Set(contextData
+            .filter(d => isStrictCocktail(d))
+            .map(d => d.nomeCocktail)
+            .filter(Boolean)
+        );
+
         const brandCocktailData = contextData.filter(d =>
             d.brand === selectedBrand &&
             d.nomeCocktail &&
-            targetCocktailsLower.includes(d.nomeCocktail.toLowerCase())
+            isStrictCocktail(d)
         );
+
         const placementsByCocktail = brandCocktailData.reduce((acc, item) => {
-            const normalizedName = item.nomeCocktail.toLowerCase();
-            if (!acc[normalizedName]) acc[normalizedName] = new Set();
-            acc[normalizedName].add(item.venueId || item.insegna);
+            const name = item.nomeCocktail!;
+            if (!acc[name]) acc[name] = new Set();
+            acc[name].add(item.venueId || item.insegna);
             return acc;
         }, {} as Record<string, Set<string>>);
         const brandTotalPlacements = Object.values(placementsByCocktail).reduce<number>((sum, venues) => sum + (venues as Set<string>).size, 0);
@@ -95,7 +104,7 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
 
     const dataForSelectedCocktail = useMemo(() => {
         if (!selectedCocktail) return [];
-        return contextData.filter(item => isCocktailMatch(item.nomeCocktail, selectedCocktail));
+        return contextData.filter(item => isCocktailMatch(item.nomeCocktail, selectedCocktail) && isStrictCocktail(item));
     }, [contextData, selectedCocktail]);
 
     const selectedCategory = useMemo(() => {
@@ -110,8 +119,8 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
     if (!selectedCocktail) {
         return (
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg text-center border-2 border-dashed border-gray-700">
-                <h2 className="text-xl font-semibold text-white">Select a Cocktail</h2>
-                <p className="mt-2 text-gray-400">Please select a Cocktail from the main filter panel to analyze its Drink Strategy.</p>
+                <h2 className="text-xl font-semibold text-white">{t('selectCocktail')}</h2>
+                <p className="mt-2 text-gray-400">{t('selectCocktailDesc')}</p>
             </div>
         );
     }
@@ -119,33 +128,35 @@ const DrinkStrategySheet: FC<DrinkStrategySheetProps> = ({ allData, primaryPerio
     return (
         <div className="space-y-6">
             <div>
-                <h2 className="text-xl font-bold text-teal-400 mb-2">Drink Strategy: {selectedBrand || 'All Brands'} on {selectedCocktail} {filters.cocktail.length > 1 && `(+${filters.cocktail.length - 1} others)`}</h2>
+                <h2 className="text-xl font-bold text-teal-400 mb-2">
+                    {t('drinkStrategy')}: {selectedBrand || t('allBrands')} {t('on')} {selectedCocktail} {filters.cocktail.length > 1 && `(+${filters.cocktail.length - 1} ${t('others')})`}
+                </h2>
             </div>
 
             {/* KPI Cards Row */}
             {metrics && (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     <MetricCard
-                        title="Cocktail Popularity"
+                        title={t('cocktailPopularity')}
                         primaryValue={`${metrics.cocktailDistribution.toFixed(1)}%`}
-                        subtitle="of total venues serve this cocktail"
+                        subtitle={t('ofTotalVenues')}
                     />
                     <MetricCard
-                        title="Venue Count"
+                        title={t('venueCount')}
                         primaryValue={formatNumber(metrics.venuesWithBrandInCocktail, 0)}
                         subtitle={selectedBrand
-                            ? `vs ${formatNumber(metrics.venuesWithCompetitorInCocktail, 0)} Competitor Venues`
-                            : "Total venues serving this cocktail"}
+                            ? t('vsCompetitorVenues').replace('{count}', formatNumber(metrics.venuesWithCompetitorInCocktail, 0))
+                            : t('totalVenuesServing')}
                     />
                     <MetricCard
-                        title="Cocktail Avg Price"
+                        title={t('avgPrice')}
                         primaryValue={`€${formatNumber(metrics.cocktailAvgPrice, 2)}`}
-                        subtitle={`Average price of ${selectedCocktail}`}
+                        subtitle={`${t('avgPriceOf')} ${selectedCocktail}`}
                     />
                     <MetricCard
-                        title="Brand Total Placements"
+                        title={t('brandTotalPlacements')}
                         primaryValue={formatNumber(metrics.brandTotalPlacements, 0)}
-                        subtitle="Total brand-cocktail combinations"
+                        subtitle={t('totalCombinations')}
                     />
                 </div>
             )}

@@ -5,28 +5,27 @@ import { formatNumber } from '../utils/formatters';
 interface CompetitiveLandscapeTableProps {
     allData: MenuItem[];
     filteredData: MenuItem[]; // Data with current filters applied (for context)
-    selectedBrand: string;
+    selectedBrand: string | string[];
     selectedCategory: string;
 }
 
 const CompetitiveLandscapeTable: React.FC<CompetitiveLandscapeTableProps> = ({ allData, filteredData, selectedBrand, selectedCategory }) => {
+    const selectedBrandsArray = Array.isArray(selectedBrand) ? selectedBrand : [selectedBrand];
+
     const competitors = useMemo(() => {
         if (!selectedCategory) return [];
 
         // Find all competitors in the same category across the entire dataset
         const competitorBrands = allData.filter(item =>
             item.categoriaProdotto === selectedCategory &&
-            item.brand !== selectedBrand
+            !selectedBrandsArray.includes(item.brand || '')
         );
 
-        // FIX: Explicitly type the accumulator (`acc`) to correctly infer the return type of reduce. This resolves the "Untyped function calls may not accept type arguments" error.
         const competitorCounts = competitorBrands.reduce((acc: Record<string, number>, item) => {
             acc[item.brand] = (acc[item.brand] || 0) + 1;
             return acc;
         }, {} as Record<string, number>);
 
-        // Calculate avg price for each competitor
-        // FIX: Explicitly type the accumulator (`acc`) to correctly infer the return type of reduce.
         const competitorPrices = allData.filter(item => item.categoriaProdotto === selectedCategory).reduce((acc: Record<string, { total: number, count: number }>, item) => {
             if (!acc[item.brand]) {
                 acc[item.brand] = { total: 0, count: 0 };
@@ -44,16 +43,17 @@ const CompetitiveLandscapeTable: React.FC<CompetitiveLandscapeTableProps> = ({ a
             .sort((a, b) => b.listings - a.listings)
             .slice(0, 5); // Top 5 competitors
 
-    }, [allData, selectedBrand, selectedCategory]);
+    }, [allData, selectedBrandsArray, selectedCategory]);
 
     const selectedBrandAvgPrice = useMemo(() => {
         if (filteredData.length === 0) return 0;
-        const brandData = filteredData.filter(i => i.brand === selectedBrand);
+        const brandData = filteredData.filter(i => selectedBrandsArray.includes(i.brand || ''));
         if (brandData.length === 0) return 0;
-        // FIX: Explicitly type the accumulator `acc` as a number to prevent type inference issues in the arithmetic operation.
         const total = brandData.reduce((acc: number, item) => acc + item.prezzo, 0);
         return total / brandData.length;
-    }, [filteredData, selectedBrand]);
+    }, [filteredData, selectedBrandsArray]);
+
+    const displayBrandName = selectedBrandsArray.length > 1 ? `${selectedBrandsArray.length} Selected Brands` : selectedBrandsArray[0];
 
     if (!selectedCategory) {
         return (
@@ -85,8 +85,8 @@ const CompetitiveLandscapeTable: React.FC<CompetitiveLandscapeTableProps> = ({ a
                     </thead>
                     <tbody className="divide-y divide-gray-700">
                         <tr className="bg-teal-900/30">
-                            <td className="py-3 px-3 font-bold text-teal-300">{selectedBrand} (You)</td>
-                            <td className="py-3 px-3 font-bold text-teal-300 text-right font-mono">{formatNumber(filteredData.filter(i => i.brand === selectedBrand).length, 0)}</td>
+                            <td className="py-3 px-3 font-bold text-teal-300">{displayBrandName} (You)</td>
+                            <td className="py-3 px-3 font-bold text-teal-300 text-right font-mono">{formatNumber(filteredData.filter(i => selectedBrandsArray.includes(i.brand || '')).length, 0)}</td>
                             <td className="py-3 px-3 font-bold text-teal-300 text-right font-mono">€{selectedBrandAvgPrice.toFixed(2)}</td>
                         </tr>
                         {competitors.map(c => {

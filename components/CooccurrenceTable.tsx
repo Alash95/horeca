@@ -5,16 +5,18 @@ import { formatNumber } from '../utils/formatters';
 
 interface CooccurrenceTableProps {
     allData: MenuItem[];
-    selectedBrand: string;
+    selectedBrand: string | string[];
     selectedCategory: string;
     timeSelection: TimeSelection;
 }
 
 const CooccurrenceTable: FC<CooccurrenceTableProps> = ({ allData, selectedBrand, selectedCategory, timeSelection }) => {
-    const { cooccurrenceData, brandVenueCount } = useMemo(() => {
-        if (!selectedBrand || !selectedCategory) return { cooccurrenceData: [], brandVenueCount: 0 };
+    const selectedBrandsArray = Array.isArray(selectedBrand) ? selectedBrand : [selectedBrand];
 
-        const brandVenues = new Set<string>(allData.filter(item => item.brand === selectedBrand).map(item => item.insegna));
+    const { cooccurrenceData, brandVenueCount } = useMemo(() => {
+        if (selectedBrandsArray.length === 0 || !selectedCategory) return { cooccurrenceData: [], brandVenueCount: 0 };
+
+        const brandVenues = new Set<string>(allData.filter(item => selectedBrandsArray.includes(item.brand || '')).map(item => item.insegna));
         const brandVenueCount = brandVenues.size;
 
         if (brandVenueCount === 0) return { cooccurrenceData: [], brandVenueCount: 0 };
@@ -25,7 +27,7 @@ const CooccurrenceTable: FC<CooccurrenceTableProps> = ({ allData, selectedBrand,
             const competitorsInVenue = allData.filter(item =>
                 item.insegna === venue &&
                 item.categoriaProdotto === selectedCategory &&
-                item.brand !== selectedBrand
+                !selectedBrandsArray.includes(item.brand || '')
             );
 
             const uniqueCompetitorBrands = new Set<string>(competitorsInVenue.map(item => item.brand));
@@ -45,9 +47,10 @@ const CooccurrenceTable: FC<CooccurrenceTableProps> = ({ allData, selectedBrand,
             .slice(0, 5); // Top 5
 
         return { cooccurrenceData: formattedData, brandVenueCount };
-    }, [allData, selectedBrand, selectedCategory]);
+    }, [allData, selectedBrandsArray, selectedCategory]);
 
     const subtitle = timeSelection.mode !== 'none' ? `Data for ${formatPeriod(timeSelection.periodA, timeSelection.mode)}` : undefined;
+    const displayBrandName = selectedBrandsArray.length > 1 ? `${selectedBrandsArray.length} Brands` : selectedBrandsArray[0];
 
     if (!selectedCategory) {
         return (
@@ -73,7 +76,7 @@ const CooccurrenceTable: FC<CooccurrenceTableProps> = ({ allData, selectedBrand,
             </div>
             <p className="text-xs text-gray-400 mb-4">
                 Brands in the same category most frequently found on the same menu.
-                Based on {formatNumber(brandVenueCount, 0)} venues where {selectedBrand} is present.
+                Based on {formatNumber(brandVenueCount, 0)} venues where {displayBrandName} is present.
             </p>
             <div className="overflow-x-auto">
                 <table className="min-w-full text-sm text-left">

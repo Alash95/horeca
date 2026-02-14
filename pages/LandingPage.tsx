@@ -10,6 +10,7 @@ export const LandingPage = () => {
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isDemoOpen, setIsDemoOpen] = useState(false);
     const [verificationSuccess, setVerificationSuccess] = useState(false);
+    const [authMode, setAuthMode] = useState<'login' | 'signup' | 'forgot'>('login');
 
     useEffect(() => {
         // Check for existing session
@@ -25,13 +26,22 @@ export const LandingPage = () => {
                 // This usually happens on first email confirmation
                 setVerificationSuccess(true);
                 await supabase.auth.signOut();
-            } else if (session && event !== 'SIGNED_OUT') {
+            } else if (session && event !== 'SIGNED_OUT' && event !== 'PASSWORD_RECOVERY') {
+                // Only redirect if not in recovery or signout
                 navigate('/dashboard');
             }
         });
 
         return () => subscription.unsubscribe();
     }, [navigate, verificationSuccess]);
+
+    useEffect(() => {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('auth') === 'recovery') {
+            setAuthMode('forgot');
+            setIsAuthOpen(true);
+        }
+    }, []);
 
     return (
         <div className="min-h-screen bg-slate-950 font-sans selection:bg-teal-500/30 text-slate-100 overflow-x-hidden">
@@ -44,20 +54,20 @@ export const LandingPage = () => {
             </div>
 
             {/* Navbar */}
-            <nav className="relative z-50 flex items-center justify-between px-6 py-6 max-w-7xl mx-auto">
+            <nav className="relative z-50 flex items-center justify-between px-6 py-8 max-w-7xl mx-auto">
                 <div className="flex items-center gap-3">
                     <img src="/logo.png" alt="Horeca Logo" className="h-10 w-auto" />
                 </div>
                 <div className="flex items-center gap-6">
                     <button
                         onClick={() => setIsAuthOpen(true)}
-                        className="text-sm font-medium text-slate-300 hover:text-white transition-colors"
+                        className="text-sm font-semibold text-slate-400 hover:text-white transition-colors"
                     >
                         Log in
                     </button>
                     <button
                         onClick={() => setIsAuthOpen(true)}
-                        className="px-5 py-2.5 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-full text-sm transition-all shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40"
+                        className="px-6 py-2.5 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-full text-sm transition-all shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40"
                     >
                         Get Started
                     </button>
@@ -65,7 +75,7 @@ export const LandingPage = () => {
             </nav>
 
             {/* Hero Section */}
-            <section className="relative z-10 pt-20 pb-32 px-6 max-w-7xl mx-auto text-center">
+            <section className="relative z-10 pt-12 pb-32 px-6 max-w-7xl mx-auto text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -79,89 +89,97 @@ export const LandingPage = () => {
                         </div>
                     )}
 
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900/50 border border-slate-800 text-teal-400 text-xs font-medium mb-6">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-                        </span>
-                        Live Market Data 2024-2025
+                    <div className="space-y-6 mb-12">
+                        <h1 className="text-teal-400 font-black text-5xl md:text-7xl tracking-tighter leading-tight">
+                            Horeca Intelligence.
+                        </h1>
+                        <h2 className="text-2xl md:text-4xl font-extrabold text-white max-w-4xl mx-auto leading-tight">
+                            You're already paying for distribution. <br />
+                            <span className="text-slate-400">We show you what's actually on their menus.</span>
+                        </h2>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 bg-gradient-to-b from-white to-slate-400 bg-clip-text text-transparent">
-                        Unlocking the Value of <br />
-                        <span className="text-teal-400">Italian HORECA</span>
-                    </h1>
+                    <h3 className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed font-medium">
+                        The intelligence platform for Wine & Spirits companies and decision makers.
+                        Track brand menu presence, cocktail features, and competitor gaps across top Italian premium accounts.
+                    </h3>
 
-                    <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                        The ultimate intelligence platform for Italian Fine Wines & F&B.
-                        Track menu trends, pricing strategies, and brand performance across Italy's top venues.
-                    </p>
-
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-24">
                         <button
                             onClick={() => setIsAuthOpen(true)}
-                            className="px-8 py-4 bg-teal-500 hover:bg-teal-400 text-slate-950 font-bold rounded-full text-lg transition-all shadow-xl shadow-teal-500/20 hover:shadow-teal-500/40 hover:scale-105 flex items-center gap-2"
+                            className="px-10 py-4 bg-teal-500 hover:bg-teal-400 text-slate-950 font-black rounded-full text-lg transition-all shadow-xl shadow-teal-500/30 hover:shadow-teal-500/50 hover:scale-105 flex items-center gap-3 group"
                         >
-                            Start Analysis <ArrowRight size={20} />
+                            Start Analysis <ArrowRight size={22} className="group-hover:translate-x-1 transition-transform" />
                         </button>
                         <button
                             onClick={() => setIsDemoOpen(true)}
-                            className="px-8 py-4 bg-slate-900 hover:bg-slate-800 text-white font-medium rounded-full text-lg border border-slate-800 transition-all flex items-center gap-2"
+                            className="px-10 py-4 bg-slate-900/50 hover:bg-slate-800 text-white font-bold rounded-full text-lg border border-slate-800 transition-all flex items-center gap-3 backdrop-blur-sm group"
                         >
-                            View Demo <ChevronRight size={20} className="text-slate-500" />
+                            View Demo <ChevronRight size={22} className="text-slate-500 group-hover:text-white transition-colors" />
                         </button>
+                    </div>
+
+                    {/* Main Headline in Visual Style */}
+                    <div className="mb-20">
+                        <h3 className="text-5xl md:text-8xl font-black tracking-tighter text-white">
+                            Unlocking the Value of <br />
+                            <span className="bg-gradient-to-r from-teal-400 to-emerald-400 bg-clip-text text-transparent">Italian HORECA</span>
+                        </h3>
                     </div>
                 </motion.div>
 
-                {/* Dashboard Preview "Blend" */}
+                {/* Dashboard Preview */}
                 <motion.div
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.8 }}
-                    className="mt-20 relative mx-auto max-w-7xl"
+                    className="relative mx-auto max-w-6xl"
                 >
-                    <div className="absolute -inset-1 bg-gradient-to-r from-teal-500/30 to-emerald-500/30 rounded-2xl blur-lg opacity-40"></div>
-                    <div className="relative rounded-2xl border border-slate-800 bg-slate-900 shadow-2xl overflow-hidden aspect-[16/9] flex items-center justify-center group">
+                    <div className="absolute -inset-4 bg-gradient-to-r from-teal-500/20 to-emerald-500/20 rounded-[2.5rem] blur-2xl opacity-30"></div>
+                    <div className="relative rounded-3xl border border-slate-800 bg-slate-950 shadow-2xl overflow-hidden aspect-[16/10] flex items-center justify-center group ring-1 ring-white/5">
                         <img
                             src="/dashboard_overview_clean.png"
                             alt="HORECA Intelligence Dashboard Overview"
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                            className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000"
                         />
-                        <div className="absolute inset-0 bg-slate-950/5 pointer-events-none"></div>
-                        <div className="absolute bottom-6 left-8 z-20">
-                            <span className="px-4 py-1.5 rounded-full bg-slate-900/90 border border-slate-700 text-teal-400 text-xs font-bold shadow-lg backdrop-blur-sm">
-                                Live Platform Interface
+                        <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-slate-950 to-transparent"></div>
+                        <div className="absolute top-8 left-8 z-20">
+                            <span className="px-4 py-2 rounded-xl bg-slate-900/90 border border-white/5 text-teal-400 text-[10px] uppercase font-black tracking-widest shadow-2xl backdrop-blur-md">
+                                Platform Analytics 2.0
                             </span>
+                        </div>
+                        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 z-20">
+                            <h4 className="text-white/40 text-sm font-black uppercase tracking-[0.5em]">Advanced Analytics</h4>
                         </div>
                     </div>
                 </motion.div>
             </section>
 
             {/* Features Section */}
-            <section className="relative z-10 py-32 bg-slate-950">
-                <div className="max-w-7xl mx-auto px-6">
-                    <div className="text-center mb-20">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Italian Excellence Data</h2>
-                        <p className="text-slate-400 max-w-2xl mx-auto">
-                            Comprehensive data coverage of the Italian food and beverage sector.
+            <section className="relative z-10 py-40 border-t border-white/5">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                    <div className="mb-24">
+                        <h2 className="text-4xl md:text-6xl font-black text-white mb-8 tracking-tight">From Drink Menus to <br /><span className="text-teal-400">Commercial Decisions</span></h2>
+                        <p className="text-slate-400 text-xl max-w-3xl mx-auto font-medium leading-relaxed">
+                            Real market data from Italian top accounts, built for Wine & Spirits companies.
                         </p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
                         <FeatureCard
                             icon={<Wine className="text-teal-400" size={32} />}
-                            title="Wine Trends"
-                            description="Deep dive into wine lists across regions. Analyze pricing, varietals, and brand presence in top Italian restaurants."
+                            title="Find wasted distribution"
+                            description="You distributed 12 SKU, only 5 made the menu. Track which products accounts buy but never feature—and fix it."
                         />
                         <FeatureCard
                             icon={<BarChart3 className="text-teal-400" size={32} />}
-                            title="Competitor Analysis"
-                            description="Track your Share of Listings against key competitors. Identify white spaces in menus and optimize your portfolio."
+                            title="Spot competitor threats early"
+                            description="Competitor just launched a new signature cocktail in Milano’s 20 bars. You have zero. See where competitors are winning menu space."
                         />
                         <FeatureCard
                             icon={<MapPin className="text-teal-400" size={32} />}
-                            title="Regional Focus"
-                            description="Granular data from Milan to Sicily. Understand regional preferences and tailor your distribution strategy."
+                            title="Prove activation ROI"
+                            description="You spent €50K on a Negroni Week activation. Did it work? Track menu changes before and after. Prove which accounts adopted your drinks."
                         />
                     </div>
                 </div>
@@ -174,14 +192,19 @@ export const LandingPage = () => {
                         <div className="h-8 w-8 bg-gradient-to-br from-teal-500 to-emerald-600 rounded-lg flex items-center justify-center font-bold text-white text-xs">H</div>
                         <span className="text-slate-300 font-semibold">Horeca Intelligence</span>
                     </div>
-                    <div className="text-slate-600 text-sm">
-                        &copy; {new Date().getFullYear()} HORECA Studio. All rights reserved.
+                    <div className="text-slate-600 text-sm uppercase tracking-widest font-bold">
+                        &copy; 2026 HORECA INTELLIGENCE SYSTEMS. ALL RIGHTS RESERVED.
                     </div>
                 </div>
             </footer>
 
             {/* Auth Modal */}
-            {isAuthOpen && <AuthModal onClose={() => setIsAuthOpen(false)} />}
+            {isAuthOpen && (
+                <AuthModal
+                    onClose={() => setIsAuthOpen(false)}
+                    initialMode={authMode}
+                />
+            )}
 
             {/* Demo Video Modal */}
             {isDemoOpen && (

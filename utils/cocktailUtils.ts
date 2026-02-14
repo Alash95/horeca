@@ -28,3 +28,22 @@ export const TARGET_COCKTAILS = [
     'Gin&Tonic',
     'Cocktail Martini'
 ];
+
+export const isStrictCocktail = (item: any): boolean => {
+    const category = (item.categoriaProdotto || '').toLowerCase();
+    const macro = (item.macroCategoria || '').toLowerCase();
+    const catName = (item.categoryName || '').toLowerCase();
+    const subCat = (item.subCategory || '').toLowerCase();
+
+    // User Requirement: "only item name... with a category name with any thing labeled with or that has a LIKE cocktail"
+    const isCocktailCategory =
+        category.includes('cocktail') ||
+        macro.includes('cocktail') ||
+        catName.includes('cocktail') ||
+        subCat.includes('cocktail');
+
+    // Hardened Exclusion: Ensure it's not Wine/Beer even if it mentions cocktail
+    const isExcludedMacro = macro.includes('wine') || macro.includes('vine') || macro.includes('beer') || macro.includes('birra');
+
+    return isCocktailCategory && !isExcludedMacro;
+};

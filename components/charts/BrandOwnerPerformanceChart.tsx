@@ -1,6 +1,6 @@
 import { useMemo, FC } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, Legend } from 'recharts';
-import type { MenuItem, ChartDataItem, TimeSelection } from '../../types';
+import type { MenuItem, ChartDataItem, TimeSelection, Filters } from '../../types';
 import { formatPeriod } from '../../utils/timeUtils';
 import { formatNumber } from '../../utils/formatters';
 import ChartContainer from './ChartContainer';
@@ -10,6 +10,7 @@ interface BrandOwnerPerformanceChartProps {
   comparisonData: MenuItem[];
   allInPrimaryPeriod: MenuItem[];
   allInComparisonPeriod: MenuItem[];
+  filters: Filters; // Added filters
   timeSelection: TimeSelection;
   onFilter: (brandOwner: string | null) => void;
 }

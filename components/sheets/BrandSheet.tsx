@@ -11,6 +11,7 @@ import ChannelPenetrationMetrics from '../ChannelPenetrationMetrics';
 import VenueList from '../VenueList';
 import CompetitorHeatmap from '../CompetitorHeatmap';
 import ErrorBoundary from '../ErrorBoundary';
+import { useLanguage } from '../../context/LanguageContext';
 
 interface BrandSheetProps {
     primaryPeriodData: MenuItem[];
@@ -23,6 +24,7 @@ interface BrandSheetProps {
 }
 
 const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodData, allData, allInComparisonPeriod, filters, timeSelection, handleFilterChange }) => {
+    const { language, t } = useLanguage();
 
     const chartFilterContext = useMemo(() => {
         return allData.filter(i =>
@@ -38,14 +40,16 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
         );
     }, [comparisonPeriodData, filters.macroCategoria, filters.brandOwner]);
 
-    const selectedBrand = filters.brand.length > 0 ? filters.brand[0] : null;
+    const selectedBrands = filters.brand;
+    const isMultiSelect = selectedBrands.length > 1;
+    const firstBrand = selectedBrands[0];
 
-    if (!selectedBrand) {
+    if (selectedBrands.length === 0) {
         return (
             <div className="space-y-6">
                 <div className="bg-slate-900 p-8 rounded-lg shadow-lg text-center border-2 border-dashed border-slate-800">
-                    <h2 className="text-xl font-semibold text-white">Select a Brand</h2>
-                    <p className="mt-2 text-slate-400">Please select a Brand from the filter panel above, or click a bar on the chart below, to see a detailed performance analysis.</p>
+                    <h2 className="text-xl font-semibold text-white">{t('selectBrandOwnerOrBrand')}</h2>
+                    <p className="mt-2 text-slate-400">{t('selectBrandOwnerDesc')}</p>
                 </div>
                 <BrandPerformanceChart
                     allData={allData}
@@ -62,7 +66,7 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
 
     const brandAnalysis = useMemo(() => {
         const calculateMetrics = (data: MenuItem[], allPeriodData: MenuItem[]) => {
-            const brandData = data.filter(item => item.brand === selectedBrand);
+            const brandData = data.filter(item => selectedBrands.includes(item.brand || ''));
             if (brandData.length === 0) {
                 return { avgPrice: 0, brandShareInCategory: 0, cocktailPresenceRate: 0, isSpirit: false, top4PositionRate: 0, priceIndexVsCategory: 0 };
             }
@@ -82,7 +86,7 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
             const totalCategoryListings = categoryData.length;
             const brandShareInCategory = totalCategoryListings > 0 ? (totalBrandListings / totalCategoryListings) * 100 : 0;
 
-            const isSpirit = brandData[0]?.macroCategoria === 'Spirits' || brandData[0]?.macroCategoria === 'SPIRITS';
+            const isSpirit = brandData.some(i => i.macroCategoria === 'Spirits' || i.macroCategoria === 'SPIRITS');
 
             // 🎯 CSV Guide: [Cocktail Presence Rate] = Brand List in Cocktails / Category List in Cocktails
             let cocktailPresenceRate = 0;
@@ -110,7 +114,7 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
                 const sortedByPrice = [...venueCategoryItems].sort((a, b) => b.prezzo - a.prezzo);
                 const top4Brands = new Set(sortedByPrice.slice(0, 4).map(item => item.brand));
 
-                if (top4Brands.has(selectedBrand!)) {
+                if (selectedBrands.some(b => top4Brands.has(b))) {
                     top4PresenceCount++;
                 }
             });
@@ -123,12 +127,12 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
             primary: calculateMetrics(primaryPeriodData, allData),
             comparison: calculateMetrics(comparisonPeriodData, allInComparisonPeriod),
         };
-    }, [primaryPeriodData, comparisonPeriodData, allData, allInComparisonPeriod, selectedBrand]);
+    }, [primaryPeriodData, comparisonPeriodData, allData, allInComparisonPeriod, selectedBrands]);
 
-    const comparisonLabel = timeSelection.mode !== 'none' ? formatPeriod(timeSelection.periodB, timeSelection.mode) : undefined;
+    const comparisonLabel = timeSelection.mode !== 'none' ? formatPeriod(timeSelection.periodB, timeSelection.mode, language) : undefined;
 
-    const selectedCategoryData = primaryPeriodData.find(i => i.brand === selectedBrand);
-    const selectedCategory = selectedCategoryData?.categoriaProdotto || '';
+    const firstItem = primaryPeriodData.find(i => selectedBrands.includes(i.brand || ''));
+    const selectedCategory = firstItem?.categoriaProdotto || '';
 
     // Calculate Context Universe (Filtered by Region, Client Type, etc., but NOT Brand)
     const contextUniverse = useMemo(() => {
@@ -143,30 +147,33 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
 
     return (
         <div className="space-y-6">
-            <h2 className="text-2xl font-bold text-teal-400">Deep Dive: {selectedBrand} {filters.brand.length > 1 && `(+${filters.brand.length - 1} others)`}</h2>
+            <h2 className="text-2xl font-bold text-teal-400">
+                {t('deepDive')}: {isMultiSelect ? `${selectedBrands.length} ${t('brands')}` : firstBrand}
+                {isMultiSelect && <span className="text-sm font-normal text-gray-400 ml-4">({selectedBrands.join(', ')})</span>}
+            </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <MetricCard
-                    title="Average Price"
+                    title={t('avgPrice')}
                     primaryValue={`€${formatNumber(brandAnalysis.primary.avgPrice, 2)}`}
                     comparisonValue={brandAnalysis.comparison.avgPrice}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Brand Share in Category"
+                    title={t('brandShareInCategory')}
                     primaryValue={`${brandAnalysis.primary.brandShareInCategory.toFixed(1)}%`}
                     comparisonValue={brandAnalysis.comparison.brandShareInCategory}
                     comparisonLabel={comparisonLabel}
                 />
                 <MetricCard
-                    title="Top 4 Position Rate (Just Neat Spirits)"
+                    title={`${t('top4PositionRate')} (${t('justNeatSpirits')})`}
                     primaryValue={`${brandAnalysis.primary.top4PositionRate.toFixed(1)}%`}
                     comparisonValue={brandAnalysis.comparison.top4PositionRate}
                     comparisonLabel={comparisonLabel}
                 />
                 {brandAnalysis.primary.isSpirit && (
                     <MetricCard
-                        title="Cocktail Presence Rate"
+                        title={t('cocktailPresenceRate')}
                         primaryValue={`${brandAnalysis.primary.cocktailPresenceRate.toFixed(1)}%`}
                         comparisonValue={brandAnalysis.comparison.cocktailPresenceRate}
                         comparisonLabel={comparisonLabel}
@@ -177,21 +184,21 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <RegionDistributionChart
                     allData={allData}
-                    selectedBrand={selectedBrand}
+                    selectedBrand={selectedBrands}
                     filters={filters}
                     onRegionSelect={value => handleFilterChange('regione', value)}
                 />
                 <CompetitiveLandscapeTable
                     allData={allData}
                     filteredData={primaryPeriodData}
-                    selectedBrand={selectedBrand}
+                    selectedBrand={isMultiSelect ? selectedBrands : (firstBrand || '')}
                     selectedCategory={selectedCategory}
                 />
             </div>
             <div className="grid grid-cols-1">
                 <CooccurrenceTable
                     allData={primaryPeriodData}
-                    selectedBrand={selectedBrand}
+                    selectedBrand={isMultiSelect ? selectedBrands : (firstBrand || '')}
                     selectedCategory={selectedCategory}
                     timeSelection={timeSelection}
                 />
@@ -199,10 +206,11 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
             <div className="grid grid-cols-1 gap-6">
                 <ChannelPenetrationMetrics
                     allData={contextUniverse}
-                    ownerData={primaryPeriodData.filter(i => i.brand === selectedBrand)}
-                    ownerName={selectedBrand || undefined}
-                    selectedBrand={selectedBrand}
+                    ownerData={primaryPeriodData.filter(i => selectedBrands.includes(i.brand || ''))}
+                    ownerName={isMultiSelect ? 'Selected Group' : (firstBrand || '')}
+                    selectedBrand={isMultiSelect ? selectedBrands : (firstBrand || '')}
                     selectedCategory={selectedCategory}
+                    filters={filters}
                 />
             </div>
 
@@ -211,12 +219,12 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
                     <ErrorBoundary>
                         <CompetitorHeatmap
                             data={contextUniverse.filter(d => d.categoriaProdotto === selectedCategory)}
-                            primaryEntity={selectedBrand}
+                            primaryEntity={isMultiSelect ? selectedBrands : (firstBrand || '')}
                             entityType="brand"
                             rowType={filters.citta.length > 0 ? 'insegna' : 'citta'}
                             title={filters.citta.length > 0
-                                ? `Competitive Landscape in ${filters.citta.join(', ')} (by Venue)`
-                                : `Competitive Landscape in ${filters.regione.join(', ')} (by City)`}
+                                ? `${t('competitiveLandscape')} in ${filters.citta.join(', ')} (${t('byVenue')})`
+                                : `${t('competitiveLandscape')} in ${filters.regione.join(', ')} (${t('byCity')})`}
                         />
                     </ErrorBoundary>
                 </div>
@@ -225,9 +233,9 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
             <div className="grid grid-cols-1 gap-6">
                 <ErrorBoundary>
                     <VenueList
-                        data={primaryPeriodData.filter(i => i.brand === selectedBrand)}
+                        data={primaryPeriodData.filter(i => selectedBrands.includes(i.brand || ''))}
                         opportunityData={useMemo(() => {
-                            const currentBrandVenues = new Set(primaryPeriodData.filter(i => i.brand === selectedBrand).map(d => d.insegna));
+                            const currentBrandVenues = new Set(primaryPeriodData.filter(i => selectedBrands.includes(i.brand || '')).map(d => d.insegna));
 
                             const opportunities = contextUniverse.filter(d =>
                                 d.categoriaProdotto === selectedCategory &&
@@ -241,8 +249,8 @@ const BrandSheet: FC<BrandSheetProps> = ({ primaryPeriodData, comparisonPeriodDa
                                 }
                             });
                             return Array.from(uniqueOpportunities.values());
-                        }, [primaryPeriodData, contextUniverse, selectedBrand, selectedCategory])}
-                        title={`Venues for ${selectedBrand}`}
+                        }, [primaryPeriodData, contextUniverse, selectedBrands, selectedCategory])}
+                        title={isMultiSelect ? `${t('venuesFor')} ${selectedBrands.length} Brands` : `${t('venuesFor')} ${firstBrand}`}
                     />
                 </ErrorBoundary>
             </div>

@@ -8,11 +8,13 @@ import BrandSheet from './sheets/BrandSheet';
 import DrinkStrategySheet from './sheets/DrinkStrategySheet';
 import InsightsSheet from './sheets/InsightsSheet';
 import { useData } from '../context/DataProvider';
+import { useLanguage } from '../context/LanguageContext';
 
 type Sheet = 'Overview' | 'Brand Owner' | 'Brand' | 'Drink Strategy' | 'Insights';
 
 const Dashboard: FC = () => {
     const { enrichedData, masterData, loading: dataLoading, error: dataError } = useData();
+    const { t } = useLanguage();
     const [activeSheet, setActiveSheet] = useState<Sheet>('Overview');
 
     const availableYears = useMemo(() => getAvailableYears(enrichedData), [enrichedData]);
@@ -110,7 +112,7 @@ const Dashboard: FC = () => {
                     check(filters.categoriaProdotto, item.categoriaProdotto) &&
                     check(filters.cocktail, item.nomeCocktail) &&
                     check(filters.insegna, item.insegna) &&
-                    check(filters.venueId, String(item.venueId || item["Menu ID"]))
+                    check(filters.venueId, item["Menu ID"])
                 );
             });
         };
@@ -136,7 +138,7 @@ const Dashboard: FC = () => {
 
     const handleDataExport = useCallback(() => {
         if (filteredData.primary.length === 0) {
-            alert("No data to export matching current filters.");
+            alert(t('noDataExport'));
             return;
         }
 
@@ -164,7 +166,7 @@ const Dashboard: FC = () => {
             link.click();
             document.body.removeChild(link);
         }
-    }, [filteredData.primary]);
+    }, [filteredData.primary, t]);
 
     const renderSheet = () => {
         switch (activeSheet) {
@@ -223,10 +225,16 @@ const Dashboard: FC = () => {
     }
 
     if (dataError) {
-        return <div className="flex items-center justify-center h-screen"><div className="bg-red-900 border border-red-400 text-red-100 px-4 py-3 rounded-lg shadow-lg" role="alert"><strong className="font-bold">Error:</strong><span className="block sm:inline ml-2">{dataError}</span></div></div>;
+        return <div className="flex items-center justify-center h-screen"><div className="bg-red-900 border border-red-400 text-red-100 px-4 py-3 rounded-lg shadow-lg" role="alert"><strong className="font-bold">{t('error')}:</strong><span className="block sm:inline ml-2">{dataError}</span></div></div>;
     }
 
-    const sheets: Sheet[] = ['Overview', 'Brand Owner', 'Brand', 'Drink Strategy', 'Insights'];
+    const sheets: { id: Sheet; label: string }[] = [
+        { id: 'Overview', label: t('overview') },
+        { id: 'Brand Owner', label: t('brandOwner') },
+        { id: 'Brand', label: t('brand') },
+        { id: 'Drink Strategy', label: t('drinkStrategy') },
+        { id: 'Insights', label: t('insights') }
+    ];
 
     return (
         <div className="flex h-screen overflow-hidden">
@@ -255,16 +263,16 @@ const Dashboard: FC = () => {
                             <nav className="-mb-px flex space-x-8 overflow-x-auto" aria-label="Tabs">
                                 {sheets.map(sheet => (
                                     <button
-                                        key={sheet}
+                                        key={sheet.id}
                                         onClick={() => {
-                                            setActiveSheet(sheet);
+                                            setActiveSheet(sheet.id);
                                         }}
-                                        className={`${activeSheet === sheet
+                                        className={`${activeSheet === sheet.id
                                             ? 'border-teal-400 text-teal-400'
                                             : 'border-transparent text-gray-400 hover:text-gray-200 hover:border-gray-500'
                                             } whitespace-nowrap py-4 px-4 border-b-2 font-medium text-base transition-colors`}
                                     >
-                                        {sheet}
+                                        {sheet.label}
                                     </button>
                                 ))}
                             </nav>

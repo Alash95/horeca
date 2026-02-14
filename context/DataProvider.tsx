@@ -1,10 +1,11 @@
 import { createContext, useContext, useEffect, useState, FC, ReactNode, useMemo } from 'react';
 import { supabase } from '../lib/supabase';
 import { useNavigate } from 'react-router-dom';
-import type { MenuItem, ProductMasterItem } from '../types';
+import type { MenuItem, ProductMasterItem, MarketUniverseItem, MarketBenchmarkItem } from '../types';
 
 // Import loaders (temporarily, or moving them here)
 import { fetchMasterDataFromSheet } from '../utils/googleSheetLoader';
+import { getCache, setCache, clearCache } from '../utils/db';
 
 interface DataContextType {
     menuItems: MenuItem[];
@@ -19,20 +20,44 @@ interface DataContextType {
         totalClients: number;
         totalRevenue: number;
     };
+    marketUniverse: MarketUniverseItem[];
+    marketBenchmarks: MarketBenchmarkItem[];
+    loadingProgress: number;
+    fullUniverse: MenuItem[];
     refreshData: () => Promise<void>;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
 
-// 🎯 SHARED HELPER: Robust string normalization
 const normalizeString = (str: string) => {
     if (!str) return str;
     let s = str.trim();
     const lower = s.toLowerCase();
 
-    // 🎯 SPECIFIC FIXES: Handle common inconsistencies
+    // 🎯 SPECIFIC FIXES: Handle common inconsistencies and map to English (matching region_match_updates.sql)
     if (lower === 'campari group') return 'Campari Group';
     if (lower === 'n/a' || lower === 'n.a.') return 'N/A';
+
+    // Region Mappings (Standardize to Italian per UI guide)
+    if (lower === 'lombardia' || lower === 'lombardy') return 'Lombardia';
+    if (lower === 'piemonte' || lower === 'piedmont') return 'Piemonte';
+    if (lower === 'sicilia' || lower === 'sicily') return 'Sicilia';
+    if (lower === 'toscana' || lower === 'tuscany') return 'Toscana';
+    if (lower === 'veneto') return 'Veneto';
+    if (lower === 'lazio') return 'Lazio';
+    if (lower === 'puglia' || lower === 'apulia') return 'Puglia';
+    if (lower === 'campania') return 'Campania';
+    if (lower === 'emilia romagna' || lower === 'emilia-romagna') return 'Emilia-Romagna';
+    if (lower === 'sardegna' || lower === 'sardinia') return 'Sardegna';
+    if (lower === 'abruzzo') return 'Abruzzo';
+    if (lower === 'basilicata') return 'Basilicata';
+    if (lower === 'calabria') return 'Calabria';
+    if (lower === 'liguria') return 'Liguria';
+    if (lower === 'marche') return 'Marche';
+    if (lower === 'molise') return 'Molise';
+    if (lower === 'umbria') return 'Umbria';
+    if (lower === 'aosta' || lower === "valle d'aosta" || lower === "valle d' aosta") return "Valle d'Aosta";
+    if (lower === 'trentino' || lower.includes('trentino-alto')) return 'Trentino-Alto Adige';
 
     // 🎯 ACCENT NORMALIZATION: Handle Espolòn vs Espolón
     s = s.replace(/espol[òó]n/gi, 'Espolón');
@@ -40,7 +65,9 @@ const normalizeString = (str: string) => {
     // 🎯 TITLE CASE: Standardize casing
     return s.split(/\s+/)
         .map(word => {
-            if (word.toUpperCase() === 'N/A') return 'N/A';
+            const upper = word.toUpperCase();
+            if (upper === 'N/A') return 'N/A';
+            if (word.toLowerCase() === "d'aosta") return "d'Aosta";
             return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
         })
         .join(' ');
@@ -53,62 +80,145 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [userPermissions, setUserPermissions] = useState<{ brand: string; role: string }>({ brand: 'PENDING', role: 'user' });
+    const [marketUniverse, setMarketUniverse] = useState<MarketUniverseItem[]>([]);
+    const [marketBenchmarks, setMarketBenchmarks] = useState<MarketBenchmarkItem[]>([]);
+    const [loadingProgress, setLoadingProgress] = useState(0);
 
     const fetchAllData = async () => {
         setLoading(true);
+        setLoadingProgress(5);
         try {
-            // 1. Fetch User Permissions
+            // 1. Fetch User & Permissions (Sequential for stability)
+            setLoadingProgress(10);
             const { data: { user } } = await supabase.auth.getUser();
             let assignedBrand = 'PENDING';
             let userRole = 'user';
 
             if (user) {
-                const { data: settings } = await supabase
-                    .from('users')
-                    .select('brand_owner_access, role')
-                    .eq('id', user.id)
-                    .maybeSingle();
+                // 🛡️ SECURITY: Verify user exists and isn't blacklisted
+                const [settingsRes, blacklistRes] = await Promise.all([
+                    supabase.from('users').select('brand_owner_access, role').eq('id', user.id).maybeSingle(),
+                    supabase.from('blacklist').select('email').eq('email', user.email).maybeSingle()
+                ]);
 
-                if (settings) {
-                    const { data: isBlacklisted } = await supabase
-                        .from('blacklist')
-                        .select('email')
-                        .eq('email', user.email)
-                        .maybeSingle();
-
-                    if (isBlacklisted) {
-                        await supabase.auth.signOut();
-                        navigate('/');
-                        return;
-                    }
-
-                    assignedBrand = settings.brand_owner_access || 'PENDING';
-                    userRole = settings.role || 'user';
-                    setUserPermissions({ brand: assignedBrand, role: userRole });
+                if (blacklistRes.data) {
+                    console.warn("User blacklisted. Signing out.");
+                    await clearCache(); // Clear potential sensitive data
+                    await supabase.auth.signOut();
+                    window.location.href = '/'; // Hard redirect to break loops
+                    return;
                 }
+
+                if (settingsRes.data) {
+                    assignedBrand = settingsRes.data.brand_owner_access || 'PENDING';
+                    userRole = settingsRes.data.role || 'user';
+                    setUserPermissions({ brand: assignedBrand, role: userRole });
+                } else {
+                    console.warn("User record not found in public.users. Signing out.");
+                    // await clearCache(); // Optional: Clear if invalid user
+                    await supabase.auth.signOut();
+                    window.location.href = '/'; // Hard redirect to break loops
+                    return;
+                }
+            }
+            setLoadingProgress(25);
+
+            // ⚡ CACHE CHECK: Try to load from IndexedDB first
+            try {
+                const [cachedMenu, cachedMaster, cachedUniverse, cachedBenchmarks] = await Promise.all([
+                    getCache(`menuItems_${user?.id || 'anon'}`),
+                    getCache('masterData'),
+                    getCache('marketUniverse'),
+                    getCache('marketBenchmarks')
+                ]);
+
+                if (cachedMenu && cachedMaster && cachedMenu.length > 0) {
+                    console.log("⚡ Loaded data from cache");
+                    setMenuItems(cachedMenu);
+                    setMasterData(cachedMaster);
+                    if (cachedUniverse) setMarketUniverse(cachedUniverse);
+                    if (cachedBenchmarks) setMarketBenchmarks(cachedBenchmarks);
+
+                    // Trigger metrics calc immediately with cached data
+                    let dataForMetrics = cachedMenu;
+                    if (userRole === 'user' && assignedBrand !== 'ALL' && assignedBrand !== 'PENDING') {
+                        const target = normalizeString(assignedBrand);
+                        dataForMetrics = cachedMenu.filter((item: MenuItem) => normalizeString(item.brandOwner) === target);
+                    }
+                    calculateMetrics(dataForMetrics);
+
+                    setLoadingProgress(100);
+                    setLoading(false);
+                    return; // EXIT EARLY - Skip network fetch
+                }
+            } catch (e) {
+                console.warn("Cache read failed, falling back to network", e);
             }
 
             // 2. Fetch Master Data
+            let finalMasterData: ProductMasterItem[] = []; // Store for cache
             try {
                 const mData = await fetchMasterDataFromSheet();
-                // 🎯 NORMALIZE MASTER DATA: Ensures filter options match menu items
-                const normalizedMaster: ProductMasterItem[] = mData.map(p => ({
+                const normalizedMaster: ProductMasterItem[] = (mData || []).map(p => ({
                     ...p,
-                    brandOwner: normalizeString(p.brandOwner),
-                    brand: normalizeString(p.brand),
-                    macroCategoria: normalizeString(p.macroCategoria) as ProductMasterItem['macroCategoria'],
-                    categoriaProdotto: normalizeString(p.categoriaProdotto),
+                    brandOwner: normalizeString(p.brandOwner || 'Unknown'),
+                    brand: normalizeString(p.brand || 'Unknown'),
+                    macroCategoria: normalizeString(p.macroCategoria || 'Other') as ProductMasterItem['macroCategoria'],
+                    categoriaProdotto: normalizeString(p.categoriaProdotto || 'Generic'),
                 }));
                 setMasterData(normalizedMaster);
+                finalMasterData = normalizedMaster;
+                setCache('masterData', normalizedMaster, 60 * 24); // Cache for 24h
             } catch (e) {
-                console.error("Failed to load Master Data:", e);
+                console.error("Master data fail:", e);
             }
+            setLoadingProgress(40);
 
-            // 3. Fetch Menu Items (Supabase)
+            // 3. Fetch Market Data (Data Mart)
+            let finalUniverse: MarketUniverseItem[] = [];
+            let finalBenchmarks: MarketBenchmarkItem[] = [];
+            try {
+                const [uRes, bRes] = await Promise.all([
+                    supabase.rpc('get_market_universe'),
+                    supabase.rpc('get_market_benchmarks')
+                ]);
+                if (uRes.data) {
+                    // 🎯 NORMALIZE MARKET UNIVERSE to match MenuItems
+                    const normalizedUniverse = uRes.data.map((item: any) => ({
+                        ...item,
+                        regione: (() => {
+                            const raw = normalizeString(item.regione || 'Unknown Region');
+                            if (raw === 'Aosta') return 'Valle d\'Aosta';
+                            if (raw === 'Trentino') return 'Trentino-Alto Adige';
+                            return raw;
+                        })(),
+                        citta: normalizeString(item.citta || 'Unknown City'),
+                        tipologia_cliente: normalizeString(item.tipologia_cliente || 'Unknown Type'),
+                    }));
+                    setMarketUniverse(normalizedUniverse);
+                    finalUniverse = normalizedUniverse;
+                    setCache('marketUniverse', normalizedUniverse, 60 * 24);
+                }
+                if (bRes.data) {
+                    const normalizedBenchmarks = bRes.data.map((item: any) => ({
+                        ...item,
+                        macro_categoria: normalizeString(item.macro_categoria || 'Other'),
+                        categoria_prodotto: normalizeString(item.categoria_prodotto || 'Generic'),
+                    }));
+                    setMarketBenchmarks(normalizedBenchmarks);
+                    finalBenchmarks = normalizedBenchmarks;
+                    setCache('marketBenchmarks', normalizedBenchmarks, 60 * 24);
+                }
+            } catch (e) {
+                console.warn("Market data fail:", e);
+            }
+            setLoadingProgress(55);
+
+            // 4. Fetch Menu Items (Sequential with robustness)
             let allItems: MenuItem[] = [];
+            let hasMore = true;
             let page = 0;
             const pageSize = 1000;
-            let hasMore = true;
 
             while (hasMore) {
                 const { data, error } = await supabase
@@ -116,51 +226,76 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
                     .select('*')
                     .range(page * pageSize, (page + 1) * pageSize - 1);
 
-                if (error) throw new Error(error.message);
+                if (error) {
+                    console.error("Menu fetch error:", error);
+                    throw new Error(error.message);
+                }
 
                 if (data && data.length > 0) {
-                    const mappedData: MenuItem[] = data.map((row: any) => ({
+                    const mapped = data.map((row: any) => ({
                         ...row,
                         // 🌉 ROBUST BRIDGE: Handles exact Supabase headers with Normalization
                         insegna: normalizeString(row.NomeLocale || row.Venue_Name || 'Unknown Venue'),
                         via: row.venue_address || row.Address || '',
                         citta: normalizeString(row.Città || row.venue_city || row.City || 'Unknown City'),
-                        regione: normalizeString(row.RegionMatch || row.Region || 'Unknown Region'),
+                        regione: (() => {
+                            const raw = normalizeString(row.RegionMatch || row.Region || 'Unknown Region');
+                            if (raw === 'Aosta') return 'Valle d\'Aosta';
+                            if (raw === 'Trentino') return 'Trentino-Alto Adige';
+                            return raw;
+                        })(),
                         tipologiaCliente: normalizeString(row.TipologiaLocale || row.Customer_Type || 'Unknown Type'),
                         brandOwner: normalizeString(row.ingredients_brand_owner || row.BrandOwner || 'Unknown Owner'),
                         brand: normalizeString(row.ingredients_brand || row.Brand || 'Unknown Brand'),
                         macroCategoria: normalizeString(row.Broad_category || row.MacroCategory || 'Other'),
                         categoriaProdotto: normalizeString(row.ingredients_categoria || row.Product_Category || 'Generic'),
                         nomeCocktail: normalizeString(row.Item_Name || row.CocktailName || 'General Item'),
+                        categoryName: normalizeString(row["Category Name"] || ''),
+                        subCategory: normalizeString(row.Sub_Category || ''),
                         prezzo: typeof row.Price === 'number' ? row.Price : (parseFloat(String(row.Price || '0').replace(',', '.')) || 0),
                         data: row['Item Date'] || row.Date || row.data || '2024-01-01',
-                        venueId: row.NomeLocale || row.Venue_Name || '', // USE RAW NAME OR STABLE ID
+                        venueId: row.NomeLocale || row.Venue_Name || '',
                     }));
+                    allItems = [...allItems, ...mapped];
 
-                    allItems = [...allItems, ...mappedData];
                     if (data.length < pageSize) hasMore = false;
                     else page++;
+
+                    setLoadingProgress(Math.min(95, 55 + (allItems.length / 500))); // Dynamic update
                 } else {
                     hasMore = false;
                 }
             }
 
             setMenuItems(allItems);
+            // Cache the huge menu items list
+            // Use User ID in key to separate cache per user if needed (though data is shared, permissions differ)
+            // Actually, safe to just check `user.id` exists.
+            if (user) {
+                setCache(`menuItems_${user.id}`, allItems, 60 * 4); // Cache for 4 hours
+            }
 
-            // 🛡️ INITIAL METRICS: If role is user, metrics should reflect filtered set
+            setLoadingProgress(98);
+
+            // 5. Initial Metrics
             let dataForMetrics = allItems;
-            if (userRole === 'user' && assignedBrand !== 'ALL') {
+            if (userRole === 'user' && assignedBrand !== 'ALL' && assignedBrand !== 'PENDING') {
                 const target = normalizeString(assignedBrand);
                 dataForMetrics = allItems.filter(item => normalizeString(item.brandOwner) === target);
             }
 
             calculateMetrics(dataForMetrics);
-            setLoading(false);
+            setLoadingProgress(100);
+
+            setTimeout(() => {
+                setLoading(false);
+            }, 300);
 
         } catch (err) {
-            console.error('Data loading error:', err);
-            setError(err instanceof Error ? err.message : 'An unknown error occurred');
+            console.error('CRITICAL LOAD ERROR:', err);
+            setError(err instanceof Error ? err.message : 'Critical system failure');
             setLoading(false);
+            setLoadingProgress(0);
         }
     };
 
@@ -187,7 +322,7 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
         });
     };
 
-    const enrichedData = useMemo(() => {
+    const enrichedDataUnfiltered = useMemo(() => {
         if (!masterData || masterData.length === 0) return menuItems;
 
         const productMap = new Map<string, ProductMasterItem>();
@@ -201,7 +336,7 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
         });
 
         // 🎯 ENRICH DATA: Map raw rows to master data
-        const enriched = menuItems.map(item => {
+        return menuItems.map(item => {
             const masterInfo = productMap.get((item.brand || '').toLowerCase());
             if (masterInfo) {
                 return {
@@ -214,15 +349,17 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
             }
             return item;
         });
+    }, [masterData, menuItems]);
 
+    const enrichedData = useMemo(() => {
         // 🛡️ PERMISSION FILTERING: Restrict 'user' role to their assigned brand owner
         if (userPermissions.role === 'user' && userPermissions.brand !== 'ALL') {
             const targetBrandOwner = normalizeString(userPermissions.brand);
-            return enriched.filter(item => normalizeString(item.brandOwner) === targetBrandOwner);
+            return enrichedDataUnfiltered.filter(item => normalizeString(item.brandOwner) === targetBrandOwner);
         }
 
-        return enriched;
-    }, [masterData, menuItems, userPermissions]);
+        return enrichedDataUnfiltered;
+    }, [enrichedDataUnfiltered, userPermissions]);
 
     // 🎯 FILTER MASTER DATA: Ensure filter dropdowns only show relevant options for restricted users
     const filteredMasterData = useMemo(() => {
@@ -238,11 +375,15 @@ export const DataProvider: FC<{ children: ReactNode }> = ({ children }) => {
         <DataContext.Provider value={{
             menuItems,
             enrichedData,
+            fullUniverse: enrichedDataUnfiltered,
             masterData: filteredMasterData,
             loading,
             error,
             metrics,
             userPermissions,
+            marketUniverse,
+            marketBenchmarks,
+            loadingProgress,
             refreshData: fetchAllData
         }}>
             {children}
